@@ -1,0 +1,300 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* ===============头部导航================== */
+.nav{
+    position: relative;
+    z-index: 1;
+    margin-right: auto;
+    margin-left: auto;
+    width: 1000px;
+    height: 100px;
+    zoom: 1;
+    /* border: 1px solid; */
+}
+.nav .nav-index{
+    background-image: url("../images/weipinhui/maodian.png");
+    background-position: -308px -57px;
+    width: 125px;
+    height: 100px;
+    border: 2px solid;
+    display: inline-block;
+    vertical-align: top;
+    overflow: hidden;
+}
+.nav .nav-san{
+    background-image: url("../images/weipinhui/maodian.png");   
+    background-position: 0 0;
+    width: 304px;
+    height: 100px;
+    position: absolute;
+    border: 2px solid;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+/* ===========================登录背景========================= */
+
+.login-bg{
+    border: 1px solid;
+    width: 100%;
+    height: 650px;
+    background-image: url("../images/weipinhui/login-bg.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+/* =====================登录框=================== */
+.login-bg .login-panel{
+    width:360px;
+    height: 450px;
+    background-color: white;
+    margin-top: 50px;
+    margin-left: 900px;
+}
+.login-bg .login-panel .login-head{
+    width: 360px;
+    height: 50px;
+    border-bottom:1px solid #ccc;
+    
+}
+
+.login-bg .login-panel .saoma-login{
+    width: 178px;
+    vertical-align: top;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 50px;
+    overflow: hidden;
+    color: #575557;
+    cursor: default;
+    float: left;
+    cursor: pointer; 
+}
+.login-bg .login-panel .a{
+    width: 2px;
+    height: 50px;
+    float: left;
+    font-size: 25px;
+    margin-top: 10px;
+    color: #ccc;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.login-bg .login-panel .acc-login:hover{
+    color: #f10180;
+}
+.login-bg .login-panel .saoma-login:hover{
+    color: #f10180;
+}
+.login-bg .login-panel .acc-login{
+    display: block;
+    width: 178px;
+    /* border: 1px solid; */
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 50px;
+    overflow: hidden;
+    color:#575557;
+    cursor: default;
+    text-decoration: none;
+    float: right;
+    cursor: pointer; 
+}
+/* ==============登录表单============== */
+.login-bg .login-panel .login-form{
+    width: 300px;
+    height: 351px;
+    background: white;
+    margin-left: 30px;
+}
+/* ======提示用户名或者密码错误 */
+.login-bg .login-panel .login-form .error{
+    /* display: none; */
+    width: 100%;
+    height: 15px;
+    float: left;
+    /* border: 1px solid; */
+    font-size: 10px;
+    line-height: 15px;   
+    position: relative;
+    top: 12px;
+    text-align: left;
+    padding-left: 15px;
+    color:  rgb(206, 27, 27);
+    font-weight: bolder;
+    
+}
+/* =========用户区 */
+.login-bg .login-panel .login-form .login-user{
+    padding-left: 40px;
+    margin-left:5px ;
+    position: relative;
+    top:40px;
+    width: 248px;
+    height: 40px;
+    line-height: 32px;
+    border: 1px solid;
+    border-radius:5px;
+
+}
+.login-bg .login-panel .login-form .login-user .user-img{
+    display: block;
+    width: 20px;
+    height: 20px;
+    /* border: 1px solid; */
+    position: absolute;
+    top: 10px;
+    left: 11px;
+    float: left;
+
+}
+
+/* 用户名输入框 */
+.login-bg .login-panel .login-form .login-user input[type = text]{
+    width: 220px;
+    height: 20px;
+    position: absolute;
+    top: 13px;
+    left: 40px;
+    float: left;
+    outline: none;
+    border: none;
+    padding: 0 10px;
+
+   
+}
+/* 提示用户名为空 */
+.login-bg .login-panel .login-form .user-none{
+    /* display: none; */
+    width: 150px;
+    height: 20px;
+    float: left;
+    /* border: 1px solid; */
+    
+    font-size: 10px;
+    line-height: 20px;   
+    margin-top: 40px;
+    text-align: center;
+    color:  rgb(206, 27, 27);
+    font-weight: bolder;
+}
+/* ==========密码区 */
+.login-bg .login-panel .login-form .login-pwd{
+    padding-left: 40px;
+    margin-left:5px ;
+    position: relative;
+    top:70px;
+    width: 248px;
+    height: 40px;
+    line-height: 32px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+.login-bg .login-panel .login-form .login-pwd .pwd-img{
+    display: block;
+    width: 20px;
+    height: 20px;
+    /* border: 1px solid; */
+    position: absolute;
+    top: 10px;
+    left: 11px;
+    float: left;
+
+}
+.login-bg .login-panel .login-form .login-pwd input[type = password]{
+width: 220px;
+height: 20px;
+position: absolute;
+top: 13px;
+left: 40px;
+float: left;
+outline: none;
+border: none;
+padding: 0 10px;
+}
+/* 提示密码为空 */
+.login-bg .login-panel .login-form .pwd-none{
+    /* display: none; */
+    width: 80px;
+    height: 20px;
+    /* border: 1px solid; */
+    font-size: 10px;
+    line-height: 20px;   
+    margin-top: 70px;
+    margin-left: 25px;
+    text-align: center;
+    color: rgb(206, 27, 27);
+    font-weight: bolder;
+}
+/* ==========忘记密码区================== */
+.login-bg .login-panel .login-other-item{
+    width: 300px;
+    height: 20px;
+    /* border: 1px solid; */
+    margin-top: 20px;
+}
+.login-bg .login-panel .login-other-item .c{
+    
+    float: left;
+    font-size: 13px;
+    margin-left: 20px;
+    text-decoration: none;
+    color: #575557;
+}
+.login-bg .login-panel .login-other-item .b{
+    float: right;
+    font-size: 13px;
+    margin-right: 20px;
+    text-decoration: none;
+    color: #575557;
+}
+.login-bg .login-panel .login-form .login-tiaokuan{
+    width: 280px;
+    height: 40px;
+    /* border: 1px solid; */
+    margin-top: 20px;
+    margin-left: 10px;    
+}
+
+.login-bg .login-panel .login-form .login-tiaokuan strong{
+    font-size: 12px;
+}
+.login-bg .login-panel .login-form .login-tiaokuan a{
+   font-size: 10px;
+   color: #f10180;
+   text-decoration: none;
+}
+.login-bg .login-panel .login-form .no-agree{
+    width: 280px;
+    height: 20px;
+    /* border: 1px solid; */
+    margin-top: 10px;
+    margin-left: 10px; 
+    font-size: 10px;
+    line-height: 20px;   
+    text-align: center;
+    color: rgb(206, 27, 27);
+    font-weight: bolder;
+    text-align: left;
+
+}
+
+.login-bg .login-panel .login-form .denglu{
+    text-decoration: none;
+    display: block;
+    width: 280px;
+    height: 40px;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #f10180;
+    color: #fff;
+    font-weight: bolder;
+    margin-left: 10px;
+    margin-top: 30px;
+   border: none;
+   cursor: pointer;
+
+}
