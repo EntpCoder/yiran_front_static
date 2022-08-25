@@ -47,8 +47,8 @@
 /* =====================登录框=================== */
 .login-bg .login-panel{
     width:360px;
-    height: 450px;
-    background-color: white;
+    height: 500px;
+    background-color: rgb(245, 229, 229);
     margin-top: 50px;
     margin-left: 900px;
 }
@@ -105,8 +105,8 @@
 /* ==============登录表单============== */
 .login-bg .login-panel .login-form{
     width: 300px;
-    height: 351px;
-    background: white;
+    height: 450px;
+    background-color: rgb(245, 229, 229);
     margin-left: 30px;
 }
 /* ======提示用户名或者密码错误 */
@@ -233,15 +233,7 @@ padding: 0 10px;
     width: 300px;
     height: 20px;
     /* border: 1px solid; */
-    margin-top: 20px;
-}
-.login-bg .login-panel .login-other-item .c{
-    
-    float: left;
-    font-size: 13px;
-    margin-left: 20px;
-    text-decoration: none;
-    color: #575557;
+    margin-top: 10px;
 }
 .login-bg .login-panel .login-other-item .b{
     float: right;
@@ -254,7 +246,7 @@ padding: 0 10px;
     width: 280px;
     height: 40px;
     /* border: 1px solid; */
-    margin-top: 20px;
+    margin-top: 10px;
     margin-left: 10px;    
 }
 
@@ -293,8 +285,48 @@ padding: 0 10px;
     color: #fff;
     font-weight: bolder;
     margin-left: 10px;
-    margin-top: 30px;
    border: none;
    cursor: pointer;
 
+}
+/* ========微信登陆================== */
+.login-bg .login-panel .login-form .fooder{
+    width: 100%;
+    height: 130px;
+    /* background-color: rgb(244, 210, 210); */
+    margin-top: 25px;
+}
+.login-bg .login-panel .login-form .fooder .wechat{
+    width: 100%;
+    height: 40px;
+    /* border: 1px solid; */
+}
+.login-bg .login-panel .login-form .fooder .wechat .i1,.i2{
+    display: block;
+    width: 120px;
+    float: left;
+    margin-top: 20px;
+    border-top:1px solid #cac9c9;
+}
+.login-bg .login-panel .login-form .fooder .wechat .weixin-img{
+    width: 40px;
+    float: left;
+    height: 40px;
+    background-image: url("../images/maodian.png");
+    background-position: -580px -161px;
+    display: inline-block;
+    position: relative;
+    z-index: 3;
+    margin: 0 10px;
+    cursor: pointer;
+}
+.login-bg .login-panel .login-form .fooder .register{
+   width: 100%;
+   height: 14px;
+    color: #333;
+    line-height: 24px;
+    font-size: 14px;
+    float:left;
+    padding-left: 75%;
+    text-decoration: none;
 }
