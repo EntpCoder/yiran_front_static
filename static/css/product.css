@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.pinpai{
+    width: 80%;
+    height: 30px;
+    margin: 0 auto;
+    background-color: rgb(246, 209, 209);
+    margin-bottom: 10px;
+}
+.pinpai .pinpai-name{
+    width: 70%;
+    height: 100%;
+
+}
+.pinpai .pinpai-name .brand{
+    width: auto;
+    font-size: 18px;
+    color: #333333;
+    float: left;
+    border: 1px solid;
+    margin-right: 30px;
+}
+.pinpai .pinpai-name .zhekou{
+    width: 30%;
+    height: 100%;
+    float: left;
+}
+.pinpai .pinpai-name .zhekou .zhekou-num{
+    width: auto;
+    height: 100%;
+    font-size: 18px;
+    font-weight: bolder;
+    color: #333333;
+    border: 1px solid;
+    line-height: 100%;
+    padding-top: 5px;
+    float: left;
+}
+.pinpai .pinpai-name .zhekou .zhekou-name{
+    width: auto;
+    height: 100%;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333333;
+    border: 1px solid;
+    line-height: 100%;
+    padding-top: 5px;
+    margin-left: 5px;
+    float: left;
+}
+.pinpai .pinpai-like{
+    float: right;
+    width:150px;
+    height: 30px;
+    border: 1px solid red;
+    border-radius: 30px;
+}
+
+.pinpai .pinpai-like .like-img{
+    display: block;
+    width: 15px;
+    height: 15px;
+    /* border: 1px solid; */
+    margin-top: 8px;
+    margin-left: 10px;
+    float: left;
+    margin-right: 5px;
+    background: url("../svg/like-img.svg");
+}
+.pinpai .pinpai-like .like-text{
+    font-size: 13px;
+    line-height: 30px;
+    float: left;
+    color:  #f32b80;
+
+}
+.pinpai .pinpai-like .like-num{
+    font-size: 13px;
+    color: #686666;
+    margin-top: 8px;
+    float: left;
+    margin-left: 5px;
+}
+.pinpai .pinpai-like:hover{
+    background-color: #f32b80;
+    cursor: pointer;
+}
+.pinpai .pinpai-like:hover .like-text{
+    color:white;    
+}
+.pinpai .pinpai-like:hover .like-num{
+    color:white;    
+}
+.pinpai .pinpai-like:hover .like-img{
+    background: url("../svg/like-hover.svg");
+}
+
+/* =================筛选===================== */
+.layui-tab-title {
+    width: 87%;
+    height: auto;
+    background-color: rgb(218, 162, 88);
+
+}
+.layui-tab-title .layui-this{
+    width: 80px;
+    height: auto;
+}
+.layui-tab-card>.layui-tab-title li{
+    font-size: 10px;
+}
+.layui-tab-card>.layui-tab-title .layui-this {
+    background-color: rgb(243, 156, 156);
+}
+.layui-tab-card>.layui-tab-more .layui-this {
+    background: 0 0;
+    color: #f32b80;
+}
+.layui-tab-card>.layui-tab-title .layui-tab-bar {
+    height: 40px;
+    line-height: 40px;
+    border-radius: 0;
+    border-top: none;
+    border-right: none;
+}
