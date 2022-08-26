@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.product-container{
+    width: 1000px;
+    height: 700px;
+    /* background-color: rgb(244, 214, 214); */
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+/* *****************************左边 */
+.product-container .layui-row .layui-col-md5 .layui-row{
+    margin-top: 8px;
+}
+.product-container .layui-row .layui-col-md5 .layui-row .layui-col-md3{
+    border: 1px rgb(184, 184, 184) solid;
+    height: 23%;
+    width: 23%;
+}
+/* 小图片列表 */
+
+/* 小图片列表的左右按钮 */
+.product-container .layui-row .layui-col-md5 .layui-row .layui-col-md1{
+    background-color: rgb(111, 111, 111);
+    opacity: 0.5;
+    height: 69px;
+}
+.product-container .layui-row .layui-col-md5 .layui-row .layui-col-md1 img{
+    margin-top: 17px;
+    
+}
+/* 商品编码和收藏 */
+.product-container .layui-row .layui-col-md5 .proId-and-collect{
+    height: 30px;
+    width: 100%;
+    /* background-color: rgb(180, 239, 170); */
+    margin-top: 10px;
+    border-bottom: 1px rgb(210, 210, 210)dashed;
+}
+.product-container .layui-row .layui-col-md5 .proId-and-collect span{
+    color: rgb(210, 210, 210);
+    font-size: x-small;
+    display: block;
+    float: left;
+}
+.product-container .layui-row .layui-col-md5 .proId-and-collect .pro-collect{
+    /* background-color: #fff; */
+    float: left;
+    margin-left: 25px;
+}
+.product-container .layui-row .layui-col-md5 .proId-and-collect .pro-collect img{
+    float: left;
+}
+
+/* ****************************右边 */
+.product-container .layui-row .layui-col-md7{
+    /* background-color: rgb(193, 220, 241); */
+}
+.product-container .layui-row .layui-col-md7 .grid-demo .layui-col-md1{
+    /* background-color: rgb(243, 164, 164); */
+    color: aliceblue;
+}
+.product-container .layui-row .layui-col-md7 .grid-demo .layui-col-md11{
+    background-color: rgb(178, 243, 249);
+}
+
+/* 品牌和标题 */
+.product-container .layui-row .layui-col-md7 .grid-demo .layui-col-md11 .brand-and-title a{
+    color: #007cff;
+    font-size: 16px;
+    line-height: 22px;
+    height: 20px;
+    width: 100%;
+    /* background-color: #fff; */
+    float: left;
+}
+/* 唯品自营框 */
+.product-container .layui-row .layui-col-md7 .grid-demo .layui-col-md11 .brand-and-title .weipin-ziying{
+    height: 20px;
+    width: 60px;
+    background-color: #f03867;
+    border-radius: 2px;
+    float: left;   
+    margin-top: 7px; 
+}
+.product-container .layui-row .layui-col-md7 .grid-demo .layui-col-md11 .brand-and-title .weipin-ziying span{
+    font-size: 12px;
+    color: whitesmoke;
+    display: block;
+    padding-left: 5px;
+    margin: 0 auto;
+    font-weight: 300;
+}
+/* 标题 */
+.product-container .layui-row .layui-col-md7 .grid-demo .layui-col-md11 .brand-and-title span{
+    float: left;
+    font-size: 16px;
+    color: #333;
+    max-height: 40px;
+    overflow: hidden;
+    line-height: 20px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+/* 打折券 */
+.product-container .layui-row .layui-col-md7 .grid-demo .layui-col-md11 .discount-coupon{
+    height: 94px;
+    /* width: 100%; */
+    float: top;
+    background-color: rgb(209, 62, 62);
+    margin-top: 55px;
+}
+/*  */
