@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.toplogo{
+    padding-top: 16px;
+}
+.inline-block-item{
+    margin-top: 15px;
+}
+.inline-block-item li{
+    float: left;
+    margin-right: 30px;
+    color: rgb(144, 144, 144);
+    font-size: smaller;
+}
+.member-actions-link{
+    color: rgb(144, 144, 144);
+    margin-left: 16px;
+}
+.border-pink{
+    background-color: rgb(232,10,132);
+    height: 2px;
+    border: none;
+}
