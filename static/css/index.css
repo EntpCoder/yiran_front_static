@@ -1,0 +1,25 @@
+.damo{
+    background-color: aqua;
+}
+.demo2{
+    background-color: blanchedalmond;
+}
+.hade-lest{
+    float: left;
+}
+.layui-row li{
+    position: relative;
+    float: left;
+    height: 40px;
+    background-color: #e9e1e1;
+}
+.layui-row  a{
+    color:  #666666;
+    font-size: 12px;
+    padding: 6.2px;
+}
+.layui-row span{
+    color: #424242;
+    margin: 0 3.6px;
+    font-size: 12px;
+}
