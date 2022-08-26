@@ -34,7 +34,7 @@ function checkUserpwd(){
     }
 }
 
-document.querySelector(".denglu").onclick = getLoginValue;
+
 function getLoginValue(){
     var usertel = document.querySelector(".user").value;
     var userpwd = document.querySelector(".pwd").value;
@@ -90,7 +90,7 @@ function checkCode(){
         document.querySelector(".login-form2 .code-none").innerText = "验证码不能为空！";
         return false;
     }
-    else if(!/^S{6}/.test(code)){
+    else if(!/^S{5}/.test(code)){
         document.querySelector(".login-form2 .code-none").innerText = "请输入六位验证码";
         return false;
     }
@@ -100,8 +100,8 @@ function checkCode(){
     }
 }
 
-document.querySelector(".login-form2 .denglu").onclick = getLoginValue;
-function getLoginValue(){
+
+function getLoginValue2(){
     var tel = document.querySelector(".login-form2 .user").value;
     var code = document.querySelector(".login-form2 .pwd").value;
     var box1 = document.querySelector(".login-form2 input[type = checkbox]").checked;
@@ -114,7 +114,7 @@ function getLoginValue(){
         document.querySelector(".login-form2 .error").innerText="手机号或者验证码错误！"
         return false;
     }
-     if(!box1){
+     if(tel && code && !box1){
         document.querySelector(".login-form2 .no-agree").innerText="请勾选服务！";
         return false;
     }    

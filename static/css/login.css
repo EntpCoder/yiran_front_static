@@ -37,7 +37,7 @@
 /* ===========================登录背景========================= */
 
 .login-bg{
-    border: 1px solid;
+    /* border: 1px solid; */
     width: 100%;
     height: 650px;
     background-image: url("../images/login-bg.jpg");
@@ -46,9 +46,10 @@
 }
 /* =====================登录框=================== */
 .login-bg .login-panel{
+    position: absolute;
     width:360px;
     height: 500px;
-    background-color: rgb(245, 229, 229);
+    background-color: #fff;
     margin-top: 50px;
     margin-left: 900px;
 }
@@ -118,7 +119,7 @@
     height: 20px;
     margin-left: 25px;
     float: left;
-    border: 1px solid;
+    /* border: 1px solid; */
     font-size: 10px;
     line-height: 15px;   
     position: relative;
@@ -138,7 +139,7 @@
     width: 248px;
     height: 40px;
     line-height: 32px;
-    border: 1px solid;
+    border: 1px solid #ccc;  
     border-radius:5px;
 
 }
@@ -159,7 +160,7 @@
     width: 220px;
     height: 20px;
     position: absolute;
-    background-color: rgb(245, 229, 229);
+    background-color: #fff;
     top: 13px;
     left: 40px;
     float: left;
@@ -176,7 +177,7 @@
     height: 20px;
     margin-left: 25px;
     float: left;
-    border: 1px solid;
+    /* border: 1px solid; */
     
     font-size: 10px;
     line-height: 20px;   
@@ -194,7 +195,7 @@
     width: 248px;
     height: 40px;
     line-height: 32px;
-    border: 1px solid;
+    border: 1px solid #ccc;  
     border-radius: 5px;
 }
 .login-bg .login-panel .login-form .login-pwd .pwd-img{
@@ -212,7 +213,7 @@
 width: 220px;
 height: 20px;
 position: absolute;
-background-color: rgb(245, 229, 229);
+background-color: #fff;
 top: 13px;
 left: 40px;
 float: left;
@@ -226,7 +227,7 @@ padding: 0 10px;
     width: 200px;
     height: 20px;
     margin-left: 25px;
-    border: 1px solid;
+    /* border: 1px solid; */
     font-size: 10px;
     line-height: 20px;   
     margin-top: 80px;
@@ -260,7 +261,7 @@ padding: 0 10px;
     width: 248px;
     height: 40px;
     line-height: 32px;
-    border: 1px solid;
+    border: 1px solid #ccc;  
     border-radius:5px;
 
 }
@@ -280,7 +281,7 @@ padding: 0 10px;
     width: 220px;
     height: 20px;
     position: absolute;
-    background-color: rgb(245, 229, 229);
+    background-color: #fff;
     top: 13px;
     left: 40px;
     float: left;
@@ -296,7 +297,7 @@ padding: 0 10px;
     width: 150px;
     height: 20px;
     float: left;
-    border: 1px solid;
+    /* border: 1px solid; */
     
     font-size: 10px;
     line-height: 20px;   
@@ -319,7 +320,7 @@ padding: 0 10px;
     width: 150px;
     height: 40px;
     line-height: 32px;
-    border: 1px solid;
+    border: 1px solid #ccc;  
     border-radius: 5px;
     float: left;
 }
@@ -339,7 +340,7 @@ padding: 0 10px;
     height: 20px;
     position: absolute;
     /* background-color: rgb(137, 102, 102); */
-    background-color: rgb(245, 229, 229);
+    background-color: #fff;
     top: 13px;
     left: 40px;
     float: left;
@@ -369,7 +370,7 @@ padding: 0 10px;
     width: 285px;
     height: 20px;
     float: left;
-    border: 1px solid;
+    /* border: 1px solid; */
     
     font-size: 10px;
     line-height: 20px;   
@@ -407,7 +408,7 @@ padding: 0 10px;
     float: left;
     width: 280px;
     height: 20px;
-    border: 1px solid;
+    /* border: 1px solid; */
     margin-top: 10px;
     margin-left: 10px; 
     font-size: 10px;
@@ -505,7 +506,7 @@ padding: 0 10px;
 .login-bg .login-panel .login-form .no-agree{
     width: 280px;
     height: 20px;
-    border: 1px solid;
+    /* border: 1px solid; */
     margin-top: 10px;
     margin-left: 10px; 
     font-size: 10px;
