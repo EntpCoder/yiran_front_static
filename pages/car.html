@@ -27,13 +27,13 @@
                         <span>
                             <embed width="12px" height="12px" src="static/svg/seckill.svg"></embed>
                         </span>
-                        <span>秒杀专场</span>
+                        <a href="#">秒杀专场</a>
                     </li>
                     <li>
                         <span>
                             <embed width="12px" height="12px" src="static/svg/no-collect.svg"></embed>
                         </span>
-                        <span>我的收藏</span>
+                        <a href="#">我的收藏</a>
                     </li>
                 </ul>
                 <ul class="promise-item layui-row">
@@ -76,7 +76,14 @@
                 勾选商品“<img src="static/images/shop-lock-success.png">”即可锁定库存20分钟，倒计时内不用担心商品被抢走～
             </div>
         </div>
-        <table class="layui-table" style="border: none">
+        <!-- 商品列表 -->
+        <table class="orders-table layui-table" style="table-layout:fixed" lay-skin="nob"  lay-size="sm">
+            <colgroup>
+                <col width="400">
+                <col width="300">
+                <col width="200">
+                <col>
+              </colgroup>
             <thead>
               <tr>
                 <th>商品</th>
@@ -86,22 +93,158 @@
               </tr> 
             </thead>
             <tbody>
-              <tr>
-                <td>
-                    <input type="checkbox"></input>
-                    <img width="70px" height="70px" src="static/images/temp/测试数据1.jpg">
-                    <span>贤心</span>
+              <tr class="goods-item">
+                <td class="product-item">
+                    <div class="m-checkbox">
+                        <input type="checkbox"></input>
+                    </div>
+                    <div class="product-price">
+                        <img width="70px" height="70px" src="static/images/temp/测试数据1.jpg">
+                    </div>
+                    <div class="product-info">
+                        <div class="title">粗跟仙女风单鞋低跟浅口通勤平底女鞋 安妮208003</div>
+                        <p>尺码 39</p>
+                    </div>
                 </td>
-                <td>2016-11-29</td>
-                <td>人生就像是一场修行</td>
+                <td class="price-item"><strong>￥999</strong></td>
+                <td class="quantity-item" >
+                    <div class="layui-btn-group">
+                        <button type="button" class="layui-btn layui-btn-primary layui-btn-sm">
+                            <i class="layui-icon">&#xe67e;</i>
+                        </button>
+                        <button type="button" class="layui-btn layui-btn-primary layui-btn-sm">
+                            <input class="product-num" type="text" value="1" readonly="readonly"></input>
+                        </button>
+                        <button type="button" class="layui-btn layui-btn-primary layui-btn-sm">
+                            <i class="layui-icon">&#xe654;</i>
+                        </button>
+                    </div>
+                </td>
+                <td class="actions-item">
+                    <a class="order-button-del" href="javascript:;">删除</a>
+                </td>
               </tr>
-              <tr>
-                <td>许闲心</td>
-                <td>2016-11-28</td>
-                <td>于千万人之中遇见你所遇见的人，于千万年之中</td>
+              <tr class="goods-item">
+                <td class="product-item">
+                    <div class="m-checkbox">
+                        <input type="checkbox"></input>
+                    </div>
+                    <div class="product-price">
+                        <img width="70px" height="70px" src="static/images/temp/测试数据1.jpg">
+                    </div>
+                    <div class="product-info">
+                        <div class="title">粗跟仙女风单鞋低跟浅口通勤平底女鞋 安妮208003</div>
+                        <p>尺码 39</p>
+                    </div>
+                </td>
+                <td class="price-item"><strong>￥233</strong></td>
+                <td class="quantity-item" >
+                    <div class="layui-btn-group">
+                        <button type="button" class="layui-btn layui-btn-primary layui-btn-sm">
+                            <i class="layui-icon">&#xe67e;</i>
+                        </button>
+                        <button type="button" class="layui-btn layui-btn-primary layui-btn-sm">
+                            <input class="product-num" type="text" value="1" readonly="readonly"></input>
+                        </button>
+                        <button type="button" class="layui-btn layui-btn-primary layui-btn-sm">
+                            <i class="layui-icon">&#xe654;</i>
+                        </button>
+                    </div>
+                </td>
+                <td class="actions-item">
+                    <a class="order-button-del" href="javascript:;">删除</a>
+                </td>
+              </tr>
+              <tr class="goods-item">
+                <td class="product-item">
+                    <div class="m-checkbox">
+                        <input type="checkbox"></input>
+                    </div>
+                    <div class="product-price">
+                        <img width="70px" height="70px" src="static/images/temp/测试数据1.jpg">
+                    </div>
+                    <div class="product-info">
+                        <div class="title">【舒适透气】夏季潮牌休闲短袖t恤经典LOGO印花男式短袖t恤</div>
+                        <p>尺码 39</p>
+                    </div>
+                </td>
+                <td class="price-item"><strong>￥659</strong></td>
+                <td class="quantity-item" >
+                    <div class="layui-btn-group">
+                        <button type="button" class="layui-btn layui-btn-primary layui-btn-sm">
+                            <i class="layui-icon">&#xe67e;</i>
+                        </button>
+                        <button type="button" class="layui-btn layui-btn-primary layui-btn-sm">
+                            <input class="product-num" type="text" value="1" readonly="readonly"></input>
+                        </button>
+                        <button type="button" class="layui-btn layui-btn-primary layui-btn-sm">
+                            <i class="layui-icon">&#xe654;</i>
+                        </button>
+                    </div>
+                </td>
+                <td class="actions-item">
+                    <a class="order-button-del" href="javascript:;">删除</a>
+                </td>
+              </tr>
+              <tr class="goods-item">
+                <td class="product-item">
+                    <div class="m-checkbox">
+                        <input type="checkbox"></input>
+                    </div>
+                    <div class="product-price">
+                        <img width="70px" height="70px" src="static/images/temp/测试数据1.jpg">
+                    </div>
+                    <div class="product-info">
+                        <div class="title">粗跟仙女风单鞋低跟浅口通勤平底女鞋 安妮208003</div>
+                        <p>尺码 39</p>
+                    </div>
+                </td>
+                <td class="price-item"><strong>￥1888</strong></td>
+                <td class="quantity-item" >
+                    <div class="layui-btn-group">
+                        <button type="button" class="layui-btn layui-btn-primary layui-btn-sm">
+                            <i class="layui-icon">&#xe67e;</i>
+                        </button>
+                        <button type="button" class="layui-btn layui-btn-primary layui-btn-sm">
+                            <input class="product-num" type="text" value="1" readonly="readonly"></input>
+                        </button>
+                        <button type="button" class="layui-btn layui-btn-primary layui-btn-sm">
+                            <i class="layui-icon">&#xe654;</i>
+                        </button>
+                    </div>
+                </td>
+                <td class="actions-item">
+                    <a class="order-button-del" href="javascript:;">删除</a>
+                </td>
               </tr>
             </tbody>
-          </table>
+        </table>
+        <div class="orders-total">
+            <div class="orders-panel layui-row">
+                <div class="price-panel-coupon layui-col-md2">
+                    <button class="layui-btn" id="demo1">
+                        使用优惠券
+                        <i class="layui-icon layui-icon-down layui-font-12"></i>
+                    </button>
+                </div>
+                <div class="price-panel-item layui-col-md1">
+                    共
+                    <span class="product-num">3</span>
+                    件商品
+                </div>
+            </div>
+            <div class="orders-price layui-row">
+                <div class="sum-price-text layui-col-md1 layui-col-md-offset10">总金额:</div>
+                <div class="sum-price layui-col-md1">￥1888</div>
+            </div>
+            <div class="orders-settlement layui-row">
+                <div class="orders-tips layui-col-md8">
+                    <span id="st-tips-text">请在倒计时之前结算</span>
+                    <i id="st-tips" class="layui-icon" style="font-size: 15px; color: rgb(97,137,248); margin-right: 20px; margin-left: 10px;">&#xe607;</i>  
+                </div>
+                <button type="button" class="settlement-button layui-btn layui-col-md4">立即结算</button>
+            </div>
+        </div>
     </div>
 </body>
 <script src="static/layui/layui.js"></script>

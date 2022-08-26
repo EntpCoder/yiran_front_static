@@ -77,3 +77,109 @@
     font-size: large;
     width: 1px;
 }
+.orders-table thead{
+    border: 1px solid #d8d8d8;
+    height: 40px;
+}
+.orders-table tbody tr{
+    border: none;
+}
+.orders-table thead tr th{
+    text-align: center;
+}
+.orders-table tbody tr td:not(.product-item){
+    text-align: center;
+}
+.product-item > *{
+    float: left;
+    margin-left: 10px;
+    height: 70px;
+}
+.m-checkbox input{
+    height: 70px;
+}
+.product-info .title{
+    width: 250px;
+    height: 40px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    color: black;
+    font-weight: lighter;
+}
+.product-info p{
+    color: black;
+    font-weight: lighter;
+}
+.price-item strong{
+    font-size: large;
+    color: rgb(241,1,128);
+}
+.product-num{
+    background: none;
+    outline: none;
+    border: none;
+    width: 20px;
+}
+.order-button-del{
+    color: rgb(51,51,51);
+}
+.orders-table > *{
+    border: 1px solid #d8d8d8;
+}
+.orders-total{
+    border: 1px solid #d8d8d8;
+    height: 100px;
+    margin-top: 4%;
+}
+.orders-panel .price-panel-item{
+    margin-top: 1%;
+    float: right;
+    color: #929292;
+    font-weight: lighter;
+    font-size: small;
+}
+.orders-panel .price-panel-item .product-num{
+    color: black;
+}
+.orders-panel .price-panel-coupon{
+    margin-top: 1%;
+    margin-left: 1%;
+    float: left;
+}
+.orders-price{
+    margin-top: 1%;
+    color: #929292;
+    font-weight: lighter;
+    font-size: small;
+}
+.orders-price .sum-price-text{
+    text-align: center;
+}
+.orders-price .sum-price{
+    color: rgb(241,1,128);
+    font-weight: bold;
+    font-size: larger;
+}
+.price-panel-coupon button{
+    color: rgb(241,1,128);
+    font-weight: lighter;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(53, 53, 53);
+}
+.price-panel-coupon button:hover{
+    color: rgb(241,1,128);
+    background-color: rgb(253,244,247);
+}
+.orders-settlement{
+    height: 60px;
+}
+.orders-settlement .orders-tips{
+    height: 100%;
+    background-color: rgb(243,243,243);
+    text-align: right;
+    line-height: 60px;
+}
+.settlement-button{
+    height: 100%;
+    background-color: rgb(244,52,153);
+}
