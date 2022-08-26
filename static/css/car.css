@@ -5,13 +5,26 @@
 .toplogo{
     padding-top: 16px;
 }
-.inline-block-item{
+.layui-container{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.top-item{
     margin-top: 15px;
 }
-.inline-block-item li{
+.top-item li{
     float: left;
-    margin-right: 30px;
+    margin-right: 20px;
     color: rgb(144, 144, 144);
+    font-size: smaller;
+}
+.promise-item{
+    margin-top: 15px;
+}
+.promise-item li{
+    float: left;
+    margin-right: 20px;
+    color: rgb(22, 22, 22);
     font-size: smaller;
 }
 .member-actions-link{
@@ -19,7 +32,48 @@
     margin-left: 16px;
 }
 .border-pink{
-    background-color: rgb(232,10,132);
+    background-color: rgb(250,42,131);
     height: 2px;
     border: none;
+}
+.inline-block-item{
+    display: inline;
+}
+.top-item li::after{
+    content:"|";
+    margin-left: 10px;
+}
+.cart-tab{
+    padding-top: 4%;
+    padding-bottom: 1%;
+    font-size: larger;
+    font-weight: bold;
+    color: rgb(241,1,128);
+    border-bottom: 3px solid rgb(241,1,128);
+    text-align: center;
+}
+.cart-tab-row{
+    border-bottom: 1px solid rgb(226,225,225);
+}
+.channel-tips{
+    margin-top: 2%;
+}
+.area-delivery-info{
+    font-size: medium;
+}
+.area-delivery-info .area-delivery-province{
+    margin-left: 5px;
+    font-weight: bold;
+    font-size: larger;
+}
+.shop-tips{
+    color: #c4c4c4;
+    font-weight: lighter;
+}
+.shop-tips::before{
+    content:"|";
+    margin-left: 10px;
+    color: #c4c4c4;
+    font-size: large;
+    width: 1px;
 }
