@@ -7,3 +7,8 @@ layui.use('element', function(){
       layer.msg(elem.text());
     });
   });
+  layui.use('element', function(){
+    var element = layui.element;
+    
+    //…
+  });

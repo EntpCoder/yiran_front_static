@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="../static/css/myInfo.css">
     <script src="../static/js/jquery-3.6.0.min.js"></script>
 </head>
+
 <body>
     <header>
         <nav class="main-nav">
@@ -23,46 +25,88 @@
             </div>
         </nav>
         <div class="m-body">
-            <div class="layui-row">
-                <div class="layui-col-md8 layui-col-md-offset2">
-                    <ul class="g-sidebar layui-nav layui-nav-tree layui-inline " lay-filter="demo" style="margin-right: 10px;">
-                        <li class="layui-nav-item layui-nav-itemed">
-                          <a id = "aa" href="javascript:;">我的交易</a>
-                          <dl class="layui-nav-child">
+            <div class="m-content">
+                <ul class="g-sidebar layui-nav layui-nav-tree layui-inline " lay-filter="demo"
+                    style="margin-right: 10px;">
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <a id="aa" href="javascript:;">我的交易</a>
+                        <dl class="layui-nav-child">
                             <dd><a href="javascript:;">订单管理</a></dd>
                             <dd><a href="javascript:;">退换/售后</a></dd>
                             <dd><a href="javascript:;">收获地址</a></dd>
-                          </dl>
-                        </li>
-                        <li class="layui-nav-item layui-nav-itemed">
-                          <a href="javascript:;">我的资产</a>
-                          <dl class="layui-nav-child">
+                        </dl>
+                    </li>
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <a href="javascript:;">我的资产</a>
+                        <dl class="layui-nav-child">
                             <dd><a href="javascript:;">优惠券</a></dd>
                             <dd><a href="javascript:;">唯品币</a></dd>
-                          </dl>
-                        </li>
-                        <li class="layui-nav-item layui-nav-itemed">
-                            <a href="javascript:;">我的账户</a>
-                            <dl class="layui-nav-child">
-                              <dd><a href="javascript:;">我的资料</a></dd>
-                            </dl>
-                          </li>
-                    </ul>
-                    <div class=".g-content">
-                        <p>
-                            <a href="myInfo.html">我的唯品会</a>
-                            &nbsp;>&nbsp;订单管理
-                        </p>
-                        <div class="mid J_declare">
-                            
+                        </dl>
+                    </li>
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <a href="javascript:;">我的账户</a>
+                        <dl class="layui-nav-child">
+                            <dd><a href="javascript:;">我的资料</a></dd>
+                        </dl>
+                    </li>
+                </ul>
+                <div class="g-content">
+                    <p id="m-title">
+                        <a href="myInfo.html">我的唯品会</a>
+                        &nbsp;>&nbsp;订单管理
+                    </p>
+                    <div class="mad J_declare">
+                        <i class="i-horn"></i>
+                        <div class="J_declare_warning">
+                            <p>安全提醒：唯品会不会以任何理由要求您提供银行卡信息或支付额外费用，请谨防钓鱼链接或诈骗电话。</p>
+                            <p>*为保障您的信息安全，订单信息中的联系电话已被加密隐藏。</p>
                         </div>
-                        <div></div>
+                    </div>
+                    <div class="layui-tab">
+                        <ul class="layui-tab-title">
+                            <li class="layui-this">全部订单</li>
+                            <li>待付款</li>
+                            <li>待发货</li>
+                            <li>待收货</li>
+                            <li>已完成</li>
+                        </ul>
+                        <div class="layui-tab-content">
+                            <div class="layui-tab-item layui-show">
+                                <div class="col-name">
+                                    <div class="goods">商品</div>
+                                    <div class="total">订单金额</div>
+                                    <div class="state">订单状态</div>
+                                    <div class="control">操作</div>
+                                </div>
+                                <div class="order-list-info">
+                                    <div class="order-hd">
+                                        <i class="ii-te"></i>
+                                        <span class="num">
+                                            订单号：
+                                            <a href="">22082784137477</a>
+                                        </span>
+                                        <span class="num order-gen-date">2022-08-27 15:40:30</span>
+                                    </div>
+                                    <div class="order-bd">
+                                        <div class=""></div>
+                                        <div class=""></div>
+                                        <div class=""></div>
+                                        <div class=""></div>
+                                        <div class=""></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="layui-tab-item">内容2</div>
+                            <div class="layui-tab-item">内容3</div>
+                            <div class="layui-tab-item">内容4</div>
+                            <div class="layui-tab-item">内容5</div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
     </header>
     <script src="../static/layui/layui.js"></script>
     <script src="../static/js/myInfo.js"></script>
 </body>
+
 </html>

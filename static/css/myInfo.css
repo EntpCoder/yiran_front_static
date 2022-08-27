@@ -57,17 +57,20 @@
 
 /* ==============m-body================ */
 .m-body {
-    background: #f5f6f8 url(../images/myInfo-layout-bg.png) center 0 no-repeat;
-    min-height: 600px;
-}
-
-.m-body .layui-row {
     display: block;
     margin-left: auto;
     margin-right: auto;
     padding-top: 24px;
     padding-bottom: 24px;
+    background: #f5f6f8 url(../images/myInfo-layout-bg.png) center 0 no-repeat;
+    min-height: 600px;
 }
+.m-content{
+    margin-left: 250px;
+}
+/* .m-body .layui-row {
+
+} */
 
 /* 左侧导航栏 */
 .g-sidebar{
@@ -78,7 +81,7 @@
     background-color: #f10180;
 }
 
-.m-body .layui-row .layui-col-md8 ul {
+.m-body .g-sidebar {
     width: 107px;
 }
 
@@ -91,6 +94,10 @@
     background-color: #fd5ab1;
     /* 选择子标题时字体颜色  */
     color: #fff;
+}
+
+.layui-nav-tree{
+    width: 100px;
 }
 
 .layui-nav-tree .layui-nav-bar {
@@ -108,8 +115,112 @@
 
 /* 右侧内容栏 */
 .g-content {
+    display: block;
     float: left;
+    margin-left: 10px;
     width: 820px;
     min-height: 600px;
-    background-color: white;
+
+}
+#m-title{
+    font-size: 12px;
+}
+.mad {
+    position: relative;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid #ececec;
+    padding: 1px 5px 1px;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+.J_declare_warning p{
+    display: block;
+    margin-left: 40px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-end: 0px;
+    font-size: 12px;
+}
+.i-horn {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    background-image: url(../images/sprites.png);
+    background-position: -145px -174px;
+    width: 21px;
+    height: 21px;
+}
+
+.layui-tab-content .col-name{
+    height: 36px;
+    line-height: 36px;
+    background-color: #f9f9f9;
+    border: 1px solid #eaeaea;
+}
+.col-name .goods {
+    display: inline-block;
+    text-align: center;
+    width: 406px;
+    font-size: 12px;
+}
+.col-name .total {
+    display: inline-block;
+    text-align: center;
+    width: 127px;
+    font-size: 12px;
+}
+.col-name .state {
+    display: inline-block;
+    text-align: center;
+    width: 97px;
+    font-size: 12px;
+}
+.col-name .control {
+    display: inline-block;
+    text-align: center;
+    width: 174px;
+    font-size: 12px;
+}
+.order-hd {
+    background-color: #f9f9f9;
+    color: #333;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 10px;
+    border: 1px solid #eaeaea;
+    border-bottom: 0;
+    border-left: 2px solid #f10180;
+}
+.order-bd {
+    background-color: #fff;
+    border: 1px solid #eaeaea;
+    display: table;
+    width: 818px;
+}
+.ii-te {
+    background-image: url(../images/sprites.png);
+    background-position: -242px -205px;
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 20px;
+    margin-right: 8px;
+}
+.order-hd span {
+    vertical-align: middle;
+    font-size: 12px;
+    display: inline-block;
+}
+.order-hd .num {
+    vertical-align: middle;
+    margin-right: 10px;
+    color: #666;
+    font-size: 12px;
+}
+.order-hd .order-gen-date {
+    float: right;
+    color: #999;
+    margin-top: 2px;
 }
