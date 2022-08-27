@@ -4,44 +4,205 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>首页</title>
+    <title>唯品会</title>
     <link rel="stylesheet" href="./static/layui/css/layui.css">
+    <link rel="stylesheet" href="./static/css/reset.css">
+    <link rel="stylesheet" href="./static/css/iconfont.css">
     <link rel="stylesheet" href="./static/css/index.css">
 </head>
-<body>  
-    <!-- 顶头开始设计 -->
-    <div class="layui-row">
-        <div class="layui-col-md2"><div class="grid-demo"></div></div>
-        <div class="layui-col-md1 layui-col-md-offset2">
-            <div class="grid-demo">北京市</div>
-            <div class="grid-demo-triangle"></div>
-        </div>
-        <div class="layui-col-md1"><div class="grid-demo"></div></div>
-        <!-- 顶部八股文 -->
-        <div class="layui-col-md6 layui-col-md-offset2">
-          <div class="grid-demo">
-            <ul class="hade-lest">
-                <li class="cart">
-                    <a href="#">请登录</a><span>/</span>
+<body>
+    <!-- 头部开始-->
+    <div class="header">
+        <div class="wrap">
+            <div class="neader-left">
+                <li><a href="#">北京市</a><span></span></li>
+            </div>
+            <ul class="header-right">
+                <li><a href="#">请登录</a><span>/</span>
                     <div class="cart-list">
-                            <span><a href="#">我的收藏</a></span>
-                            <span><a href="#">我的订单</a></span>
-                            <span><a href="#">零钱</a></span>
-                            <span><a href="#">我的优惠券</a></span>
-                            <span><a href="#">我的唯品币</a></span>
-                            <span><a href="#">唯品金融</a></span>
+                        <span><a href="#">我的收藏</a></span>
+                        <span><a href="#">我的订单</a></span>
+                        <span><a href="#">零钱</a></span>
+                        <span><a href="#">我的优惠券</a></span>
+                        <span><a href="#">我的唯品币</a></span>
+                        <span><a href="#">唯品金融</a></span>
                     </div>
                 </li>
-                <li><a href="#">注册</a><span>/</span></li>
-                <li><a href="#">签到有礼</a><span>/</span></li>
-                <li><a href="#">我的订单</a><span>/</span></li>
-                <li><a href="#">我的收场</a><span>/</span></li>
-                <li><a href="#">会员俱乐部</a><span></span></li>
+                <li><a href="#">注册</a><span>|</span></li>
+                <li><a href="#">签到有礼</a><span>|</span></li>
+                <li><a href="#">我的订单</a><span>|</span></li>
+                <li><a href="#">我的收藏</a><span>|</span></li>
+                <li><a href="#">会员俱乐部</a><span>|</span></li>
             </ul>
-          </div>
         </div>
-        <!-- 导航开始 -->
-    
-        <script src="./static/layui/layui.js"></script> 
+    </div>
+    <!-- 头部结束 -->
+    <!-- 导航开始 -->
+    <div class="nav">
+        <div class="wrap">
+        <!--logo上页面-->
+            <div class="logo">
+                <img src="./static/images/wphlogo.png" alt="">
+            </div>
+            <div class="nav-bar">
+                <ul>
+                    <li><a href="#">100%正品</a>
+                    </li>
+                    <li><a href="#">88元包邮</a></li>
+                    <li><a href="#">退换无忧</a></li>
+                </ul>
+            </div>
+            <div class="search">
+                <form action="">
+                    <input type="text" placeholder="电视">
+                    <button class="iconfont">&#xe63d;</button>
+<!--                    <li><a href="#">笔记本</a></li>-->
+<!--                    <li><a href="#">平板</a></li>-->
+<!--                    <li><a href="#">家电</a></li>-->
+<!--                    <li><a href="#">路由器</a></li>-->
+<!--                    <li><a href="#">服务中心</a></li>-->
+<!--                    <li><a href="#">社区</a></li>-->
+<!--                    <div class="hot-list">-->
+<!--                        <a href="#">全部商品</a>-->
+<!--                        <a href="#">全部商品</a>-->
+<!--                        <a href="#">全部商品</a>-->
+<!--                        <a href="#">全部商品</a>-->
+<!--                        <a href="#">全部商品</a>-->
+<!--                        <a href="#">全部商品</a>-->
+<!--                        <a href="#">全部商品</a>-->
+<!--                        <a href="#">全部商品</a>-->
+<!--                    </div>-->
+                </form>
+            </div>
+            <!-- 导航条部分-->
+            <div class="nav-bar-e">
+                    <ul>
+                        <li class="damo"><a href="#" class="dame">商品特卖</a>
+                            <div class="nav-bar-list">
+                                <div class="wrap">
+                                    <ul>
+                                        <li><a href="#">女装</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#">特价</a></li>
+                        <li><a href="#">电视</a></li>
+                        <li><a href="#">笔记本</a></li>
+                        <li><a href="#">平板</a></li>
+                        <li><a href="#">家电</a></li>
+                        <li><a href="#">路由器</a></li>
+                        <li><a href="#">服务中心</a></li>
+                        <li><a href="#">社区</a></li>
+                    </ul>
+            </div>
+<!--                    <li class="layui-nav-item"><a href="">特价</a></li>-->
+<!--                    <li class="layui-nav-item layui-this"><a href="">3折疯抢</a></li>-->
+<!--                    <li class="layui-nav-item"><a href="">唯品快抢</a></li>-->
+<!--                    <li class="layui-nav-item"><a href="">唯品奢</a></li>-->
+<!--                    <li class="layui-nav-item"><a href="">女装</a></li>-->
+<!--                    <li class="layui-nav-item"><a href="">运动</a></li>-->
+<!--                    <li class="layui-nav-item"><a href="">鞋包</a></li>-->
+<!--                    <li class="layui-nav-item"><a href="">美妆</a></li>-->
+<!--                    <li class="layui-nav-item"><a href="">母婴</a></li>-->
+<!--                    <li class="layui-nav-item"><a href="">电器</a></li>-->
+<!--                    <li class="layui-nav-item"><a href="">男装</a></li>-->
+<!--                    <li class="layui-nav-item"><a href="">百货</a></li>-->
+            </diV>
+        </div>
+    </div>
+    <!-- 导航结束 -->
+    <!-- 轮播图开始 -->
+    <div class="banner">
+        <div class="wrap">
+            <div class="banner-box">
+                <div class="layui-carousel" id="test10">
+                    <div carousel-item="">
+                        <div><img src="./static/images/temp/测试.jpg"></div>
+                        <div><img src="./static/images/temp/测试.jpg"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 导航结束结束 -->
+    <!-- 主体开始 -->
+    <div class="content">
+        <div class="wrap">
+            <!--广告区头牌-->
+            <div class="home-box">
+                <a href="#">
+                    <img src="./static/images/temp/超级大牌日.jpg" alt="">
+                </a>
+            </div>
+            <!--广告区-->
+            <div class="adver">
+                    <div class="abver-a">
+                        <img src="./static/images/temp/广告1.jpg" alt="">
+                    </div>
+                    <div class="abver-b">
+                        <img src="./static/images/temp/广告2.jpg" alt="">
+                    </div>
+                    <div class="abver-c">
+                        <img src="./static/images/temp/广告3.jpg" alt="">
+                    </div>
+                </div>
+            <!--每日必看模块-->
+            <div class="home-box">
+                <a href="#">
+                    <img src="./static/images/temp/每日必看.jpg" alt="">
+                </a>
+            </div>
+            <!-- 商品开始 -->
+            <div class="shop">
+                <div class="shop-box">
+                    <div class="shop-box-right">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 主体开始 -->
+    <script src="./static/layui/layui.js"></script>
+    <script>
+        layui.use(['carousel', 'form'], function(){
+            var carousel = layui.carousel
+                ,form = layui.form;
+            //图片轮播
+            carousel.render({
+                elem: '#test10'
+                ,width: '100%'
+                ,height: '100%'
+                ,interval: 5000
+            });
+            var $ = layui.$, active = {
+                set: function(othis){
+                    var THIS = 'layui-bg-normal'
+                        ,key = othis.data('key')
+                        ,options = {};
+
+                    othis.css('background-color', '#5FB878').siblings().removeAttr('style');
+                    options[key] = othis.data('value');
+                    ins3.reload(options);
+                }
+            };
+
+            //监听开关
+            form.on('switch(autoplay)', function(){
+                ins3.reload({
+                    autoplay: this.checked
+                });
+            });
+
+            $('.demoSet').on('keyup', function(){
+                var value = this.value
+                    ,options = {};
+                if(!/^\d+$/.test(value)) return;
+
+                options[this.name] = value;
+                ins3.reload(options);
+            });
+        });
+    </script>
 </body>
 </html>
