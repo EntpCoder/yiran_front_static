@@ -6,7 +6,7 @@
     width: 80%;
     height: 30px;
     margin: 0 auto;
-    background-color: rgb(246, 209, 209);
+    /* background-color: rgb(246, 209, 209); */
     margin-bottom: 10px;
 }
 .pinpai .pinpai-name{
@@ -19,7 +19,7 @@
     font-size: 18px;
     color: #333333;
     float: left;
-    border: 1px solid;
+    /* border: 1px solid; */
     margin-right: 30px;
 }
 .pinpai .pinpai-name .zhekou{
@@ -33,7 +33,7 @@
     font-size: 18px;
     font-weight: bolder;
     color: #333333;
-    border: 1px solid;
+    /* border: 1px solid; */
     line-height: 100%;
     padding-top: 5px;
     float: left;
@@ -44,7 +44,7 @@
     font-size: 16px;
     font-weight: 500;
     color: #333333;
-    border: 1px solid;
+    /* border: 1px solid; */
     line-height: 100%;
     padding-top: 5px;
     margin-left: 5px;
@@ -102,6 +102,7 @@
     width: 87%;
     height: auto;
     background-color: rgb(218, 162, 88);
+    min-width: 1000px;
 
 }
 .layui-tab-title .layui-this{
@@ -117,11 +118,339 @@
 .layui-tab-card>.layui-tab-more .layui-this {
     background: 0 0;
     color: #f32b80;
-}
+} */
 .layui-tab-card>.layui-tab-title .layui-tab-bar {
     height: 40px;
     line-height: 40px;
     border-radius: 0;
     border-top: none;
     border-right: none;
+}
+
+/* =================小筛选======================= */
+.filter{
+    width: 80%;
+    margin: 0 auto;
+    height: 46px;
+    background-color: #f5f5f5;
+    border: 1px solid #dfdfdf;
+    min-width: 1000px;
+}
+.filter .pro-oper{
+    width: 600px;
+    height: 46px;
+    float: left;
+
+}
+.filter .pro-oper .oper{
+    float: left;
+    width: 70px;
+    height: 46px;
+    border: 1px solid #dfdfdf;
+    line-height: 46px;
+    text-align: center;
+    font-size: 12px;
+    float: left;
+    cursor: pointer;
+}
+.filter .pro-oper .oper:hover{
+    color: #f32b80;
+    border: 1px solid #f32b80;
+}
+/* ========折扣价格======= */
+.filter .pro-oper .select{
+    width: 70px;
+    float: left;
+    border: 1px solid #dfdfdf;
+    line-height: 46px;
+    height: 46px;
+    padding-left: 10px;
+    font-size: 12px;
+    float: left;
+    cursor: pointer;
+}
+.filter .pro-oper .select:hover{
+    color: #f32b80;
+    border: 1px solid #f32b80;
+}
+.filter .select .up{
+    float: right;
+    display: block;
+    width: 12px;
+    height: 12px;
+    /* border: 1px solid; */
+    background: url("../svg/price-up.svg");
+    margin-top: 13px;
+    margin-right: 25px;
+}
+.filter .select .down{
+    float:right;
+    width: 12px;
+    height: 12px;
+    /* border: 1px solid; */
+    background: url("../svg/price-down.svg");
+    margin-top: 23px;
+    margin-right:-12px
+}
+/* ==============价格筛选============== */
+.filter .oper-price-select{
+    float: left;
+    width: 280px;
+    height: 46px;
+}
+.filter .oper-price-select:hover{
+    background-color: white;    
+}
+.filter .oper-price-select:hover .ensure{
+    display: block;   
+}
+.filter .oper-price-select:hover .delete{
+    display: block;   
+}
+.filter .oper-price-select .select-start{
+    width: 62px;
+    height: 24px;
+    border: 1px solid #dfdfdf;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.filter .oper-price-select .select-start input[type = text]{
+    width: 80%;
+    height: 100%;
+    background-color: white;
+    border: none;
+    float: left;
+    padding:0 6px;
+}
+.filter .oper-price-select em{
+    float: left;
+    margin-top: -20px;
+    margin-left: 90px;
+}
+.filter .oper-price-select .select-end{
+    float: left;
+    width: 62px;
+    height: 24px;
+    border: 1px solid #dfdfdf;
+    margin-left: 107px;
+    margin-top: -26px;
+}
+.filter .oper-price-select .select-end input[type = text]{
+    float: left;
+    width: 80%;
+    height: 100%;
+    background-color: white;
+    border: none;
+    float: left;
+    padding:0 6px;
+}
+.filter .oper-price-select .ensure{
+    display: none;
+    width: 30px;
+    height: 20px;
+    color: white;
+    background-color:#f32b80;
+    font-size: 14px;
+    float: left;
+    margin-top: -23px;
+    margin-left: 190px;
+    margin-right: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+.filter .oper-price-select .delete{
+    display: none;
+    width: 30px;
+    height: 20px;
+    color: white;
+    background-color:#f32b80;
+    font-size: 14px;
+    float: left;
+    margin-top: -23px;
+    margin-left: 240px;
+    margin-right: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+/* =============分页=============== */
+.filter .pro-page{
+   width: 250px;
+   height: 46px;
+   /* border: 1px solid; */
+   float: right;
+   font-weight: 400;
+
+}
+.filter .pro-page .page-total{
+    width: 70px;
+    height: 46px;
+    line-height: 46px;
+    text-align: center;
+    /* border: 1px solid; */
+    margin-right: 20px;
+    float: left;
+
+}
+.filter .pro-page .page-total .page-num{
+    color: #f32b80;
+}
+/* =====分页===== */
+.layui-laypage {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    vertical-align: middle;
+    font-size: 0;
+    float: right;
+    margin: 0;
+}
+.layui-laypage a:hover {
+    color: #f32b80;
+}
+
+
+/* =============商品列表====================== */
+/* ===========商品小框框========== */
+.pro-show-page{
+    width: 80%;
+    height:auto;
+    /* border: 1px solid; */
+    margin: 0 auto;
+    min-width: 1000px;
+}
+
+.pro-show-page .pro-ul .pro-li{
+    width: 224px;
+    height: 344px;
+    float: left;
+    margin: 20px 8px;
+    border: 1px solid white;
+}
+.pro-show-page .pro-ul .pro-li .li-li{
+    width: 218px;
+    height: 338px;
+    float: left;
+    border: solid 1px #e7e7e7;
+    margin: 2px 2px;
+}
+.pro-show-page .pro-ul .pro-li:hover{
+    border: 1px solid #f32b80;
+}
+.pro-show-page .pro-ul .pro-li:hover .li-li{
+    border: none;
+}
+/* ==============商品框框内容================ */
+.pro-show-page .pro-ul .pro-li .li-li .pro-1-img{
+    display: block;
+    width: 216px;
+    height: 218px;
+    margin: auto;
+    background-image: url("../images/pro-1-img.jpg");
+}
+.pro-show-page .pro-ul .pro-li .li-li .pro-price-item{
+    width: 210px;
+    height: 20px;
+    /* border: 1px solid; */
+    margin: auto;
+    color: #333333;
+    margin-top: 10px;
+}
+.pro-show-page .pro-ul .pro-li .li-li .pro-price-item .temai{
+    display: block;
+    width:40px;
+    height: 20px;
+    /* border: 1px solid; */
+    color: #fff;
+    text-align: center;
+    line-height: 20px;
+    font-size: 10px;
+    background-color: #e46dfb;
+    border-radius: 10px;
+    float: left;
+
+}
+.pro-show-page .pro-ul .pro-li .li-li .pro-price-item .pro-pri{
+    width:70px;
+    height: 20px;
+    float: left;
+    /* border: 1px solid; */
+    color: rgb(18, 17, 17);
+    text-align: center;
+    line-height: 20px;
+    font-size: 23px;
+    font-weight: 700;
+    margin-top: 3px;
+
+}
+.pro-show-page .pro-ul .pro-li .li-li .pro-price-item .pre-price{
+    text-decoration: line-through;
+    float: left;
+    color: #999;
+    line-height: 14px;
+    margin-left: 2px;
+    font-size: 14px;
+    width: 50px;
+    height: 14px;
+    /* border: 1px solid; */
+    margin-top: 6px;
+}
+.pro-show-page .pro-ul .pro-li .li-li .pro-price-item .pro-noe-zhekou{
+    float: left;
+    color: #999;
+    line-height: 14px;
+    font-size: 14px;
+    width: 40px;
+    height: 14px;
+    /* border: 1px solid; */
+    margin-top: 6px;
+}
+/* =========近60天内最低价============ */
+.pro-show-page .pro-ul .pro-li .li-li .lower_price_60{
+    line-height: 14px;
+    font-size: 14px;
+    padding-top: 6px;
+    color: #999;
+    width: 210px;
+    height: 14px;
+    /* border: 1px solid; */
+    margin: auto; 
+    margin: 5px 0;  
+}
+.pro-show-page .pro-ul .pro-li .li-li .pro-name-text{
+    text-overflow: ellipsis;
+    min-height: 36px;
+    float: left;
+    font-size: 12px;
+    color: #666;
+    line-height: 18px;
+    margin-top: 8px;
+}
+/* ===================底部页码======================= */
+.total-page-num{
+    /* border: 1px solid;   */
+    min-width: 1000px;
+    float: left;
+    margin-left: 70px;
+    margin-top: 50px; 
+    text-align: center;  
+}
+.total-page-num .nums{
+    height: 46px;
+    line-height: 46px;
+}
+.layui-laypage a, .layui-laypage span {
+    width: 36px;
+    height: 46px;
+    line-height: 46px;
+    font-size: 12px;
+    
+}
+.layui-laypage .layui-laypage-curr .layui-laypage-em {
+    position: absolute;
+    left: -1px;
+    top: -1px;
+    padding: 1px;
+    width: 100%;
+    height: 100%;
+    background-color: #f32b80;
 }
