@@ -313,7 +313,7 @@
 /* ===========商品小框框========== */
 .pro-show-page{
     width: 80%;
-    height:auto;
+    height:1150px;
     /* border: 1px solid; */
     margin: 0 auto;
     min-width: 1000px;
@@ -340,12 +340,36 @@
     border: none;
 }
 /* ==============商品框框内容================ */
+.page-1{
+    display: block;
+}
+.page-2{
+    display: none;
+}
+.page-3{
+    display: none;
+}
+
 .pro-show-page .pro-ul .pro-li .li-li .pro-1-img{
     display: block;
     width: 216px;
     height: 218px;
     margin: auto;
     background-image: url("../images/pro-1-img.jpg");
+}
+.pro-show-page .pro-ul .pro-li .li-li .pro-2-img{
+    display: block;
+    width: 216px;
+    height: 218px;
+    margin: auto;
+    background-image: url("../images/pro-2-img.jpg");
+}
+.pro-show-page .pro-ul .pro-li .li-li .pro-3-img{
+    display: block;
+    width: 216px;
+    height: 218px;
+    margin: auto;
+    background-image: url("../images/pro-3-img.jpg");
 }
 .pro-show-page .pro-ul .pro-li .li-li .pro-price-item{
     width: 210px;
@@ -427,17 +451,17 @@
 }
 /* ===================底部页码======================= */
 .total-page-num{
+    width: 70%;
+    height: 46px;
+    margin: 0 auto;
+    float: left;
     /* border: 1px solid;   */
     min-width: 1000px;
-    float: left;
-    margin-left: 70px;
     margin-top: 50px; 
-    text-align: center;  
+    text-align: center;
 }
-.total-page-num .nums{
-    height: 46px;
-    line-height: 46px;
-}
+
+
 .layui-laypage a, .layui-laypage span {
     width: 36px;
     height: 46px;
