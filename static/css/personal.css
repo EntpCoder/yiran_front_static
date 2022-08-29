@@ -3,6 +3,7 @@
     padding: 0;
 }
 
+
 /* ==============header================ */
 .main-nav {
     height: 40px;
@@ -134,7 +135,7 @@
     line-height: 20px;
     margin-bottom: 10px;
 }
-.J_declare_warning p{
+.J-declare-warning p{
     display: block;
     margin-left: 40px;
     margin-block-start: 1em;
@@ -208,6 +209,7 @@
     margin-left: 20px;
     margin-right: 8px;
 }
+
 .order-hd span {
     vertical-align: middle;
     font-size: 12px;
@@ -223,4 +225,131 @@
     float: right;
     color: #999;
     margin-top: 2px;
+}
+
+.order-bd .order-goods {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: left;
+    width: 406px;
+    border-right: 1px solid #eaeaea;
+}
+.order-bd .order-price {
+    color: #999;
+    width: 128px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    border-right: 1px solid #eaeaea;
+}
+.order-bd .order-state {
+    width: 97px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    border-right: 1px solid #eaeaea;
+}
+.order-bd .order-control {
+    border-right: 1px solid #eaeaea;
+    width: 97px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+.order-bd .order-other {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+.order-bd .order-goods .good {
+    display: block;
+    padding: 20px;
+    border-bottom: 1px solid #eaeaea;
+}
+.order-bd .order-goods .pic img {
+    vertical-align: middle;
+}
+.goods-info {
+    width: 300px;
+    word-wrap: break-word;
+    vertical-align: middle;
+    display: inline-block;
+}
+.goods-info .goods-name {
+    width: 170px;
+    float: left;
+    margin-top: 10px;
+}
+.goods-info .name {
+    display: block;
+    color: #333;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 12px;
+}
+.goods-info .size {
+    color: #999;
+    font-size: 12px;
+}
+.goods-info .goods-num {
+    float: left;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.goods-info {
+    width: 300px;
+    word-wrap: break-word;
+    vertical-align: middle;
+    display: inline-block;
+}
+.goods-info .goods-num .num{
+    font-size: 12px;
+}
+.order-bd .order-price strong {
+    font-size: 14px;
+    font-family: arial;
+    color: #333;
+}
+.order-bd .order-price p {
+    font-size: 12px;
+}
+.order-bd .order-state span {
+    display: block;
+    font-size: 12px;
+}
+.order-bd .order-state .green {
+    color: #16a61e;
+}
+.order-track {
+    position: relative;
+    zoom: 1;
+    height: 22px;
+    margin-bottom: -4px;
+}
+.order-track a{
+    font-size: 12px;
+}
+.order-state a{
+    font-size: 12px;
+}
+.order-bd .order-control .ui-btn-mini {
+    text-decoration: none;
+}
+.confirmSign-content .ui-btn-mini {
+    margin-top: 6px;
+}
+.ui-btn-secondary, .ui-btn2 {
+    background-color: #fcedf2;
+    border: 1px solid #ffbee0;
+    color: #e00078;
+}
+.ui-btn-mini {
+    min-width: 24px;
+    padding: 0 5px;
+    font: 12px/20px tahoma,arial,Hiragino Sans GB,WenQuanYi Micro Hei,'\5FAE\8F6F\96C5\9ED1','\5B8B\4F53',sans-serif;
+    height: 20px;
+}
+.J-cancel-delivery, .J-modify{
+    font-size: 12px;
 }
