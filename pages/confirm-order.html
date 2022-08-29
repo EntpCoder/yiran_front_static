@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/layui/css/layui.css">
+    <link rel="stylesheet" href="../static/css/common.css">
+    <link rel="stylesheet" href="../static/css/confirm-order.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 页头 -->
+    <div class="g-hd layui-container">
+        <div class="layui-row">
+            <div class="carlogo layui-col-md2">
+                <img class="toplogo" src="../static/images/checkoutHeader.png" />
+            </div>
+            <div class="layui-col-md7 layui-col-md-offset3">
+                <ul class="top-item layui-row">
+                    <li>
+                        <span class="welcome-text">你好,152****1014</span>
+                        <a class="member-actions-link" href="#">[退出]</a>
+                        <a class="member-actions-link" href="#">[订单管理]</a>
+                    </li>
+                    <li>
+                        <span>
+                            <embed width="12px" height="12px" src="../static/svg/seckill.svg"></embed>
+                        </span>
+                        <a href="#">秒杀专场</a>
+                    </li>
+                    <li>
+                        <span>
+                            <embed width="12px" height="12px" src="../static/svg/no-collect.svg"></embed>
+                        </span>
+                        <a href="#">我的收藏</a>
+                    </li>
+                </ul>
+                <ul class="promise-item layui-row">
+                    <li>
+                        <span>
+                            <embed width="12px" height="12px" src="../static/svg/dui.svg"></embed>
+                        </span>
+                        <span>100%正品保证</span>
+                    </li>
+                    <li>
+                        <span>
+                            <embed width="12px" height="12px" src="../static/svg/7day.svg"></embed>
+                        </span>
+                        <span>7天无理由放心退</span>
+                    </li>
+                    <li>
+                        <span>
+                            <embed width="12px" height="12px" src="../static/svg/xianshi.svg"></embed>
+                        </span>
+                        <span>限时抢购</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <hr class="border-pink">
+    <div class="layui-container">
+        <!-- 步骤条 -->
+        <div class="step layui-row">
+            <ol class="ui-step ui-step-blue ui-step-3">
+                <li class="ui-step-start ui-step-done">
+                    <div class="ui-step-line">-</div>
+                    <div class="ui-step-icon">
+                        <embed class="iconfont" width="25px" height="25px" src="../static/svg/step-ok.svg"></embed>
+                        <!-- <i class="ui-step-number">1</i> -->
+                        <a href="car.html" class="ui-step-text">查看购物袋</a>
+                    </div>
+                </li>
+                <li class="ui-step-active">
+                    <div class="ui-step-line">-</div>
+                    <div class="ui-step-icon">
+                        <embed class="iconfont" width="25px" height="25px" src="../static/svg/steping-2.svg"></embed>
+                        <!-- <i class="ui-step-number">2</i> -->
+                        <a class="ui-step-text">第二步</a>
+                    </div>
+                </li>
+                <li class="ui-step-end">
+                    <div class="ui-step-line">-</div>
+                    <div class="ui-step-icon">
+                        <embed class="iconfont" width="25px" height="25px" src="../static/svg/step-3.svg"></embed>
+                        <a class="ui-step-text">第三步</a>
+                    </div>
+                </li>
+            </ol>
+        </div>
+        <!-- 提示信息 -->
+        <div class="channel-tips layui-row">
+            <span class="area-delivery-info">
+                配送至
+                <strong class="area-delivery-province">苏州工业园区 驰星教育</strong>
+            </span>
+            <div class="shop-tips inline-block-item">
+                请在
+                <span class="countdown">
+                    <span class="countdown-num countdown-num-min">11</span>分
+                    <span class="countdown-num countdown-num-sec">29</span>秒
+                </span>
+                内提交订单，下单后你另有 30 分钟的支付时间。
+                <i id="st-tips" class="layui-icon"
+                    style="font-size: 15px; color: rgb(97,137,248); margin-right: 20px; margin-left: 10px;">&#xe607;</i>
+            </div>
+        </div>
+        <div class="m-box layui-row">
+            <div class="box-hd layui-col-md12">
+                <span class="box-hd-title">收货信息</span>
+            </div>
+            <div class="box-bd">
+                <div class="m-address layui-row layui-col-space10">
+                    <ul class="address-ul">
+                        <li class="layui-col-md4">
+                            <!-- 地址卡片 -->
+                            <div class="address-inner">
+                                <!-- 装饰上线条 -->
+                                <div class="stripe-top"></div>
+                                <div class="name-row layui-row">
+                                    <div class="layui-col-md2 layui-col-md-offset1">
+                                        <p class="member-text member-name">洋</p>
+                                    </div>
+                                    <div class="layui-col-md2 layui-col-md-offset4">
+                                        <a class="update-address-text">修改</a>
+                                    </div>
+                                    <div class="layui-col-md3">
+                                        <span class="default-address-text">默认地址</span>
+                                    </div>
+                                </div>
+                                <div class="layui-row">
+                                    <div class="layui-col-md2 layui-col-md-offset1">
+                                        <span class="member-text">152****1014</span>
+                                    </div>
+                                    <div class="layui-col-md6 layui-col-md-offset3">
+                                        <span class="member-text">周一至周日均可收货</span>
+                                    </div>
+                                </div>
+                                <div class="layui-row">
+                                    <div class="member-text layui-col-md11 layui-col-md-offset1">
+                                        <i class="layui-icon" style="font-size: 15px; color: #626262;">&#xe715</i>
+                                        <strong>江苏省苏州市</strong>
+                                        苏州工业园区东方文慧苑3区
+                                    </div>
+                                </div>
+                                <!-- 装饰下线条 -->
+                                <div class="stripe-bottom"></div>
+                            </div>
+                        </li>
+                        <li class="layui-col-md4">
+                            <div class="address-inner">
+                                <!-- 装饰上线条 -->
+                                <div class="stripe-top"></div>
+                                <div class="name-row layui-row">
+                                    <div class="layui-col-md2 layui-col-md-offset1">
+                                        <p class="member-text member-name">洋</p>
+                                    </div>
+                                </div>
+                                <div class="layui-row">
+                                    <div class="layui-col-md2 layui-col-md-offset1">
+                                        <span class="member-text">152****1014</span>
+                                    </div>
+                                    <div class="layui-col-md6 layui-col-md-offset3">
+                                        <span class="member-text">周一至周日均可收货</span>
+                                    </div>
+                                </div>
+                                <div class="layui-row">
+                                    <div class="member-text layui-col-md11 layui-col-md-offset1">
+                                        <i class="layui-icon" style="font-size: 15px; color: #626262;">&#xe715</i>
+                                        <strong>江苏省苏州市</strong>
+                                        苏州工业园区苏州职业外包技术学院
+                                    </div>
+                                </div>
+                                <!-- 装饰下线条 -->
+                                <div class="stripe-bottom"></div>
+                            </div>
+                        </li>
+                        <li class="layui-col-md4">
+                            <!--添加地址模块 -->
+                            <div class="address-add-row address-inner">
+                                <div class="add-address layui-col-md12">
+                                    <div class="layui-icon" style="font-size: 50px; color: #626262;">&#xe608</div>
+                                    <div>添加地址</div>
+                                </div>
+
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="box-hd layui-col-md12">
+                <span class="box-hd-title">商品清单</span>
+            </div>
+            <div class="box-bd">
+                <table class="layui-table" style="table-layout:fixed" lay-skin="nob">
+                    <colgroup>
+                        <col width="500">
+                        <col width="200">
+                        <col width="100">
+                        <col>
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th><strong>唯品会 发货清单</strong></th>
+                            <th>尺码</th>
+                            <th>单价</th>
+                            <th>数量</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="goods-item">
+                            <td class="product-item">
+                                <div class="product-price">
+                                    <img width="70px" height="70px" src="../static/images/temp/测试数据1.jpg">
+                                </div>
+                                <div class="product-info">
+                                    <div class="title">粗跟仙女风单鞋低跟浅口通勤平底女鞋 安妮208003</div>
+                                    <p>尺码 39</p>
+                                </div>
+                            </td>
+                            <td>m</td>
+                            <td>72</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>许闲心</td>
+                            <td>m</td>
+                            <td>72</td>
+                            <td>1</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="box-hd layui-col-md12">
+                <span class="box-hd-title">收货信息</span>
+            </div>
+            <div class="box-bd">
+                地址...
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../static/layui/layui.js"></script>
+<script src="../static/js/jquery-3.6.0.min.js"></script>
+<script>
+    $("#st-tips").bind("mouseover", function () {
+        layer.tips('好商品需要精挑细选，特意为你留足20分钟考虑时间。', '#st-tips', {
+            tips: [3, '#3595CC'],
+            time: 3000
+        });
+    })
+    $(".update-address-text").bind("click", function () {
+        layer.open({
+            type: 2,
+            skin: 'layui-layer-rim', //加上边框
+            area: ['800px', '500px'], //宽高
+            content: 'update-address.html'
+        });
+    })
+</script>
+
+</html>

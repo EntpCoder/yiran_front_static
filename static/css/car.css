@@ -1,48 +1,3 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-.toplogo{
-    padding-top: 16px;
-}
-.layui-container{
-    margin-left: 15%;
-    margin-right: 15%;
-}
-.top-item{
-    margin-top: 15px;
-}
-.top-item li{
-    float: left;
-    margin-right: 20px;
-    color: rgb(144, 144, 144);
-    font-size: smaller;
-}
-.promise-item{
-    margin-top: 15px;
-}
-.promise-item li{
-    float: left;
-    margin-right: 20px;
-    color: rgb(22, 22, 22);
-    font-size: smaller;
-}
-.member-actions-link{
-    color: rgb(144, 144, 144);
-    margin-left: 16px;
-}
-.border-pink{
-    background-color: rgb(250,42,131);
-    height: 2px;
-    border: none;
-}
-.inline-block-item{
-    display: inline;
-}
-.top-item li::after{
-    content:"|";
-    margin-left: 10px;
-}
 .cart-tab{
     padding-top: 4%;
     padding-bottom: 1%;
@@ -181,4 +136,5 @@
 .settlement-button{
     height: 100%;
     background-color: rgb(244,52,153);
+    line-height: 60px;
 }

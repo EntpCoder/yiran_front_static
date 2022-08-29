@@ -1,0 +1,9 @@
+.address-tips{
+    height: 30px;
+    background-color: rgb(230,232,244);
+    margin-bottom: 2%;
+    margin-top: 2%;
+    line-height: 30px;
+    color: rgb(152,152,152);
+    font-size: smaller;
+}

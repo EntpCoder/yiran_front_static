@@ -1,0 +1,107 @@
+.step{
+  width: 50%;
+  margin: 0 auto;
+}
+.channel-tips{
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.area-delivery-info{
+  font-size: medium;
+}
+.area-delivery-info .area-delivery-province{
+  margin-left: 5px;
+  font-weight: bold;
+  font-size: larger;
+}
+.shop-tips{
+  color: #707070;
+  font-weight: lighter;
+}
+.shop-tips::before{
+  content:"|";
+  margin-left: 10px;
+  color: #c4c4c4;
+  font-size: large;
+  width: 1px;
+}
+.channel-tips .shop-tips .countdown{
+  color: rgb(244,52,153);
+  font-size: large;
+}
+.m-box .box-hd{
+  width: 100;
+  height: 40px;
+  border: 1px solid rgb(226,226,226);
+  border-left-color: rgb(243,22,138);
+  border-left-width: 3px;
+  font-weight: lighter;
+  font-size: larger;
+  line-height: 40px;
+  background-color: rgb(249,249,249);
+}
+.m-box .box-hd .box-hd-title{
+  margin-left: 2%;
+}
+.m-box .box-bd .m-address ul li{
+  height: 190px;
+}
+.address-ul li .address-inner{
+  position: relative;
+  height: 140px;
+  width: 80%;
+  border: 1px solid rgb(160,160,160);
+  margin-top: 25px;
+  margin-left: 10%;
+}
+.address-ul li .address-inner div:not(.stripe-top){
+  margin-top: 10px;
+}
+.box-bd .m-address .address-ul li .address-inner .stripe-top{
+  position: absolute;
+  top: 0px;
+  height: 3px;
+  width: 100%;
+  background:repeating-linear-gradient(-45deg, #F9F9F9 0%, #F9F9F9 5%,#ff6c6c 5%,#ff6c6c 10%,#F9F9F9 10%,#F9F9F9 15%,#1989fa 10%,#1989fa 20%);
+}
+.box-bd .m-address .address-ul li .address-inner .stripe-bottom{
+  position: absolute;
+  bottom: 0px;
+  height: 3px;
+  width: 100%;
+  background:repeating-linear-gradient(-45deg, #F9F9F9 0%, #F9F9F9 5%,#ff6c6c 5%,#ff6c6c 10%,#F9F9F9 10%,#F9F9F9 15%,#1989fa 10%,#1989fa 20%);
+}
+.address-inner .name-row{
+  border-bottom: 1px dashed rgb(160,160,160);
+  height: 30px;
+  line-height: 10px;
+}
+.member-text{
+  color: rgb(51, 51, 51);
+  font-size: smaller;
+}
+.update-address-text{
+  color: rgb(29,148,209);
+  font-size: smaller;
+}
+.update-address-text:hover{
+  color: rgb(60,189,255);
+}
+.default-address-text{
+  color: rgb(160,160,160);
+  font-size: smaller;
+}
+.address-ul li .address-inner{
+  background-color: rgb(249,249,249);
+}
+.address-ul li .address-add-row:hover{
+  border: 1px solid rgb(0, 0, 0);
+}
+.address-ul li .address-inner .add-address{
+  margin-top: 100px;
+  color: rgb(160,160,160);
+}
+.address-ul li .address-inner .add-address > *{
+  padding-top: 2%;
+  padding-left: 40%;
+}
