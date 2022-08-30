@@ -353,3 +353,58 @@
 .J-cancel-delivery, .J-modify{
     font-size: 12px;
 }
+.order-bd .order-state .gray {
+    color: #9e9e9e;
+}
+.order-other p a{
+    font-size: 12px;
+}
+.order-bd .order-state .red {
+    color: #f10180;
+}
+.ui-btn-primary, .ui-btn1 {
+    background-color: #f10180;
+    border: 1px solid #f10180;
+}
+.order-bd .order-control .ui-btn-mini {
+    text-decoration: none;
+}
+.ui-btn1{
+    color: #fff;
+    display: inline-block;
+    border-radius: 3px;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: top;
+    -webkit-transition: .3s;
+    transition: .3s;
+    cursor: pointer;
+}
+.ui-tips-pop, .ui-tooltips {
+    position: absolute;
+    max-width: 800px;
+    border: 1px solid #dbdada;
+    border-radius: 2px;
+    box-shadow: 0 0 3px rgb(0 0 0 / 10%);
+    font: 12px/18px tahoma,arial,Hiragino Sans GB,WenQuanYi Micro Hei,'\5FAE\8F6F\96C5\9ED1','\5B8B\4F53',sans-serif;
+    color: #4d4d4d;
+    z-index: 50;
+}
+.u-tips-pop {
+    visibility: hidden;
+    *visibility: visible;
+    *display: none;
+    opacity: 0;
+    -webkit-transition: opacity .3s linear;
+    transition: opacity .3s linear;
+    top: 21px;
+    width: 456px;
+    left: -148px;
+    height: 300px;
+    background-color: #fff;
+}
+.order-track:hover .u-tips-pop {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
