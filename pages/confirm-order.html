@@ -108,7 +108,9 @@
                     style="font-size: 15px; color: rgb(97,137,248); margin-right: 20px; margin-left: 10px;">&#xe607;</i>
             </div>
         </div>
+        <!-- 信息盒子 -->
         <div class="m-box layui-row">
+            <!-- 收货信息 -->
             <div class="box-hd layui-col-md12">
                 <span class="box-hd-title">收货信息</span>
             </div>
@@ -191,15 +193,16 @@
                     </ul>
                 </div>
             </div>
+            <!-- 商品清单 -->
             <div class="box-hd layui-col-md12">
                 <span class="box-hd-title">商品清单</span>
             </div>
             <div class="box-bd">
-                <table class="layui-table" style="table-layout:fixed" lay-skin="nob">
+                <table class="product-info-talbe layui-table" style="table-layout:fixed" lay-skin="nob">
                     <colgroup>
                         <col width="500">
-                        <col width="200">
                         <col width="100">
+                        <col width="300">
                         <col>
                     </colgroup>
                     <thead>
@@ -213,32 +216,70 @@
                     <tbody>
                         <tr class="goods-item">
                             <td class="product-item">
-                                <div class="product-price">
+                                <div class="product-img">
                                     <img width="70px" height="70px" src="../static/images/temp/测试数据1.jpg">
                                 </div>
                                 <div class="product-info">
                                     <div class="title">粗跟仙女风单鞋低跟浅口通勤平底女鞋 安妮208003</div>
-                                    <p>尺码 39</p>
                                 </div>
                             </td>
-                            <td>m</td>
-                            <td>72</td>
-                            <td>1</td>
+                            <td>
+                                <span class="product-size">M</span>
+                            </td>
+                            <td>
+                                <span class="product-price">￥72</span>
+                            </td>
+                            <td>
+                                <span class="product-num">2</span>
+                            </td>
                         </tr>
-                        <tr>
-                            <td>许闲心</td>
-                            <td>m</td>
-                            <td>72</td>
-                            <td>1</td>
+                        <tr class="goods-item">
+                            <td class="product-item">
+                                <div class="product-img">
+                                    <img width="70px" height="70px" src="../static/images/temp/商品2.jpg">
+                                </div>
+                                <div class="product-info">
+                                    <div class="title">2022春季新款圆领短袖韩版宽松显瘦纯色简约T恤女</div>
+                                </div>
+                            </td>
+                            <td>
+                                <span class="product-size">S</span>
+                            </td>
+                            <td>
+                                <span class="product-price">￥129</span>
+                            </td>
+                            <td>
+                                <span class="product-num">2</span>
+                            </td>
                         </tr>
                     </tbody>
+                    <tfoot class="m-toot">
+                        <tr class="price-sum">
+                            <td></td>
+                            <td></td>
+                            <td colspan="2">
+                                <span class="freight-text">运费:
+                                    <span class="freight-price">免运费</span>
+                                </span>
+                                <span class="this-grop-price-text">本组商品金额:
+                                    <span class="this-grop-price">￥12354565</span>
+                                </span>
+                            </td>
+                        </tr>
+                    </tfoot>
                 </table>
             </div>
+            <!-- 支付 -->
             <div class="box-hd layui-col-md12">
                 <span class="box-hd-title">支付信息信息</span>
             </div>
-            <div class="box-bd">
-                支付
+            <div class="pay box-bd">
+                <div class="pay-type-text">
+                    支付方式
+                </div>
+                <div class="pay-type">
+                    支付宝支付
+                </div>
             </div>
         </div>
     </div>
@@ -252,7 +293,7 @@
             time: 3000
         });
     })
-    $(".update-address-text").bind("click", function () {
+    $(".update-address-text,.address-add-row").bind("click", function () {
         layer.open({
             type: 2,
             skin: 'layui-layer-rim', //加上边框
