@@ -107,6 +107,9 @@
   font-size: smaller;
 }
 .address-ul li .address-inner{
+  background-color: rgb(255, 255, 255);
+}
+.address-ul li .address-add-row{
   background-color: rgb(249,249,249);
 }
 .address-ul li .address-add-row:hover{
