@@ -52,25 +52,25 @@
             <!-- =================副头部==================== -->
             <div class="fu-header">
                 <div class="center-header">
-                    <img src="../images/weipinhui/viplogo.png" alt="" class="viplogo">
+                    <img src="../static/svg/viplogo.png" alt="" class="viplogo">
                 
                     <div class="zhengpin">
-                        <img src="../images/weipinhui/zhengpin.svg" alt="" class="zhengpin-img">
+                        <img src="../static/svg/zhengpin.svg" alt="" class="zhengpin-img">
                         <span class="zhengpin-name">100%正品</span>
                     </div>
                     <div class="baoyou">
-                        <img src="../images/weipinhui/baoyou.svg" alt="" class="baoyou-img">
+                        <img src="../static/svg/baoyou.svg" alt="" class="baoyou-img">
                         <span class="baoyou-name">88元包邮</span>
                     </div>
                     <div class="tuihuan">
-                        <img src="../images/weipinhui/tuihuan.svg" alt="" class="tuihuan-img">
+                        <img src="../static/svg/tuihuan.svg" alt="" class="tuihuan-img">
                         <span class="tuihuan-name">退换无忧</span>
                     </div>
                     <div class="search">
                         <div class="sousuo">
                             <input type="text">             
                         </div>
-                        <img src="../images/weipinhui/sousuo-img.svg" alt="" class="sousuo-img">
+                        <img src="../static/svg/sousuo.svg"style="no-repeat"  alt="" class="sousuo-img">
                     </div>
                 </div>
             </div>
@@ -1649,6 +1649,33 @@
                 }
             });
         });
+
+        // =================固定导航栏=================================
+$(function(){
+    //windows对象出发滚动事件
+    $(window).scroll(function(){
+
+        if($(document).scrollTop() >= $(".top").height()){
+            console.log("超过了");
+            $(".filter").css({"position":"fixed","top":0,"margin-left":"148px"});
+             $(".pro-show-page").css("marginTop",$(".filter").height());
+        } else{
+            $(".filter").css({"position":"static"});
+            $(".pro-show-page").css({".margin-top":"0px"}) ;    
+        }
+    });
+});
+
+// ===================================分页======================
+
+window.onload = function(){
+document.querySelector("#demo1 .layui-laypage").onclick = function(event){
+    var value = event.target.innerText;
+    console.log("点击第"+value+"页")
+    $(".pro-show-page").css({"display" : 'none'});
+    $(".page-"+value).css({"display" : 'block'});
+    }
+}
     </script>
     <script src="../static/js/product.js"></script>
 </body>
