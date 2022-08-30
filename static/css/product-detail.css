@@ -55,16 +55,12 @@
 }
 
 /* ****************************右边 */
-.product-container .layui-row .layui-col-md7{
-    /* background-color: rgb(193, 220, 241); */
-}
+
 .product-container .layui-row .layui-col-md7 .grid-demo .layui-col-md1{
     /* background-color: rgb(243, 164, 164); */
     color: aliceblue;
 }
-.product-container .layui-row .layui-col-md7 .grid-demo .layui-col-md11{
-    background-color: rgb(178, 243, 249);
-}
+
 
 /* 品牌和标题 */
 .product-container .layui-row .layui-col-md7 .grid-demo .layui-col-md11 .brand-and-title a{
@@ -111,9 +107,33 @@
     height: 94px;
     /* width: 100%; */
     float: top;
-    background-color: rgb(209, 62, 62);
+    /* background-color: rgb(209, 62, 62); */
     margin-top: 60px;
     margin-bottom: 10px;
+    position: relative;
+}
+.product-container .layui-row .layui-col-md7 .grid-demo .layui-col-md11 .discount-coupon .left{
+    height: 94px;
+    width: 300px;
+    background-color: rgb(214, 244, 254);
+    position: absolute;
+    margin-top: -94px;
+}
+.product-container .layui-row .layui-col-md7 .grid-demo .layui-col-md11 .discount-coupon .right{
+    height: 94px;
+    width: 150px;
+    background-color: rgb(243, 183, 234);
+    position: absolute;
+    margin-top: -94px;
+    margin-left: 385px;
+}
+.product-container .layui-row .layui-col-md7 .grid-demo .layui-col-md11 .discount-coupon .right .super-brand-image{
+    height: 24px;
+    width: 100px;
+    /* background-color: rgb(199, 112, 112); */
+    float: right;
+    margin-top: 24px;
+    margin-right: 20px;
 }
 /* ********************************待补充*********************** */
 
@@ -139,6 +159,7 @@
 .product-container .layui-row .layui-col-md7 .grid-demo .layui-col-md11 .layui-row .layui-col-md1 .grid-demo #yunfei{
     color: #333;
 }
+/* 颜色 */
 .product-container .layui-row .layui-col-md7 .grid-demo .layui-col-md11 .layui-row .layui-col-md1 .grid-demo ul li{
     font-style: none;
 }
@@ -160,12 +181,21 @@
     line-height: 34px;
     margin-left: 10px;
 }
-/* 颜色 */
+/* 尺码 */
+.product-container .layui-row .layui-col-md7 .grid-demo .layui-col-md11 .layui-row .chima-box{
+    height: 60px;
+}
+.product-container .layui-row .layui-col-md7 .grid-demo .layui-col-md11 .layui-row .layui-col-md1 .chima ul :first-child{
+    margin: 0;
+}
 .product-container .layui-row .layui-col-md7 .grid-demo .layui-col-md11 .layui-row .layui-col-md1 .chima ul li .box {
     height: 28px;
     width: 32px;
     border: 1px solid #999999;
     padding: 1px 20px 1px 20px;
+    float: left;
+    margin-right: 20px;
+    margin-top: 10px;
 }
 /* 数量 */
 .product-container .layui-row .layui-col-md7 .grid-demo .layui-col-md11 .layui-row .layui-col-md1 .shuliang .pro-num{
@@ -175,6 +205,19 @@
     background-color: #fff;
     border: 1px solid #999;
 }
+.product-container .layui-row .layui-col-md7 .grid-demo .layui-col-md11 .layui-row .layui-col-md1 .shuliang .pro-num span{
+    display: block;
+    font-size: 30px;
+    margin: 0;
+}
+.product-container .layui-row .layui-col-md7 .grid-demo .layui-col-md11 .layui-row .layui-col-md1 .shuliang .pro-num span{
+    margin-top: -6px;
+    margin-left: 2px;
+}
+.product-container .layui-row .layui-col-md7 .grid-demo .layui-col-md11 .layui-row .layui-col-md1 .shuliang .pro-num .sub{
+    margin-left: 5px;
+    margin-top: -8px;
+}
 .product-container .layui-row .layui-col-md7 .grid-demo .layui-col-md11 .layui-row .layui-col-md1 .shuliang input{
     float: left;
     height: 28px;
@@ -182,5 +225,63 @@
     border: 1px solid #999999;
     border-left: none;
     border-right: none;
+    /* 文字居中 */
+    line-height: 30px;
+    text-align: center;
+}
+.product-container .layui-row .layui-col-md7 .grid-demo .layui-col-md11 .layui-row .layui-col-md1 .pay-for-it-box{
+    height: 46px;
+    width: 252px;
+    background-color: rgb(238, 203, 203);
+    border-radius: 2px;
+    margin-top: 20px;
+    margin-left: 45px;
+    position: relative;
+}
+.product-container .layui-row .layui-col-md7 .grid-demo .layui-col-md11 .layui-row .layui-col-md1 .lastbox{
+    height: 110px;
+    width: 535px;
+    /* background-color: rgb(232, 19, 19); */
+    border-bottom: 1px rgb(210, 210, 210) dashed;
+}
+.product-container .layui-row .layui-col-md7 .grid-demo .layui-col-md11 .layui-row .layui-col-md1 .lastbox .pay-for-it-box span{
+    display: block;
+    float: right;
+}
+.product-container .layui-row .layui-col-md7 .grid-demo .layui-col-md11 .layui-row .layui-col-md1 .lastbox .pay-for-it-box .lightpink-box{
+    height: 99%;
+    width: 50%;
+    background-color:#f03867;
+    float: left;
+    border-radius: 2px 0px 0px 2px;
+}
+.product-container .layui-row .layui-col-md7 .grid-demo .layui-col-md11 .layui-row .layui-col-md1 .lastbox .pay-for-it-box .lightpink-box del{
+    display: block;
+    font-size: 20px;color: white;
+    position: relative;
+    margin-top: 5px;
+    margin-left: 25px;
 
+}
+.product-container .layui-row .layui-col-md7 .grid-demo .layui-col-md11 .layui-row .layui-col-md1 .lastbox .pay-for-it-box span{
+    display: block;
+    color: white;
+}
+.product-container .layui-row .layui-col-md7 .grid-demo .layui-col-md11 .layui-row .layui-col-md1 .lastbox .pay-for-it-box :nth-child(1){
+    font-size: 14px;
+    position: absolute;
+    margin-left: 150px;
+    margin-top: 15px;
+}
+.product-container .layui-row .layui-col-md7 .grid-demo .layui-col-md11 .layui-row .layui-col-md1 .lastbox .pay-for-it-box :nth-child(2){
+    font-size: 20px;
+    position: absolute;
+    margin-left: 171px;
+    margin-top: -5px;
+}
+.product-container .layui-row .layui-col-md7 .grid-demo .layui-col-md11 .layui-row .layui-col-md1 .lastbox .pay-for-it-box :nth-child(3){
+    font-size: 20px;
+    position: absolute;
+    margin-left: 154px;
+    margin-top: -5px;
 }
