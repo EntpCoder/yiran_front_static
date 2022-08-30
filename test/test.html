@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="static/layui/css/layui.css">
+    <link rel="stylesheet" href="test.css">
+</head>
+
+<body>
+    <div class="layui-container">
+        <div class="layui-row">
+            <div class="shaixuan layui-col-md12">
+                <ul>
+                    <li>
+                        <span> 针织衫1</span>
+                    </li>
+                    <li>
+                        <span> 针织衫2</span>
+                    </li>
+                    <li>
+                        <span> 针织衫3</span>
+                    </li>
+                </ul>
+                <div class="check-more layui-btn layui-btn-primary">多选</div>
+                <div class="more layui-btn layui-btn-primary">更多</div>
+
+            </div>
+        </div>
+        <div class="shaixuan layui-row">
+            <div class="shaixuan layui-col-md12">
+                筛选条件2
+            </div>
+        </div>
+    </div>
+</body>
+<script src="static/layui/layui.js"></script>
+<script src="static/js/jquery-3.6.0.min.js"></script>
+<script>
+    $(".more").bind("click", function () {
+        var btn_type = $(this).html();
+        if (btn_type == "更多") {
+            $(".shaixuan").css("height", "120px");
+            $(this).html("收起");
+        } else {
+            $(".shaixuan").css("height", "60px");
+            $(this).html("更多");
+        }
+    })
+    $(".check-more").bind("click", function () {
+        $(".shaixuan").css("height", "120px");
+        var cm = $(".check-more").get(0);
+        var childrens = cm.parentElement.children[0].children;
+        for(var i = 0;i < childrens.length;i++){
+            var li = childrens[i];
+            var li_text = li.innerText;
+            li.innerHTML = "<input type='checkbox' name='' lay-skin='primary'>"+li_text+"</input>";
+            
+        }
+    })
+
+</script>
+
+</html>
