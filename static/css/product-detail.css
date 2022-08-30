@@ -9,7 +9,11 @@
     margin: 0 auto;
     margin-top: 20px;
 }
-
+.product-container .head{
+    height: 100px;
+    width: 100%;
+    background-color: rgb(239, 148, 148);
+}
 /* *****************************左边 */
 .product-container .layui-row .layui-col-md5 .layui-row{
     margin-top: 8px;
@@ -112,17 +116,115 @@
     margin-bottom: 10px;
     position: relative;
 }
+/* 左部分 */
 .product-container .layui-row .layui-col-md7 .grid-demo .layui-col-md11 .discount-coupon .left{
     height: 94px;
     width: 300px;
-    background-color: rgb(214, 244, 254);
+    /* background-color: rgb(214, 244, 254); */
     position: absolute;
     margin-top: -94px;
 }
+.product-container .layui-row .layui-col-md7 .grid-demo .layui-col-md11 .discount-coupon .left #up-part{
+    height: 65%;
+    width: 100%;
+    /* background-color: rgb(255, 210, 49); */
+}
+/* 原价盒子 */
+.product-container .layui-row .layui-col-md7 .grid-demo .layui-col-md11 .discount-coupon .left #up-part #box500{
+    height: 70%;
+    width: 32%;
+    /* background-color: rgb(255, 232, 149); */
+    float: left;
+    margin-top: 18px;
+    margin-left: 10px;
+}
+.product-container .layui-row .layui-col-md7 .grid-demo .layui-col-md11 .discount-coupon .left #up-part #box500 :nth-child(1){
+    color: white;
+    font-size: 24px;
+    line-height: 55px;
+    display: block;
+    float: left;
+}
+.product-container .layui-row .layui-col-md7 .grid-demo .layui-col-md11 .discount-coupon .left #up-part #box500 :nth-child(2){
+    color: white;
+    font-size: 38px;
+    font-weight: 700;
+}
+/* 特卖价盒子 */
+.product-container .layui-row .layui-col-md7 .grid-demo .layui-col-md11 .discount-coupon .left #up-part #temaijia-box{
+    height: 70%;
+    width: 60%;
+    /* background-color: rgb(77, 216, 255); */
+    float: left;
+    margin-top: 18px;
+}
+.product-container .layui-row .layui-col-md7 .grid-demo .layui-col-md11 .discount-coupon .left #up-part #temaijia-box #sanjiao-yuan{
+    margin-top: 6px;
+    float: left;
+}
+.product-container .layui-row .layui-col-md7 .grid-demo .layui-col-md11 .discount-coupon .left #up-part #temaijia-box #tamaijia-box-2{
+    height: 30px;
+    width: 120px;
+    background-color: #fff;
+    margin-top: 6px;
+    /* margin-left: 14px; */
+    float: left;
+}
+.product-container .layui-row .layui-col-md7 .grid-demo .layui-col-md11 .discount-coupon .left #up-part #temaijia-box #tamaijia-box-2 :nth-child(1){
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 700;
+    float: left;
+    color: #f03867;
+}
+.product-container .layui-row .layui-col-md7 .grid-demo .layui-col-md11 .discount-coupon .left #up-part #temaijia-box #tamaijia-box-2 :nth-child(2){
+    display: block;
+    float: left;
+    font-size: 20px;
+    color: #f03867;
+    font-weight: 700;
+    margin-left: 5px;
+}
+.product-container .layui-row .layui-col-md7 .grid-demo .layui-col-md11 .discount-coupon .left #up-part #temaijia-box #tamaijia-box-2 :nth-child(3){
+    display: block;
+    float: left;
+    font-size: 26px;
+    color: #f03867;
+    font-weight: 700;
+}
+.product-container .layui-row .layui-col-md7 .grid-demo .layui-col-md11 .discount-coupon .left #up-part #temaijia-box #attention{
+    float: left;
+    width: 22px;
+    height: 22px;
+    margin-top: 10px;
+    margin-left: 6px;
+}
+/* 中间删除线 */
+.product-container .layui-row .layui-col-md7 .grid-demo .layui-col-md11 .discount-coupon .left #down-part{
+    height: 35%;
+    width: 100%;
+    /* background-color: rgb(255, 118, 49); */
+}
+.product-container .layui-row .layui-col-md7 .grid-demo .layui-col-md11 .discount-coupon .left #down-part span{
+    color: white;
+    display: block;
+    float: left;
+    margin-left: 8px;
+    font-size: 16px;
+}
+.product-container .layui-row .layui-col-md7 .grid-demo .layui-col-md11 .discount-coupon .left #down-part del{
+    color: white;
+    display: block;
+    float: left;
+    margin-left: 12px;
+    font-size: 16px;
+    font-weight: 500;
+}
+/* 右部分 */
 .product-container .layui-row .layui-col-md7 .grid-demo .layui-col-md11 .discount-coupon .right{
     height: 94px;
     width: 150px;
-    background-color: rgb(243, 183, 234);
+    /* background-color: rgb(243, 183, 234); */
     position: absolute;
     margin-top: -94px;
     margin-left: 385px;
@@ -135,8 +237,17 @@
     margin-top: 24px;
     margin-right: 20px;
 }
+.product-container .layui-row .layui-col-md7 .grid-demo .layui-col-md11 .discount-coupon .right #clock-box{
+    height: 24px;
+    width: 110px;
+    /* background-color: #fff; */
+    margin-top: 60px;
+    font-size: 12px;
+    margin-left: 5px;
+    padding-left: 20px;
+    color: white;
+}
 /* ********************************待补充*********************** */
-
 .product-container .layui-row .layui-col-md7 .grid-demo .layui-col-md11 .layui-col-md1{
      font-size: 12px;
      color: #999999;
@@ -166,7 +277,7 @@
 .product-container .layui-row .layui-col-md7 .grid-demo .layui-col-md11 .layui-row .layui-col-md1 .grid-demo ul li .box{
     height: 32px;
     width: 129px;
-    background-color: rgb(251, 201, 201);
+    /* background-color: rgb(251, 201, 201); */
     float: left;
     margin: 0 auto;
     border: 2px solid #f03867;
@@ -232,7 +343,8 @@
 .product-container .layui-row .layui-col-md7 .grid-demo .layui-col-md11 .layui-row .layui-col-md1 .pay-for-it-box{
     height: 46px;
     width: 252px;
-    background-color: rgb(238, 203, 203);
+    /* background-color: rgb(238, 203, 203); */
+    background-color:#f03867;
     border-radius: 2px;
     margin-top: 20px;
     margin-left: 45px;
@@ -249,9 +361,10 @@
     float: right;
 }
 .product-container .layui-row .layui-col-md7 .grid-demo .layui-col-md11 .layui-row .layui-col-md1 .lastbox .pay-for-it-box .lightpink-box{
-    height: 99%;
+    height: 100%;
     width: 50%;
-    background-color:#f03867;
+    /* background-color:#f03867; */
+    background-color: #f688a4;
     float: left;
     border-radius: 2px 0px 0px 2px;
 }

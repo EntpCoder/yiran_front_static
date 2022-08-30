@@ -10,6 +10,9 @@
 </head>
 <body>
     <div class="product-container">
+      <div class="head">
+
+      </div>
         <!-- ----------------------------图片展示和商品参数 -->
         <div class="layui-row">
             <!-- 左边 -->
@@ -72,15 +75,36 @@
                     <div class="discount-coupon">
                         <img src="../static/images/discount-bgm.png" height="100%" width="100%">
                         <div class="left">
-                          <span>￥</span>
-                          <span>500</span>
-                          <del>￥</del>
-                          <del>1180</del>
-                          <span>4折</span>
+                          <div id="up-part">
+                            <div id="box500">
+                              <span>￥</span>
+                              <span>500</span>
+                            </div>
+                            <div id="temaijia-box">
+                              <img src="../static/images/三角内心圆.png" id="sanjiao-yuan">
+                              <div id="tamaijia-box-2">
+                                <span>特卖价</span>
+                                <span>￥</span>
+                                <span>470</span>
+                              </div>
+                              <img src="../static/svg/attention.svg" id="attention" >
+                            </div>
+                          </div>
+                          <div id="down-part">
+                            <del>￥1180</del>
+                            <span>4折</span>
+                          </div>
                         </div>
                         <div class="right">
                           <div class="super-brand-image">
                             <img src="../static/images/超级大牌日.png" height="100%" width="100%">
+                          </div>
+                          <div id="clock-box">
+                            <span id="clock-day">3</span>
+                            <span>天</span>
+                            <span id="clock-hour">22</span>
+                            <span>小时</span>
+                            <span>后结束</span>
                           </div>
                         </div>
                       </div>
@@ -191,6 +215,14 @@
             </div>
           </div>
     </div>
+  
+    <!---------------------------------------------------------------- 商品资料 -->
+    <div class="detail-container">
+      
+    </div>
+
+
+
     <script src="../static/layui/layui.js"></script>
     <script src="../static/js/jquery-3.6.0.min.js"></script>
 </body>
