@@ -71,7 +71,20 @@
                     <!-- 打折券 -->
                     <div class="discount-coupon">
                         <img src="../static/images/discount-bgm.png" height="100%" width="100%">
-                    </div>
+                        <div class="left">
+                          <span>￥</span>
+                          <span>500</span>
+                          <del>￥</del>
+                          <del>1180</del>
+                          <span>4折</span>
+                        </div>
+                        <div class="right">
+                          <div class="super-brand-image">
+                            <img src="../static/images/超级大牌日.png" height="100%" width="100%">
+                          </div>
+                        </div>
+                      </div>
+                    <!-- 配送、运费、颜色、尺码、数量。。 -->
                     <div class="layui-row">
                         <div class="layui-col-md1">
                           <div class="grid-demo grid-demo-bg1">
@@ -118,33 +131,59 @@
                             </ul>
                           </div>
                         </div>
-                        <div class="layui-col-md1">
+                        <div class="layui-col-md1 chima-box">
                           <div class="grid-demo grid-demo-bg1 chima">
                             <span>尺码</span>
                             <ul>
                               <li>
                                   <div class="box">
-                                      <span>s</span>
+                                      <span>S</span>
                                     </div>
                               </li>
                               <li>
                                   <div class="box">
-                                    <span>m</span>
+                                    <span>M</span>
                                   </div>
                               </li>
+                              <li>
+                                <div class="box">
+                                  <span>L</span>
+                                </div>
+                              </li>
+                              <li>
+                                <div class="box">
+                                  <span>XL</span>
+                                </div>
+                              </li>
+                              <li>
+                                <div class="box">
+                                  <span>XXL</span>
+                                </div>
+                              </li>
+                              
                           </ul>
                           </div>
                         </div>
                         <div class="layui-col-md1">
                           <div class="grid-demo shuliang">
                             <span>数量</span>
-                            <div class="pro-num"></div>
+                            <div class="pro-num"><span class="sub">-</span></div>
                             <input type="text" value="1">
-                            <div class="pro-num"></div>
+                            <div class="pro-num"><span>+</span></div>
                           </div>
                         </div>
                         <div class="layui-col-md1">
-                          <div class="grid-demo grid-demo-bg1">1/12</div>
+                          <div class="grid-demo grid-demo-bg1 lastbox">
+                            <!-- 价格按钮 -->
+                            <div class="pay-for-it-box">
+                              <span>特卖价&nbsp;抢&nbsp;></span>
+                              <span>470</span>
+                              <span>￥</span>
+                              <div class="lightpink-box">
+                                  <del>￥1180</del>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                     </div>
                 </div>
