@@ -104,7 +104,7 @@
                     <span class="countdown-num countdown-num-sec">29</span>秒
                 </span>
                 内提交订单，下单后你另有 30 分钟的支付时间。
-                <i id="st-tips" class="layui-icon"
+                <i class="st-tips layui-icon"
                     style="font-size: 15px; color: rgb(97,137,248); margin-right: 20px; margin-left: 10px;">&#xe607;</i>
             </div>
         </div>
@@ -119,7 +119,7 @@
                     <ul class="address-ul">
                         <li class="layui-col-md4">
                             <!-- 地址卡片 -->
-                            <div class="address-inner">
+                            <div class="address-inner" onclick="checkAddress(this)">
                                 <!-- 装饰上线条 -->
                                 <div class="stripe-top"></div>
                                 <div class="name-row layui-row">
@@ -146,6 +146,7 @@
                                         <i class="layui-icon" style="font-size: 15px; color: #626262;">&#xe715</i>
                                         <strong>江苏省苏州市</strong>
                                         苏州工业园区东方文慧苑3区
+                                        <embed class="tick" width="50px" height="50px" src="../static/svg/address-tick.svg"></embed>
                                     </div>
                                 </div>
                                 <!-- 装饰下线条 -->
@@ -153,7 +154,7 @@
                             </div>
                         </li>
                         <li class="layui-col-md4">
-                            <div class="address-inner">
+                            <div class="address-inner" onclick="checkAddress(this)">
                                 <!-- 装饰上线条 -->
                                 <div class="stripe-top"></div>
                                 <div class="name-row layui-row">
@@ -195,7 +196,9 @@
             </div>
             <!-- 商品清单 -->
             <div class="box-hd layui-col-md12">
-                <span class="box-hd-title">商品清单</span>
+                <span class="box-hd-title">商品清单
+                    <a href="car.html" class="go-car layui-inline">返回购物袋修改商品</a>
+                </span>
             </div>
             <div class="box-bd">
                 <table class="product-info-talbe layui-table" style="table-layout:fixed" lay-skin="nob">
@@ -273,13 +276,69 @@
             <div class="box-hd layui-col-md12">
                 <span class="box-hd-title">支付信息信息</span>
             </div>
-            <div class="pay box-bd">
+            <div class="pay layui-form box-bd">
                 <div class="pay-type-text">
                     支付方式
                 </div>
-                <div class="pay-type">
-                    支付宝支付
+                <div class="pay-type layui-form-item">
+                    <div class="layui-form-item">
+                        <div class="layui-input-block">
+                            <embed class="pay-svg" width="50px" height="50px" src="../static/svg/ali-pay.svg"></embed>
+                            <input type="radio" name="pay" value="alipay" title="支付宝支付" checked></input>
+                            <embed class="pay-svg" width="50px" height="50px" src="../static/svg/wx-pay.svg"></embed>
+                            <input type="radio" name="pay" value="wxpay" title="微信支付"></input>
+                        </div>
+                    </div>
                 </div>
+            </div>
+        </div>
+        <!-- 订单 -->
+        <div class="orders-total">
+            <div class="outer-div">
+                <div>
+                    <span class="dis-text layui-inline">商品金额:</span>
+                    <span class="product-price layui-inline">￥233</span>
+                </div>
+            </div>
+            <div class="outer-div">
+                <div>
+                    <span class="dis-text layui-inline">优惠券:</span>
+                    <span class="layui-inline">￥0</span>
+                </div>
+            </div>
+            <div class="outer-div">
+                <div>
+                    <span class="dis-text layui-inline">唯品币:</span>
+                    <span class="layui-inline">￥0</span>
+                </div>
+            </div>
+            <div class="outer-div">
+                <div>
+                    <span class="dis-text layui-inline">运费:</span>
+                    <span class="layui-inline">￥0</span>
+                </div>
+            </div>
+            <div class="outer-div">
+                <div>
+                    <span class="dis-text pay-price-text layui-inline">待支付:</span>
+                    <span class="pay-price layui-inline">￥2333</span>
+                </div>
+            </div>
+            <div class="delivery outer-div">
+                <div>
+                    <span class="dis-text layui-inline">送货至： 
+                        <span class="delivery-info layui-inline">苏州工业园区 东方文荟苑3区，洋，152*****014</span>
+                    </span>
+                </div>
+            </div>
+            <!-- 结算 -->
+            <div class="orders-settlement layui-row">
+                <div class="orders-tips layui-col-md8">
+                    <span id="st-tips-text">请在倒计时结束前提交订单</span>
+                    <i class="st-tips layui-icon"
+                        style="font-size: 15px; color: rgb(97,137,248); margin-right: 20px; margin-left: 10px;">&#xe607;</i>
+                </div>
+                <a href="./confirm-order.html" class="settlement-button layui-btn layui-col-md4">提交订单</a>
             </div>
         </div>
     </div>
@@ -287,8 +346,8 @@
 <script src="../static/layui/layui.js"></script>
 <script src="../static/js/jquery-3.6.0.min.js"></script>
 <script>
-    $("#st-tips").bind("mouseover", function () {
-        layer.tips('好商品需要精挑细选，特意为你留足20分钟考虑时间。', '#st-tips', {
+    $(".st-tips").bind("mouseover", function () {
+        layer.tips('好商品需要精挑细选，特意为你留足20分钟考虑时间。', this, {
             tips: [3, '#3595CC'],
             time: 3000
         });
@@ -301,6 +360,9 @@
             content: 'update-address.html'
         });
     })
+function checkAddress(node){
+    console.log(node);
+}
 </script>
 
 </html>
