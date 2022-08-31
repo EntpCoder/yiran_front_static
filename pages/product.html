@@ -1703,8 +1703,10 @@ document.querySelector("#demo1 .layui-laypage").onclick = function(event){
             childrens.eq(1).css("height", "auto");
             childrens.eq(0).css("height", "150px");
             //增加两个按钮
-            $(this).parent().parent().append ("<button class='ensure'>确定</button>");
-            $(this).parent().parent().append ("<button class='quxiao'>取消</button>");
+            if(childrens.length == 3){
+                $(this).parent().parent().append ("<button class='ensure'>确定</button>");
+                $(this).parent().parent().append ("<button class='quxiao'>取消</button>");
+            }
             //li
             var liArr = childrens.eq(1).children();
             //console.log(li_child.length)
