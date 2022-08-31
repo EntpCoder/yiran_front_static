@@ -125,60 +125,57 @@
             </div>
         </div>    
         <!-- =======================大筛选=========================== -->
-        <div class="layui-tab layui-tab-card" style="width: 80%;margin: 10px auto; ">
-            <ul class="layui-tab-title">
-                <li class="layui-this">品类</li>
-                <li>女款针织衫</li>
-                <li>连衣裙</li>
-                <li>半身裙</li>
-                <li>女款羽绒服</li>
-                <li>女款衬衫</li>
-                <li>女式休闲裤</li>
-                <li>女款大衣</li>
-                <li>女款西服</li>
-                <li>女款外套</li>
-                <li>女式牛仔裤</li>
-                <li>女款T恤</li>
-                <li>女款卫衣</li>
-                <li>女款风衣</li>
-                <li>女款背心</li>
-                <li>女款棉服</li>
-                <li>女款连体裤</li>
-            </ul>
-        </div>
-        <div class="layui-tab layui-tab-card" style="width: 80%;margin: 10px auto; ">
-            <ul class="layui-tab-title">
-                <li class="layui-this">品类</li>
-                <li>女款针织衫</li>
-                <li>连衣裙</li>
-                <li>半身裙</li>
-                <li>女款羽绒服</li>
-                <li>女款衬衫</li>
-                <li>女式休闲裤</li>
-                <li>女款大衣</li>
-            </ul>
-        </div>
-        <div class="layui-tab layui-tab-card" style="width: 80%;margin: 10px auto; ">
-            <ul class="layui-tab-title">
-                <li class="layui-this">品类</li>
-                <li>女款针织衫</li>
-                <li>连衣裙</li>
-                <li>半身裙</li>
-                <li>女款羽绒服</li>
-                <li>女款衬衫</li>
-                <li>女式休闲裤</li>
-                <li>女款大衣</li>
-                <li>女款西服</li>
-                <li>女款外套</li>
-                <li>女式牛仔裤</li>
-                <li>女款T恤</li>
-                <li>女款卫衣</li>
-                <li>女款风衣</li>
-                <li>女款背心</li>
-                <li>女款棉服</li>
-                <li>女款连体裤</li>
-            </ul>
-        </div>
+            
+            <div class="shaixuan shaixuan1">
+                    <span class="leibie pinlei">品类</span>
+                    <ul class="ul-item">                    
+                        <li class="group-li"><span>女款针织衫</span></li>
+                        <li class="group-li"><span>连衣裙</span></li>
+                        <li class="group-li"><span>半身裙</span></li>
+                        <li class="group-li"><span>女款女绒服</span></li>
+                        <li class="group-li"><span>女款针织衫</span></li>
+                        <li class="group-li"><span>女款针织衫</span></li>
+                        <li class="group-li"><span>女款针织衫</span></li>
+                        <li class="group-li"><span>女款针织衫</span></li>
+                        <li class="group-li"><span>女款针织衫</span></li>
+                        <li class="group-li"><span>女款针织衫</span></li>
+                    </ul>
+                    <span class="other-item">
+                        <button class="more more1">更多</button>
+                        <button class="duoxuan duoxiuan1">多选</button>
+                    </span>
+            </div>
+            <div class="shaixuan shaixuan2">
+                <span class="leibie chima">尺码</span>  
+                <ul class="ul-item">
+                    <li class="group-li"><span>XS</span></li>
+                    <li class="group-li"><span>S</span></li>
+                    <li class="group-li"><span>M</span></li>
+                    <li class="group-li"><span>L</span></li>
+                    <li class="group-li"><span>XL</span></li>
+                </ul>             
+            </div>
+            <div class="shaixuan shaixuan3">
+                <span class="leibie chima">面料</span>  
+                <ul class="ul-item">
+                    <li class="group-li"><span>棉</span></li>
+                    <li class="group-li"><span>纯棉</span></li>
+                    <li class="group-li"><span>棉混纺</span></li>
+                    <li class="group-li"><span>真丝</span></li>
+                    <li class="group-li"><span>莱赛尔</span></li>
+                    <li class="group-li"><span>羊毛</span></li>
+                    <li class="group-li"><span>羊绒</span></li>
+                    <li class="group-li"><span>羊毛混纺</span></li>
+                    <li class="group-li"><span>牛仔</span></li>
+                    <li class="group-li"><span>真皮</span></li>
+                    <li class="group-li"><span>PU</span></li>
+                    
+                </ul>   
+                <span class="other-item">
+                    <button class="more more3">更多</button>
+                    <button class="duoxuan duoxuan3">多选</button>
+                </span>          
+            </div>
     </div>
     <!-- ======================小筛选============================== -->
     <div class="filter">
@@ -1625,7 +1622,6 @@
     <div class="total-page-num">
         <div id="demo1"></div>
     </div>   
-   
     <script>
         layui.use(['laypage', 'layer'], function(){
           var laypage = layui.laypage
@@ -1657,7 +1653,7 @@ $(function(){
 
         if($(document).scrollTop() >= $(".top").height()){
             console.log("超过了");
-            $(".filter").css({"position":"fixed","top":0,"margin-left":"148px"});
+            $(".filter").css({"position":"fixed","top":"-30px","margin-left":"148px"});
              $(".pro-show-page").css("marginTop",$(".filter").height());
         } else{
             $(".filter").css({"position":"static"});
@@ -1676,6 +1672,60 @@ document.querySelector("#demo1 .layui-laypage").onclick = function(event){
     $(".page-"+value).css({"display" : 'block'});
     }
 }
+// ==============================更多按钮 =================================
+    $(".more").bind("click",function(){
+        var more = $(this).text();
+        //获取这个节点的内容
+        //console.log($(this).text());
+        if(more == '更多'){
+            //console.log($(this).parent) ;
+            //找到父亲
+            $(this).parent().parent().css("height", "150px");
+            var childrens = $(this).parent().parent().children();
+            childrens.eq(0).css("height", "100px");
+            childrens.eq(1).css("height", "auto");
+            $(this).html("收起");
+        }else{
+            $(this).parent().parent().css("height", "46px");
+            var childrens = $(this).parent().parent().children();
+            childrens.eq(0).css("height", "46px");
+            childrens.eq(1).css("height", "46px");
+            $(this).html("更多");
+        }
+    })
+    // ========================多选按钮============================
+        $(".duoxuan").bind("click",function(){
+            //找到父亲
+            // $(this).parent().css("display","none")
+            $(this).parent().parent().css("height", "150px");
+            var childrens = $(this).parent().parent().children();
+
+            childrens.eq(1).css("height", "auto");
+            childrens.eq(0).css("height", "150px");
+            //增加两个按钮
+            $(this).parent().parent().append ("<button class='ensure'>确定</button>");
+            $(this).parent().parent().append ("<button class='quxiao'>取消</button>");
+            //li
+            var liArr = childrens.eq(1).children();
+            //console.log(li_child.length)
+            for(var i = 0 ;i < liArr.length; i++){
+                var li = liArr[i];
+                console.log("li++++++++"+li);
+                //获得每个li标签的文本
+                var li_text = li.innerText;
+                console.log(li_text)
+                //span变为复选框
+                li.innerHTML = "<input type='checkbox' name='' lay-skin='primary' class='li-check'>"+li_text+"</input>";
+            }
+        })
+        // ===================点击确定或者取消按钮，右边多选按钮显示=======================================
+        $(".ensure").bind("click",function(){
+            
+        })
+
+
+
+
     </script>
 </body>
 

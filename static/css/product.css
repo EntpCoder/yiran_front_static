@@ -485,34 +485,84 @@
 }
 
 /* =================筛选===================== */
-.layui-tab-title {
-    width: 87%;
-    height: auto;
-    background-color: rgb(218, 162, 88);
-    min-width: 1000px;
-
-
+.shaixuan{
+    width: 80%;
+    height: 46px;
+    margin: 0 auto;
+    border: 1px solid #dfdfdf;
 }
-.layui-tab-title .layui-this{
+.shaixuan .leibie{
+    display: block;
+    width: 10%;
+    height: 46px;
+    /* border: 1px solid; */
+    font-size: 12px;
+    text-align: left;
+    padding-left: 20px;
+    line-height: 50px;
+    color: #f10180;
+    /* background-color: rgb(251, 196, 196); */
+    float: left;
+}
+.shaixuan .ul-item{
+    width: 60%;
+    height: 46px;
+    border: 1px solid red;
+    float: left;
+    overflow: hidden;
+}
+.shaixuan .ul-item .group-li{
+    display: block;
     width: 80px;
-    height: auto;
+    height: 46px;
+    float: left;
+    line-height: 46px;
+    text-align: center;
+    margin-right: 20px;
+    /* border: 1px solid;   */
+    font-size: 12px;
+    cursor: pointer;
 }
-.layui-tab-card>.layui-tab-title li{
-    font-size: 10px;
+.shaixuan .ul-item .group-li span:hover{
+    color: #f10180;
 }
-.layui-tab-card>.layui-tab-title .layui-this {
-    background-color: rgb(243, 156, 156);
+.shaixuan .other-item{
+    float: right;
+    width: 8%;
+    height: 46px;
+    /* border: 1px solid; */
 }
-.layui-tab-card>.layui-tab-more .layui-this {
-    background: 0 0;
-    color: #f32b80;
-} */
-.layui-tab-card>.layui-tab-title .layui-tab-bar {
-    height: 40px;
-    line-height: 40px;
-    border-radius: 0;
-    border-top: none;
-    border-right: none;
+.shaixuan .other-item .more,.duoxuan{
+    border: none;
+    background: none;
+    margin-right: 18px;
+    margin-top: 15px;
+    float: left;
+    cursor: pointer;
+    font-size: 12px;
+}
+.shaixuan .ensure,.quxiao{
+    background-color: rgb(222, 17, 103);
+    float: left;
+    position: relative;
+    bottom: -110px;
+    right: 420px;
+    border: none;
+    color: white;
+    font-size: 12px;
+    width: 45px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    cursor: pointer;
+}
+.shaixuan .quxiao{
+    right: 400px;
+}
+.shaixuan .ul-item .li-check{
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
 }
 
 /* =================小筛选======================= */
@@ -523,6 +573,7 @@
     background-color: #f5f5f5;
     border: 1px solid #dfdfdf;
     min-width: 1000px;
+    margin-top: 30px;
 }
 .filter .pro-oper{
     width: 600px;
