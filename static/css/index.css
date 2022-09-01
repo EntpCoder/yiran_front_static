@@ -87,6 +87,38 @@
     /* border: 1px solid; */
     color: rgb(112, 113, 114);
 }
+/* 注册 */
+.head .head-center .zhuce{
+    display: block;
+    width: 80px;
+    height: 27px;
+    float: left;
+    /* border: 1px solid; */
+    margin: 0 32px;
+}
+.head .head-center .zhuce .zhuce-img{
+    width: 20px;
+    height: 20px;
+    background-image: url("../svg/zuce.svg") ;
+    float: left;
+    margin-top: 3px;
+}
+.head .head-center .zhuce:hover .zhuce-img{
+    background-image: url("../svg/zuce-hover.svg");
+}
+.head .head-center .zhuce:hover .zhuce-name{
+    color: #f10180;}
+
+.head .head-center .zhuce .zhuce-name{
+    width: 50px;
+    height: 27px;
+    float: left;
+    line-height: 27px;
+    text-align: center;
+    /* border: 1px solid; */
+    color: rgb(112, 113, 114);
+    margin-left: 5px;
+}
 
 .head .head-center .qiandao{
     display: block;
@@ -104,7 +136,7 @@
     margin-top: 3px;
 }
 .head .head-center .qiandao:hover .qiandao-img{
-    background-image: url("");
+    background-image: url("../svg/qiandao-img-hover.svg");
 }
 .head .head-center .qiandao:hover .qiandao-name{
     color: #f10180;}
