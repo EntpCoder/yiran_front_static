@@ -4,7 +4,11 @@
 }
 
 
-/* ==============header================ */
+/* ==============top================ */
+.top{
+    text-align: center;
+    font-family: Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif;
+}
 .main-nav {
     height: 40px;
     background-color: #f10180;

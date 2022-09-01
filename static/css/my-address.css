@@ -13,7 +13,7 @@
     margin-top: -4px;
     font-size: 12px;
 }
-.ui-btn-primary, .ui-btn1 {
+.ui-btn-primary{
     background-color: #f10180;
     border: 1px solid #f10180;
 }
@@ -24,4 +24,17 @@
     padding: 16px 20px 18px;
     border-bottom: 1px solid #ebebeb;
     color: grey;
+}
+.ui-btn-medium{
+    min-width: 60px;
+    padding: 0 19px;
+    font: 15px/30px tahoma,arial,Hiragino Sans GB,WenQuanYi Micro Hei,'\5FAE\8F6F\96C5\9ED1','\5B8B\4F53',sans-serif;
+    height: 30px;
+    display: inline-block;
+    border-radius: 3px;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: top;
+    transition: .3s;
+    cursor: pointer;
 }
