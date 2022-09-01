@@ -16,7 +16,9 @@
     <div class="g-hd layui-container">
         <div class="layui-row">
             <div class="carlogo layui-col-md2">
-                <img class="toplogo" src="../static/images/checkoutHeader.png" />
+                <a href="/index.html">
+                    <img class="toplogo" src="../static/images/checkoutHeader.png" />
+                </a>
             </div>
             <div class="layui-col-md7 layui-col-md-offset3">
                 <ul class="top-item layui-row">
@@ -146,7 +148,8 @@
                                         <i class="layui-icon" style="font-size: 15px; color: #626262;">&#xe715</i>
                                         <strong>江苏省苏州市</strong>
                                         苏州工业园区东方文慧苑3区
-                                        <embed class="tick" width="50px" height="50px" src="../static/svg/address-tick.svg"></embed>
+                                        <embed class="tick" width="50px" height="50px"
+                                            src="../static/svg/address-tick.svg"></embed>
                                     </div>
                                 </div>
                                 <!-- 装饰下线条 -->
@@ -326,7 +329,7 @@
             </div>
             <div class="delivery outer-div">
                 <div>
-                    <span class="dis-text layui-inline">送货至： 
+                    <span class="dis-text layui-inline">送货至：
                         <span class="delivery-info layui-inline">苏州工业园区 东方文荟苑3区，洋，152*****014</span>
                     </span>
                 </div>
@@ -360,9 +363,9 @@
             content: 'update-address.html'
         });
     })
-function checkAddress(node){
-    console.log(node);
-}
+    function checkAddress(node) {
+        console.log(node);
+    }
 </script>
 
 </html>
