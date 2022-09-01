@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的唯品会</title>
+    <link rel="stylesheet" href="../static/layui/css/layui.css">
+    <link rel="stylesheet" href="../static/css/my-orders.css">
+    <script src="../static/js/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="main-nav">
+            <div class="layui-row">
+                <div class="layui-col-md8 layui-col-md-offset2">
+                    <ul class="grid-demo">
+                        <li class="nav-myvip"><a href="">我的唯品会</a></li>
+                        <li class="nav-comingsoon"><a href="">我的特卖</a></li>
+                        <li class="nav-category"><a href="">首页</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="m-body">
+        <div class="m-content">
+            <ul class="g-sidebar layui-nav layui-nav-tree layui-inline " lay-filter="demo" style="margin-right: 10px;">
+                <li class="layui-nav-item layui-nav-itemed">
+                    <a id="aa" href="javascript:;">我的交易</a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="my-orders.html">订单管理</a></dd>
+                        <dd><a href="after-sales.html">退换/售后</a></dd>
+                        <dd><a href="my-address.html">收获地址</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item layui-nav-itemed">
+                    <a href="javascript:;">我的资产</a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="javascript:;">优惠券</a></dd>
+                        <dd><a href="javascript:;">唯品币</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item layui-nav-itemed">
+                    <a href="javascript:;">我的账户</a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="javascript:;">我的资料</a></dd>
+                    </dl>
+                </li>
+            </ul>
+            <div class="g-content">
+                <p id="m-title">
+                    <a href="personal.html">我的唯品会</a>
+                    &nbsp;>&nbsp;订单管理
+                </p>
+                <div class="mad J-declare">
+                    <i class="i-horn"></i>
+                    <div class="J-declare-warning">
+                        <p>安全提醒：唯品会不会以任何理由要求您提供银行卡信息或支付额外费用，请谨防钓鱼链接或诈骗电话。</p>
+                        <p>*为保障您的信息安全，订单信息中的联系电话已被加密隐藏。</p>
+                    </div>
+                </div>
+                <div class="layui-tab">
+                    <ul class="layui-tab-title">
+                        <li class="layui-this">全部订单</li>
+                        <li>待付款</li>
+                        <li>待发货</li>
+                        <li>待收货</li>
+                        <li>已完成</li>
+                    </ul>
+                    <!-- 全部订单 -->
+                    <div class="layui-tab-content">
+                        <div class="layui-tab-item layui-show">
+                            <div class="col-name">
+                                <div class="goods">商品</div>
+                                <div class="total">订单金额</div>
+                                <div class="state">订单状态</div>
+                                <div class="control">操作</div>
+                            </div>
+                            <div class="order-list-info">
+                                <div class="order-hd">
+                                    <i class="ii-te"></i>
+                                    <span class="num">
+                                        订单号：
+                                        <a href="">22082784137477</a>
+                                    </span>
+                                    <span class="num order-gen-date">2022-08-27 15:40:30</span>
+                                </div>
+                                <div class="order-bd">
+                                    <div class="order-goods">
+                                        <div class="good">
+                                            <a href="">
+                                                <img src="../static/images/temp/订单图片.jpg" width="50" height="63" alt>
+                                            </a>
+                                            <div class="goods-info">
+                                                <div class="goods-name">
+                                                    <a href="" target="_blank" class="name"
+                                                        title="JACK&amp;JONES 纯棉立领条纹春夏男装七分袖衬衫衣">JACK&amp;JONES
+                                                        纯棉立领条纹春夏男装七分袖衬衫衣</a>
+                                                    <span class="size">L</span>
+                                                </div>
+                                                <div class="goods-num">
+                                                    <span class="num">×1</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="order-price">
+                                        <strong>69.00</strong>
+                                        <p>在线</p>
+                                    </div>
+                                    <div class="order-state">
+                                        <span class="green">已发货</span>
+                                        <div class="order-track">
+                                            <a href="javascript:;" class="track">订单跟踪<i
+                                                    class="vipFont i-arrow-down"></i></a>
+                                            <div class="ui-tips-pop u-tips-pop">
+
+                                            </div>
+                                        </div>
+                                        <a href="" target="_blank" mars_sead="account_order_detail_btn">订单详情</a>
+                                    </div>
+                                    <div class="order-control">
+                                        <div class="confirmSign-content J-confirmSign-content">
+                                            <p><a class="ui-btn-mini ui-btn2 J_confirmSign"
+                                                    data-ordersn="22082784137477" role="button"
+                                                    href="javascript:;">确认收货</a></p>
+                                        </div>
+                                        <p>
+                                            <a class="J-cancel-delivery" href="javascript:;">取消配送</a>
+                                        </p>
+                                        <p>
+                                            <a class="J-modify" href="" target="_blank">修改订单</a>
+                                        </p>
+                                    </div>
+                                    <div class="order-other"></div>
+                                </div>
+                            </div>
+
+
+
+
+                            <!-- ======== -->
+                            <div class="order-list-info">
+                                <div class="order-hd">
+                                    <i class="ii-te"></i>
+                                    <span class="num">
+                                        订单号：
+                                        <a href="">22082784137477</a>
+                                    </span>
+                                    <span class="num order-gen-date">2022-08-27 15:40:30</span>
+                                </div>
+                                <div class="order-bd">
+                                    <div class="order-goods">
+                                        <div class="good">
+                                            <a href="">
+                                                <img src="../static/images/temp/订单图片.jpg" width="50" height="63" alt>
+                                            </a>
+                                            <div class="goods-info">
+                                                <div class="goods-name">
+                                                    <a href="" target="_blank" class="name"
+                                                        title="JACK&amp;JONES 纯棉立领条纹春夏男装七分袖衬衫衣">JACK&amp;JONES
+                                                        纯棉立领条纹春夏男装七分袖衬衫衣</a>
+                                                    <span class="size">L</span>
+                                                </div>
+                                                <div class="goods-num">
+                                                    <span class="num">×1</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="order-price">
+                                        <strong>69.00</strong>
+                                        <p>在线</p>
+                                    </div>
+                                    <div class="order-state">
+                                        <span class="gray">已签收</span>
+                                        <a href="" target="_blank" mars_sead="account_order_detail_btn">订单详情</a>
+                                    </div>
+                                    <div class="order-control">
+
+                                    </div>
+                                    <div class="order-other">
+                                        <p>
+                                            <a href="" mars_sead="order_after_service_apply" target="_blank">申请售后</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- 待付款 -->
+                        <div class="layui-tab-item">
+                            <div class="col-name">
+                                <div class="goods">商品</div>
+                                <div class="total">订单金额</div>
+                                <div class="state">订单状态</div>
+                                <div class="control">操作</div>
+                            </div>
+                            <div class="order-list-info">
+                                <div class="order-hd">
+                                    <i class="ii-te"></i>
+                                    <span class="num">
+                                        订单号：
+                                        <a href="">22082784137477</a>
+                                    </span>
+                                    <span class="num order-gen-date">2022-08-27 15:40:30</span>
+                                </div>
+                                <div class="order-bd">
+                                    <div class="order-goods">
+                                        <div class="good">
+                                            <a href="">
+                                                <img src="../static/images/temp/订单图片.jpg" width="50" height="63" alt>
+                                            </a>
+                                            <div class="goods-info">
+                                                <div class="goods-name">
+                                                    <a href="" target="_blank" class="name"
+                                                        title="JACK&amp;JONES 纯棉立领条纹春夏男装七分袖衬衫衣">JACK&amp;JONES
+                                                        纯棉立领条纹春夏男装七分袖衬衫衣</a>
+                                                    <span class="size">L</span>
+                                                </div>
+                                                <div class="goods-num">
+                                                    <span class="num">×1</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="order-price">
+                                        <strong>69.00</strong>
+                                        <p>在线</p>
+                                    </div>
+                                    <div class="order-state">
+                                        <span class="red">未支付</span>
+                                        <div class="order-track">
+                                            <a href="javascript:;" class="track">订单跟踪<i
+                                                    class="vipFont i-arrow-down"></i></a>
+                                            <div class="ui-tips-pop u-tips-pop">
+
+                                            </div>
+                                        </div>
+                                        <a href="" target="_blank" mars_sead="account_order_detail_btn">订单详情</a>
+                                    </div>
+                                    <div class="order-control">
+                                        <p>
+                                            <a href="javascript:;" role="button" mars_sead="account_order_secondpay_btn"
+                                                class="ui-btn-mini ui-btn1 J_showUnpaid">支付</a>
+                                        </p>
+                                        <p>
+                                            <a class="J-modify" href="" target="_blank">修改订单</a>
+                                        </p>
+                                    </div>
+                                    <div class="order-other">
+                                        <p>
+                                            <a href="">取消订单</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 待发货 -->
+                        <div class="layui-tab-item">
+                            <div class="col-name">
+                                <div class="goods">商品</div>
+                                <div class="total">订单金额</div>
+                                <div class="state">订单状态</div>
+                                <div class="control">操作</div>
+                            </div>
+                            <div class="order-list-info">
+                                <div class="order-hd">
+                                    <i class="ii-te"></i>
+                                    <span class="num">
+                                        订单号：
+                                        <a href="">22082784137477</a>
+                                    </span>
+                                    <span class="num order-gen-date">2022-08-27 15:40:30</span>
+                                </div>
+                                <div class="order-bd">
+                                    <div class="order-goods">
+                                        <div class="good">
+                                            <a href="">
+                                                <img src="../static/images/temp/订单图片.jpg" width="50" height="63" alt>
+                                            </a>
+                                            <div class="goods-info">
+                                                <div class="goods-name">
+                                                    <a href="" target="_blank" class="name"
+                                                        title="JACK&amp;JONES 纯棉立领条纹春夏男装七分袖衬衫衣">JACK&amp;JONES
+                                                        纯棉立领条纹春夏男装七分袖衬衫衣</a>
+                                                    <span class="size">L</span>
+                                                </div>
+                                                <div class="goods-num">
+                                                    <span class="num">×1</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="order-price">
+                                        <strong>69.00</strong>
+                                        <p>在线</p>
+                                    </div>
+                                    <div class="order-state">
+                                        <span class="green">已审核</span>
+                                        <div class="order-track">
+                                            <a href="javascript:;" class="track">订单跟踪<i
+                                                    class="vipFont i-arrow-down"></i></a>
+                                            <div class="ui-tips-pop u-tips-pop">
+
+                                            </div>
+                                        </div>
+                                        <a href="" target="_blank" mars_sead="account_order_detail_btn">订单详情</a>
+                                    </div>
+                                    <div class="order-control">
+                                        <p>
+                                        <p>
+                                            <a class="J-modify" href="" target="_blank">修改订单</a>
+                                        </p>
+                                    </div>
+                                    <div class="order-other">
+                                        <p>
+                                            <a href="">提醒发货</a>
+                                        </p>
+                                        <p>
+                                            <a href="">取消订单</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 待收货 -->
+                        <div class="layui-tab-item">
+                            <div class="col-name">
+                                <div class="goods">商品</div>
+                                <div class="total">订单金额</div>
+                                <div class="state">订单状态</div>
+                                <div class="control">操作</div>
+                            </div>
+                            <div class="order-list-info">
+                                <div class="order-hd">
+                                    <i class="ii-te"></i>
+                                    <span class="num">
+                                        订单号：
+                                        <a href="">22082784137477</a>
+                                    </span>
+                                    <span class="num order-gen-date">2022-08-27 15:40:30</span>
+                                </div>
+                                <div class="order-bd">
+                                    <div class="order-goods">
+                                        <div class="good">
+                                            <a href="">
+                                                <img src="../static/images/temp/订单图片.jpg" width="50" height="63" alt>
+                                            </a>
+                                            <div class="goods-info">
+                                                <div class="goods-name">
+                                                    <a href="" target="_blank" class="name"
+                                                        title="JACK&amp;JONES 纯棉立领条纹春夏男装七分袖衬衫衣">JACK&amp;JONES
+                                                        纯棉立领条纹春夏男装七分袖衬衫衣</a>
+                                                    <span class="size">L</span>
+                                                </div>
+                                                <div class="goods-num">
+                                                    <span class="num">×1</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="order-price">
+                                        <strong>69.00</strong>
+                                        <p>在线</p>
+                                    </div>
+                                    <div class="order-state">
+                                        <span class="green">已发货</span>
+                                        <div class="order-track">
+                                            <a href="javascript:;" class="track">订单跟踪<i
+                                                    class="vipFont i-arrow-down"></i></a>
+                                            <div class="ui-tips-pop u-tips-pop">
+
+                                            </div>
+                                        </div>
+                                        <a href="" target="_blank" mars_sead="account_order_detail_btn">订单详情</a>
+                                    </div>
+                                    <div class="order-control">
+                                        <div class="confirmSign-content J-confirmSign-content">
+                                            <p><a class="ui-btn-mini ui-btn2 J_confirmSign"
+                                                    data-ordersn="22082784137477" role="button"
+                                                    href="javascript:;">确认收货</a></p>
+                                        </div>
+                                        <p>
+                                            <a class="J-cancel-delivery" href="javascript:;">取消配送</a>
+                                        </p>
+                                        <p>
+                                            <a class="J-modify" href="" target="_blank">修改订单</a>
+                                        </p>
+                                    </div>
+                                    <div class="order-other"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 已完成订单 -->
+                        <div class="layui-tab-item">
+                            <div class="col-name">
+                                <div class="goods">商品</div>
+                                <div class="total">订单金额</div>
+                                <div class="state">订单状态</div>
+                                <div class="control">操作</div>
+                            </div>
+                            <div class="order-list-info">
+                                <div class="order-hd">
+                                    <i class="ii-te"></i>
+                                    <span class="num">
+                                        订单号：
+                                        <a href="">22082784137477</a>
+                                    </span>
+                                    <span class="num order-gen-date">2022-08-27 15:40:30</span>
+                                </div>
+                                <div class="order-bd">
+                                    <div class="order-goods">
+                                        <div class="good">
+                                            <a href="">
+                                                <img src="../static/images/temp/订单图片.jpg" width="50" height="63" alt>
+                                            </a>
+                                            <div class="goods-info">
+                                                <div class="goods-name">
+                                                    <a href="" target="_blank" class="name"
+                                                        title="JACK&amp;JONES 纯棉立领条纹春夏男装七分袖衬衫衣">JACK&amp;JONES
+                                                        纯棉立领条纹春夏男装七分袖衬衫衣</a>
+                                                    <span class="size">L</span>
+                                                </div>
+                                                <div class="goods-num">
+                                                    <span class="num">×1</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="order-price">
+                                        <strong>69.00</strong>
+                                        <p>在线</p>
+                                    </div>
+                                    <div class="order-state">
+                                        <span class="gray">已签收</span>
+                                        <a href="" target="_blank" mars_sead="account_order_detail_btn">订单详情</a>
+                                    </div>
+                                    <div class="order-control">
+
+                                    </div>
+                                    <div class="order-other">
+                                        <p>
+                                            <a href="" mars_sead="order_after_service_apply" target="_blank">申请售后</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="../static/layui/layui.js"></script>
+        <script src="../static/js/my-orders.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.m-address {
+    background: #fff;
+    margin: 10px 0;
+}
+.m-address .u-address-a {
+    position: relative;
+    float: right;
+    margin-top: -4px;
+    font-size: 12px;
+}
+.ui-btn-primary, .ui-btn1 {
+    background-color: #f10180;
+    border: 1px solid #f10180;
+}
+.ui-btn-primary{
+    color: #fff;
+}
+.m-address-title {
+    padding: 16px 20px 18px;
+    border-bottom: 1px solid #ebebeb;
+    color: grey;
+}
