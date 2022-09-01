@@ -9,102 +9,129 @@
     <link rel="stylesheet" href="../static/layui/css/layui.css">   
     <script src="../static/layui/layui.js"></script>
     <link rel="stylesheet" href="../static/css/product.css">
+    <link rel="stylesheet" href="../static/css/index.css">
     <script src="../static/js/jquery-3.6.0.min.js"></script>
 
 </head>
 
 <body>
     <div class="top">
-            <!-- ==============头部=============== -->
-            <div class="head">
-                <div class="head-center">
-                    <div class="user">
-                        <i class="user-img"></i>
-                        <a href="" class="user-name">庆瑞瑞</a>
-                    </div>
-        
-        
-                    <ul class="user-ul">
-                        <li>退出登录</li>
+                    <!-- ==============头部=============== -->
+        <div class="head">
+            <div class="head-center">
+                <div class="user">
+                    <ul class="user-nav">
+                        <li class="user-cart">
+                            <i class="user-img"></i>
+                            <a href="../pages/login.html">登录</a>
+                            <div class="user-list">
+                                 <a href="#">我的账户</a>
+                                 <a href="#">我的账户</a>
+                                 <a href="#">我的账户</a>
+                                 <a href="#">我的账户</a>
+                            </div>
+                        </li>
                     </ul>
-        
-                    <a href="" class="qiandao">
-                        <i class="qiandao-img"></i>
-                        <span class="qiandao-name">签到有礼</span>
-                    </a>
-                        
-                        <a href="" class="order">我的订单</a> 
-                              
-                    <a href="" class="TeMai">
-                        <span class="temai">我的特卖</span>
-                        <!-- <ul class="temai-ul">
-                            <li><a href="">商品收藏</a></li>
-                            <li><a href="">品牌收藏</a></li>
-                            <li><a href="">我的足迹</a></li>
-                        </ul> -->
-                    </a>
-                    <a href="" class="club">会员俱乐部</a>
-                    <a href="" class="kefu">客户服务</a>
-        
                 </div>
+                <ul class="user-ul">
+                    <li>退出登录</li>
+                </ul>
+    
+                <a href="../pages/register.html" class="qiandao">
+                    <i class="qiandao-img"></i>
+                    <span class="qiandao-name">注册</span>
+                </a>
+    
+                <a href="" class="qiandao">
+                    <i class="qiandao-img"></i>
+                    <span class="qiandao-name">签到有礼</span>
+                </a>
+                <a href="../pages/my-orders.html" class="order">我的订单</a>
+                <a href="" class="TeMai">
+                    <span class="temai">我的特卖</span>
+                </a>
+                <a href="" class="club">会员俱乐部</a>
+                <a href="" class="kefu">客户服务</a>
             </div>
-        
-            <!-- =================副头部==================== -->
-            <div class="fu-header">
-                <div class="center-header">
-                    <img src="../static/svg/viplogo.png" alt="" class="viplogo">
-                
-                    <div class="zhengpin">
-                        <img src="../static/svg/zhengpin.svg" alt="" class="zhengpin-img">
-                        <span class="zhengpin-name">100%正品</span>
-                    </div>
-                    <div class="baoyou">
-                        <img src="../static/svg/baoyou.svg" alt="" class="baoyou-img">
-                        <span class="baoyou-name">88元包邮</span>
-                    </div>
-                    <div class="tuihuan">
-                        <img src="../static/svg/tuihuan.svg" alt="" class="tuihuan-img">
-                        <span class="tuihuan-name">退换无忧</span>
-                    </div>
-                    <div class="search">
-                        <div class="sousuo">
-                            <input type="text">             
-                        </div>
-                        <img src="../static/svg/sousuo.svg"style="no-repeat"  alt="" class="sousuo-img">
-                    </div>
+        </div>
+        <!-- =================副头部==================== -->
+        <div class="fu-header">
+            <div class="center-header">
+                <img src="../static/svg/viplogo.png" alt="" class="viplogo">
+                <div class="zhengpin">
+                    <img src="../static/svg/zhengpin.svg" alt="" class="zhengpin-img">
+                    <span class="zhengpin-name">100%正品</span>
                 </div>
+                <div class="baoyou">
+                    <img src="../static/svg/baoyou.svg" alt="" class="baoyou-img">
+                    <span class="baoyou-name">88元包邮</span>
+                </div>
+                <div class="tuihuan">
+                    <img src="../static/svg/tuihuan.svg" alt="" class="tuihuan-img">
+                    <span class="tuihuan-name">退换无忧</span>
+                </div>
+                <div class="search">
+                    <div class="sousuo">
+                        <input type="text">
+                    </div>
+                    <img src="../static/svg/sousuo.svg"  alt="" class="sousuo-img">
+                    <div class="gouwuche">
+                        <ul class="header-right">
+                            <li class="cart">
+                                <a href="../pages/car.html"><i class="iconfont">&#xe653;</i>购物车
+                                    <span>(0)</span></a>
+                                <div class="cart-list">
+                                    购物车中没有商品赶快去选购把！
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sousuo-a">
+                        <ul class="sousuo-lift">
+                            <li><a href="#">衣服</a><span>|</span></li>
+                            <li><a href="#">衣服555</a><span>|</span></li>
+                            <li><a href="#">衣服555</a><span>|</span></li>
+                            <li><a href="#">衣服555</a><span>|</span></li>
+                            <li><a href="#">衣服555</a><span>|</span></li>
+                            <li><a href="#">衣服555</a></li>
+                        </ul>
+                    </div>
+    
+                </div>
+    
             </div>
-            <!-- -======================导航2========================== -->
-            <div class="nav">
-                <div class="nav-center">
-                    <div class="caidan">            
-                        <a href="" class="caidan-a">
-                            <span class="fenlei">商品分类</span>
-                            <ul class="fenlei-item">
+        </div>
+        <!-- -======================导航2========================== -->
+        <div class="nav">
+            <div class="nav-center">
+                <div class="caidan">
+                    <a href="" class="caidan-a">
+                        <span class="fenlei">商品分类</span>
+                        <ul class="fenlei-item">
                             <li class="a-li">女装/男装/内衣</li>
                             <li class="a-li">女鞋/男鞋/箱包</li>
                             <li class="a-li">护肤/彩妆/个护</li>
-                            <li class="a-li">运动户外</li> 
+                            <li class="a-li">运动户外</li>
                             <li class="a-li">家电数码</li>
                             <li class="a-li">母婴童装</li>
                             <li class="a-li">手表配饰</li>
-                            </ul>
-                        </a>
-                    </div>
-                    <a href="" class="nav-b tuijian">推荐</a>
-                    <a href="" class="nav-b">3折疯抢</a>
-                    <a href="" class="nav-b">唯品快抢</a>
-                    <a href="" class="nav-b">唯品奢</a>
-                    <a href="" class="nav-b">女装</a>
-                    <a href="" class="nav-b">运动</a>
-                    <a href="" class="nav-b">鞋包</a>
-                    <a href="" class="nav-b">美妆</a>
-                    <a href="" class="nav-b">母婴</a>
-                    <a href="" class="nav-b">电器</a>
-                    <a href="" class="nav-b">男装</a>
-                    <a href="" class="nav-b">首饰</a>
+                        </ul>
+                    </a>
                 </div>
+                <a href="" class="nav-b tuijian">推荐</a>
+                <a href="" class="nav-b">3折疯抢</a>
+                <a href="" class="nav-b">唯品快抢</a>
+                <a href="" class="nav-b">唯品奢</a>
+                <a href="" class="nav-b">女装</a>
+                <a href="" class="nav-b">运动</a>
+                <a href="" class="nav-b">鞋包</a>
+                <a href="" class="nav-b">美妆</a>
+                <a href="" class="nav-b">母婴</a>
+                <a href="" class="nav-b">电器</a>
+                <a href="" class="nav-b">男装</a>
+                <a href="" class="nav-b">首饰</a>
             </div>
+        </div>
     
         <div class="pinpai">
             <div class="layui-col-md9">
@@ -266,7 +293,7 @@
     <div class="pro-show-page page-1">
         <ul class="pro-ul">
             <li class="pro-li">
-                <a href="" class="li-li">
+                <a href="../pages/product-detail.html" class="li-li">
                     <span class="pro-1-img"></span>
                     <!-- ==商品价格== -->
                     <div class="pro-price-item">
@@ -537,27 +564,298 @@
             </li>        
         </ul>
     </div>
+    <!-- =======第二页======== -->
+    <div class="pro-show-page page-2">
+        <ul class="pro-ul">
+            <li class="pro-li">
+                <a href="" class="li-li">
+                    <span class="pro-2-img"></span>
+                    <!-- ==商品价格== -->
+                    <div class="pro-price-item">
+                        <span class="temai">特卖价</span>
+                        <span class="pro-pri">
+                            <span class="pro-pri-img">￥</span>
+                            <span class="pro-pri-num">323</span>
+                        </span>
+                        <span class="pre-price">￥1680</span>
+                        <span class="pro-noe-zhekou">1.9折</span>
+                    </div>
+                    <!-- ======近60天内最低价=== -->
+                    <div class="lower_price_60">近60天内最低价</div>
+                    <span class="pro-name-text">【商场同款】2022春季新款西装领长袖设计感显瘦西装女外套</span>
+                </a>
+            </li>
+            <li class="pro-li">
+                <a href="" class="li-li">
+                    <span class="pro-2-img"></span>
+                    <!-- ==商品价格== -->
+                    <div class="pro-price-item">
+                        <span class="temai">特卖价</span>
+                        <span class="pro-pri">
+                            <span class="pro-pri-img">￥</span>
+                            <span class="pro-pri-num">323</span>
+                        </span>
+                        <span class="pre-price">￥1680</span>
+                        <span class="pro-noe-zhekou">1.9折</span>
+                    </div>
+                    <!-- ======近60天内最低价=== -->
+                    <div class="lower_price_60">近60天内最低价</div>
+                    <span class="pro-name-text">【商场同款】2022春季新款西装领长袖设计感显瘦西装女外套</span>
+                </a>
+            </li>
+            <li class="pro-li">
+                <a href="" class="li-li">
+                    <span class="pro-2-img"></span>
+                    <!-- ==商品价格== -->
+                    <div class="pro-price-item">
+                        <span class="temai">特卖价</span>
+                        <span class="pro-pri">
+                            <span class="pro-pri-img">￥</span>
+                            <span class="pro-pri-num">323</span>
+                        </span>
+                        <span class="pre-price">￥1680</span>
+                        <span class="pro-noe-zhekou">1.9折</span>
+                    </div>
+                    <!-- ======近60天内最低价=== -->
+                    <div class="lower_price_60">近60天内最低价</div>
+                    <span class="pro-name-text">【商场同款】2022春季新款西装领长袖设计感显瘦西装女外套</span>
+                </a>
+            </li>
+            <li class="pro-li">
+                <a href="" class="li-li">
+                    <span class="pro-2-img"></span>
+                    <!-- ==商品价格== -->
+                    <div class="pro-price-item">
+                        <span class="temai">特卖价</span>
+                        <span class="pro-pri">
+                            <span class="pro-pri-img">￥</span>
+                            <span class="pro-pri-num">323</span>
+                        </span>
+                        <span class="pre-price">￥1680</span>
+                        <span class="pro-noe-zhekou">1.9折</span>
+                    </div>
+                    <!-- ======近60天内最低价=== -->
+                    <div class="lower_price_60">近60天内最低价</div>
+                    <span class="pro-name-text">【商场同款】2022春季新款西装领长袖设计感显瘦西装女外套</span>
+                </a>
+            </li>
+            <li class="pro-li">
+                <a href="" class="li-li">
+                    <span class="pro-2-img"></span>
+                    <!-- ==商品价格== -->
+                    <div class="pro-price-item">
+                        <span class="temai">特卖价</span>
+                        <span class="pro-pri">
+                            <span class="pro-pri-img">￥</span>
+                            <span class="pro-pri-num">323</span>
+                        </span>
+                        <span class="pre-price">￥1680</span>
+                        <span class="pro-noe-zhekou">1.9折</span>
+                    </div>
+                    <!-- ======近60天内最低价=== -->
+                    <div class="lower_price_60">近60天内最低价</div>
+                    <span class="pro-name-text">【商场同款】2022春季新款西装领长袖设计感显瘦西装女外套</span>
+                </a>
+            </li>
+            <li class="pro-li">
+                <a href="" class="li-li">
+                    <span class="pro-2-img"></span>
+                    <!-- ==商品价格== -->
+                    <div class="pro-price-item">
+                        <span class="temai">特卖价</span>
+                        <span class="pro-pri">
+                            <span class="pro-pri-img">￥</span>
+                            <span class="pro-pri-num">323</span>
+                        </span>
+                        <span class="pre-price">￥1680</span>
+                        <span class="pro-noe-zhekou">1.9折</span>
+                    </div>
+                    <!-- ======近60天内最低价=== -->
+                    <div class="lower_price_60">近60天内最低价</div>
+                    <span class="pro-name-text">【商场同款】2022春季新款西装领长袖设计感显瘦西装女外套</span>
+                </a>
+            </li>
+            <li class="pro-li">
+                <a href="" class="li-li">
+                    <span class="pro-2-img"></span>
+                    <!-- ==商品价格== -->
+                    <div class="pro-price-item">
+                        <span class="temai">特卖价</span>
+                        <span class="pro-pri">
+                            <span class="pro-pri-img">￥</span>
+                            <span class="pro-pri-num">323</span>
+                        </span>
+                        <span class="pre-price">￥1680</span>
+                        <span class="pro-noe-zhekou">1.9折</span>
+                    </div>
+                    <!-- ======近60天内最低价=== -->
+                    <div class="lower_price_60">近60天内最低价</div>
+                    <span class="pro-name-text">【商场同款】2022春季新款西装领长袖设计感显瘦西装女外套</span>
+                </a>
+            </li>
+            <li class="pro-li">
+                <a href="" class="li-li">
+                    <span class="pro-2-img"></span>
+                    <!-- ==商品价格== -->
+                    <div class="pro-price-item">
+                        <span class="temai">特卖价</span>
+                        <span class="pro-pri">
+                            <span class="pro-pri-img">￥</span>
+                            <span class="pro-pri-num">323</span>
+                        </span>
+                        <span class="pre-price">￥1680</span>
+                        <span class="pro-noe-zhekou">1.9折</span>
+                    </div>
+                    <!-- ======近60天内最低价=== -->
+                    <div class="lower_price_60">近60天内最低价</div>
+                    <span class="pro-name-text">【商场同款】2022春季新款西装领长袖设计感显瘦西装女外套</span>
+                </a>
+            </li>
+            <li class="pro-li">
+                <a href="" class="li-li">
+                    <span class="pro-2-img"></span>
+                    <!-- ==商品价格== -->
+                    <div class="pro-price-item">
+                        <span class="temai">特卖价</span>
+                        <span class="pro-pri">
+                            <span class="pro-pri-img">￥</span>
+                            <span class="pro-pri-num">323</span>
+                        </span>
+                        <span class="pre-price">￥1680</span>
+                        <span class="pro-noe-zhekou">1.9折</span>
+                    </div>
+                    <!-- ======近60天内最低价=== -->
+                    <div class="lower_price_60">近60天内最低价</div>
+                    <span class="pro-name-text">【商场同款】2022春季新款西装领长袖设计感显瘦西装女外套</span>
+                </a>
+            </li>
+            <li class="pro-li">
+                <a href="" class="li-li">
+                    <span class="pro-2-img"></span>
+                    <!-- ==商品价格== -->
+                    <div class="pro-price-item">
+                        <span class="temai">特卖价</span>
+                        <span class="pro-pri">
+                            <span class="pro-pri-img">￥</span>
+                            <span class="pro-pri-num">323</span>
+                        </span>
+                        <span class="pre-price">￥1680</span>
+                        <span class="pro-noe-zhekou">1.9折</span>
+                    </div>
+                    <!-- ======近60天内最低价=== -->
+                    <div class="lower_price_60">近60天内最低价</div>
+                    <span class="pro-name-text">【商场同款】2022春季新款西装领长袖设计感显瘦西装女外套</span>
+                </a>
+            </li>
+            <li class="pro-li">
+                <a href="" class="li-li">
+                    <span class="pro-2-img"></span>
+                    <!-- ==商品价格== -->
+                    <div class="pro-price-item">
+                        <span class="temai">特卖价</span>
+                        <span class="pro-pri">
+                            <span class="pro-pri-img">￥</span>
+                            <span class="pro-pri-num">323</span>
+                        </span>
+                        <span class="pre-price">￥1680</span>
+                        <span class="pro-noe-zhekou">1.9折</span>
+                    </div>
+                    <!-- ======近60天内最低价=== -->
+                    <div class="lower_price_60">近60天内最低价</div>
+                    <span class="pro-name-text">【商场同款】2022春季新款西装领长袖设计感显瘦西装女外套</span>
+                </a>
+            </li>
+            <li class="pro-li">
+                <a href="" class="li-li">
+                    <span class="pro-2-img"></span>
+                    <!-- ==商品价格== -->
+                    <div class="pro-price-item">
+                        <span class="temai">特卖价</span>
+                        <span class="pro-pri">
+                            <span class="pro-pri-img">￥</span>
+                            <span class="pro-pri-num">323</span>
+                        </span>
+                        <span class="pre-price">￥1680</span>
+                        <span class="pro-noe-zhekou">1.9折</span>
+                    </div>
+                    <!-- ======近60天内最低价=== -->
+                    <div class="lower_price_60">近60天内最低价</div>
+                    <span class="pro-name-text">【商场同款】2022春季新款西装领长袖设计感显瘦西装女外套</span>
+                </a>
+            </li>
+            <li class="pro-li">
+                <a href="" class="li-li">
+                    <span class="pro-2-img"></span>
+                    <!-- ==商品价格== -->
+                    <div class="pro-price-item">
+                        <span class="temai">特卖价</span>
+                        <span class="pro-pri">
+                            <span class="pro-pri-img">￥</span>
+                            <span class="pro-pri-num">323</span>
+                        </span>
+                        <span class="pre-price">￥1680</span>
+                        <span class="pro-noe-zhekou">1.9折</span>
+                    </div>
+                    <!-- ======近60天内最低价=== -->
+                    <div class="lower_price_60">近60天内最低价</div>
+                    <span class="pro-name-text">【商场同款】2022春季新款西装领长袖设计感显瘦西装女外套</span>
+                </a>
+            </li>
+            <li class="pro-li">
+                <a href="" class="li-li">
+                    <span class="pro-2-img"></span>
+                    <!-- ==商品价格== -->
+                    <div class="pro-price-item">
+                        <span class="temai">特卖价</span>
+                        <span class="pro-pri">
+                            <span class="pro-pri-img">￥</span>
+                            <span class="pro-pri-num">323</span>
+                        </span>
+                        <span class="pre-price">￥1680</span>
+                        <span class="pro-noe-zhekou">1.9折</span>
+                    </div>
+                    <!-- ======近60天内最低价=== -->
+                    <div class="lower_price_60">近60天内最低价</div>
+                    <span class="pro-name-text">【商场同款】2022春季新款西装领长袖设计感显瘦西装女外套</span>
+                </a>
+            </li>
+            <li class="pro-li">
+                <a href="" class="li-li">
+                    <span class="pro-2-img"></span>
+                    <!-- ==商品价格== -->
+                    <div class="pro-price-item">
+                        <span class="temai">特卖价</span>
+                        <span class="pro-pri">
+                            <span class="pro-pri-img">￥</span>
+                            <span class="pro-pri-num">323</span>
+                        </span>
+                        <span class="pre-price">￥1680</span>
+                        <span class="pro-noe-zhekou">1.9折</span>
+                    </div>
+                    <!-- ======近60天内最低价=== -->
+                    <div class="lower_price_60">近60天内最低价</div>
+                    <span class="pro-name-text">【商场同款】2022春季新款西装领长袖设计感显瘦西装女外套</span>
+                </a>
+            </li>
+        </ul>
+    </div>
 <!-- ================总共的页码================== -->
-    <div class="total-page-num">
-        <div id="demo1"></div>
-    </div>  
-    
-    
+        <div id="demo1"></div>       
     <script>
         layui.use(['laypage', 'layer'], function(){
           var laypage = layui.laypage
           ,layer = layui.layer;
           laypage.render({
                 elem: 'demo1'
-                ,count: 100 //数据总数
+                ,count: 60 //数据总数
                 ,jump: function(obj){
                 console.log(obj)
                 }
             });
-              //只显示上一页、下一页
+            //   只显示上一页、下一页
             laypage.render({
                 elem: 'demo6'
-                ,count: 100
+                ,count: 60
                 ,layout: ['prev', 'next']
                 ,jump: function(obj, first){
                 if(!first){
@@ -584,14 +882,16 @@
 });
 
         // ===================================分页======================
-//         window.onload = function(){
-// document.querySelector("#demo1 .layui-laypage").onclick = function(event){
-//     var value = event.target.innerText;
-//     console.log("点击第"+value+"页")
-//     $(".pro-show-page").css({"display" : 'none'});
-//     $(".page-"+value).css({"display" : 'block'});
-//     }
-// }
+        $("#demo1 .layui-box").bind("click",function(event){
+            console.log("aaaaaaa")
+            var value = $(event.target).text();            
+            console.log("点击第"+value+"页");
+            $(".pro-show-page").css({"display" : 'none'});
+            $(".page-"+value).css({"display" : 'block'});
+        });
+        $(".layui-laypage-next").bind("click",function(){
+            
+        })
 
         // ==============================更多按钮 =================================
          $(".more").bind("click",function(){
