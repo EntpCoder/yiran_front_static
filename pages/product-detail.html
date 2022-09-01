@@ -6,13 +6,138 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../static/layui/css/layui.css">
     <link rel="stylesheet" href="../static/css/product-detail.css">
+    <link rel="stylesheet" href="../static/css/product-detail1.css">
+    <link rel="stylesheet" href="../static/css/index.css">
+    <!-- <link rel="stylesheet" href="../static/css/reset.css"> -->
+    <link rel="stylesheet" href="../static/css/iconfont.css">
     <title>商品详情</title>
 </head>
 <body>
-    <div class="product-container">
-      <div class="head">
+<!-- ---------------------------- -->
+<div class="top">
+  <!-- ==============头部=============== -->
+  <div class="head">
+      <div class="head-center">
+          <div class="user">
+              <ul class="user-nav">
+                  <li class="user-cart">
+                      <i class="user-img"></i>
+                      <a href="../pages/login.html">登录</a>
+                      <div class="user-list">
+                           <a href="#">我的账户</a>
+                           <a href="#">我的账户</a>
+                           <a href="#">我的账户</a>
+                           <a href="#">我的账户</a>
+                      </div>
+                  </li>
+              </ul>
+          </div>
+          <ul class="user-ul">
+              <li>退出登录</li>
+          </ul>
+
+          <a href="../pages/register.html" class="qiandao">
+              <i class="qiandao-img"></i>
+              <span class="qiandao-name">注册</span>
+          </a>
+
+          <a href="" class="qiandao">
+              <i class="qiandao-img"></i>
+              <span class="qiandao-name">签到有礼</span>
+          </a>
+          <a href="../pages/my-orders.html" class="order">我的订单</a>
+          <a href="" class="TeMai">
+              <span class="temai">我的特卖</span>
+          </a>
+          <a href="" class="club">会员俱乐部</a>
+          <a href="" class="kefu">客户服务</a>
+      </div>
+  </div>
+  <!-- =================副头部==================== -->
+  <div class="fu-header">
+      <div class="center-header">
+          <img src="../static/svg/viplogo.png" alt="" class="viplogo">
+          <div class="zhengpin">
+              <img src="../static/svg/zhengpin.svg" alt="" class="zhengpin-img">
+              <span class="zhengpin-name">100%正品</span>
+          </div>
+          <div class="baoyou">
+              <img src="../static/svg/baoyou.svg" alt="" class="baoyou-img">
+              <span class="baoyou-name">88元包邮</span>
+          </div>
+          <div class="tuihuan">
+              <img src="../static/svg/tuihuan.svg" alt="" class="tuihuan-img">
+              <span class="tuihuan-name">退换无忧</span>
+          </div>
+          <div class="search">
+              <div class="sousuo">
+                  <input type="text">
+              </div>
+              <img src="../static/svg/sousuo.svg"  alt="" class="sousuo-img">
+              <div class="gouwuche">
+                  <ul class="header-right">
+                      <li class="cart">
+                          <a href="../pages/car.html"><i class="iconfont">&#xe653;</i>购物车
+                              <span>(0)</span></a>
+                          <div class="cart-list">
+                              购物车中没有商品赶快去选购把！
+                          </div>
+                      </li>
+                  </ul>
+              </div>
+              <div class="sousuo-a">
+                  <ul class="sousuo-lift">
+                      <li><a href="#">衣服</a><span>|</span></li>
+                      <li><a href="#">衣服555</a><span>|</span></li>
+                      <li><a href="#">衣服555</a><span>|</span></li>
+                      <li><a href="#">衣服555</a><span>|</span></li>
+                      <li><a href="#">衣服555</a><span>|</span></li>
+                      <li><a href="#">衣服555</a></li>
+                  </ul>
+              </div>
+
+          </div>
 
       </div>
+  </div>
+  <!-- -======================导航2========================== -->
+  <div class="nav">
+      <div class="nav-center">
+          <div class="caidan">
+              <a href="" class="caidan-a">
+                  <span class="fenlei">商品分类</span>
+                  <ul class="fenlei-item">
+                      <li class="a-li">女装/男装/内衣</li>
+                      <li class="a-li">女鞋/男鞋/箱包</li>
+                      <li class="a-li">护肤/彩妆/个护</li>
+                      <li class="a-li">运动户外</li>
+                      <li class="a-li">家电数码</li>
+                      <li class="a-li">母婴童装</li>
+                      <li class="a-li">手表配饰</li>
+                  </ul>
+              </a>
+          </div>
+          <a href="" class="nav-b tuijian">推荐</a>
+          <a href="" class="nav-b">3折疯抢</a>
+          <a href="" class="nav-b">唯品快抢</a>
+          <a href="" class="nav-b">唯品奢</a>
+          <a href="" class="nav-b">女装</a>
+          <a href="" class="nav-b">运动</a>
+          <a href="" class="nav-b">鞋包</a>
+          <a href="" class="nav-b">美妆</a>
+          <a href="" class="nav-b">母婴</a>
+          <a href="" class="nav-b">电器</a>
+          <a href="" class="nav-b">男装</a>
+          <a href="" class="nav-b">首饰</a>
+      </div>
+  </div>
+</div>
+<!-- 导航结束 -->
+
+
+
+  <!-- ------------------ -->
+    <div class="product-container">
         <!-- ----------------------------图片展示和商品参数 -->
         <div class="layui-row">
             <!-- 左边 -->
@@ -218,7 +343,95 @@
   
     <!---------------------------------------------------------------- 商品资料 -->
     <div class="detail-container">
-      
+      <div class="maodian-box">
+        <div class="maodian-ul">
+          <ul>
+            <a href="#">规格参数</a>
+            <a href="#">商品展示</a>
+            <a href="#">全部评价</a>
+            <a href="#">猜你喜欢</a>
+            <a href="#">商品咨询</a>
+            <a href="#">关于我们</a>
+          </ul>
+        </div>
+      </div>
+      <div class="detail-box">
+        <!------------- 商品尺码 -------------->
+        <div class="pro-size">
+          <div class="pro-modol-head"> 
+            <p>
+              <img src="../static/svg/Hollow-diamond.svg">
+              商品尺码
+              <i>SIZE</i>
+            </p>
+          </div>
+          <div class="pro-size-table">
+            <div class="h4-warming">
+              <b>尺码对照表：</b>
+              <span>温馨提示</span> 
+              <img src="../static/svg/attendtion-blue.svg" width="20px">
+            </div>
+            <div class="pro-table">
+              <div class="table">
+                <table>
+                  <tr>
+                    <td>尺码</td>
+                    <td>号型</td>
+                    <td>肩宽(cm)</td>
+                    <td>胸围(cm)</td>
+                    <td>衣长(cm)</td>
+                    <td>袖长(cm)</td>
+                  </tr>
+                  <tr>
+                    <td>S</td>
+                    <td>S165/84A</td>
+                    <td>52.4</td>
+                    <td>118</td>
+                    <td>65</td>
+                    <td>57.6</td>
+                  </tr>
+                  <tr>
+                    <td>M</td>
+                    <td>M170/88A</td>
+                    <td>54.2</td>
+                    <td>124</td>
+                    <td>67</td>
+                    <td>58.8</td>
+                  </tr>
+                  <tr>
+                    <td>L</td>
+                    <td>L175/92A</td>
+                    <td>56</td>
+                    <td>130</td>
+                    <td>69</td>
+                    <td>60</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!------------------- 商品参数 -------------->
+        <div class="pro-static">
+
+        </div>
+        <!------------------------- 商品展示-图片 -->
+        <div class="pro-show-imag">
+
+        </div>
+        <!--  全部评价-->
+        <div class="pro-all-comment">
+
+        </div>
+        <!-- 商品咨询 -->
+        <div class="pro-consultation">
+
+        </div>
+        <!-- 关于我们 -->
+        <div class="about-us">
+
+        </div>
+      </div>
     </div>
 
 
