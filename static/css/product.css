@@ -496,7 +496,7 @@
     width: 10%;
     height: 46px;
     /* border: 1px solid; */
-    font-size: 12px;
+    font-size: 13px;
     text-align: left;
     padding-left: 20px;
     line-height: 50px;
@@ -507,7 +507,7 @@
 .shaixuan .ul-item{
     width: 60%;
     height: 46px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     float: left;
     overflow: hidden;
 }
@@ -528,16 +528,16 @@
 }
 .shaixuan .other-item{
     float: right;
-    width: 8%;
+    width: 15%;
     height: 46px;
     /* border: 1px solid; */
 }
-.shaixuan .other-item .more,.duoxuan{
+.shaixuan .other-item .more,.duoxuan,.clean-all{
     border: none;
     background: none;
-    margin-right: 18px;
+    margin-right: 25px;
     margin-top: 15px;
-    float: left;
+    float: right;
     cursor: pointer;
     font-size: 12px;
 }
@@ -563,6 +563,9 @@
     width: 15px;
     height: 15px;
     margin-right: 5px;
+}
+.shaixuan .ul-item li:hover{
+    color: #f10180;
 }
 
 /* =================小筛选======================= */
@@ -919,7 +922,7 @@
 .total-page-num .layui-laypage {
     width: auto;
     height: 46px;
-    margin-left: 500px;
+    margin-left: 470px;
     line-height: 46px;
     text-align: center;
 }
