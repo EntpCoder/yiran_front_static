@@ -160,6 +160,9 @@
     *white-space: nowrap;
     _overflow-y: hidden;
 }
+.ui-btn-medium:hover{
+    color: #fff;
+}
 /* 新增地址 */
 .m-address-form {
     color: #333;
