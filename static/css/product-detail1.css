@@ -162,9 +162,10 @@
     padding: 10px 0 20px;
 }
 .detail-container .detail-box .pro-static .pro-detail-table .layui-table tbody tr td{
-    /* background-color: #fff; */
+    background-color: rgb(255, 255, 255);
     color: #999;
     width: 20%;
+    border: 1px #ededed solid;
 }
 .detail-container .detail-box .pro-static .pro-detail-table .layui-table tbody tr th{
     background: #f5f5f5;
@@ -179,8 +180,95 @@
 }
 /******************************************** 商品展示-图片 */
 .detail-container .detail-box .pro-show-imag{
-    /* height: 300px; */
     width: 100%;
     background-color: rgb(176, 238, 195);
+    margin-top: 20px;
+}
+.detail-container .detail-box .pro-show-imag .pro-modol-head{
+    text-align: left;
+    clear: both;
+    /* padding-left: 20px; */
+    background: url(//shop.vipstatic.com/img/detail/detial_line-hash-73c7b229.png?f06a5522) repeat-x left bottom;
+    position: relative;
+    padding-bottom: 6px;
+}
+.detail-container .detail-box .pro-show-imag .pro-modol-head p{
+    color: #f10180;
+    font-size: 20px;
+}
+.detail-container .detail-box .pro-show-imag .pro-modol-head p img{
+    height: 13px;
+    width: 13px;
+}
+.detail-container .detail-box .pro-show-imag .pro-modol-head p i{
+    color: #999;
+    font-size: 20px;
+    padding-left: 5px;
+    position: relative;
+    bottom: -2px;
+    font-family: arial;
+}
+.detail-container .detail-box .pro-show-imag .put-image{
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
+.detail-container .detail-box .pro-show-imag #image4{
+    margin-bottom: 0;
+    padding-bottom: 0;
+}    
+
+.detail-container .detail-box .pro-show-imag #image5{
+    margin-top: 0;
+    padding-top: 0;
+}    
+/* *************************************************************全部评价 */
+.detail-container .detail-box .pro-all-comment{
+    width: 100%;
+    background-color: #5da2c2;
+}
+/*************** 综合评论评分盒子 */
+.detail-container .detail-box .pro-all-comment .comprehensive-coment-box{
+    width: 100%;
+    background-color: #ddf4ff;    
+}
+.detail-container .detail-box .pro-all-comment .comprehensive-coment-box .grey-head{
+    background-color: #eae8eb;
+    line-height: 45px;
+    padding-left: 15px;
+}
+/* 100%盒子 */
+.detail-container .detail-box .pro-all-comment .comprehensive-coment-box .comprehensive-score{
+    margin: 36px 35px 45px 15px;
+    height: 70px;
+    width: 165px;
+    border-right: 1px #999 solid ;
+}
+.detail-container .detail-box .pro-all-comment .comprehensive-coment-box .comprehensive-score :nth-child(1){
+    font-size: 50px;
+    display: block;
+    line-height: 40px;
+    margin-bottom: 5px;
+    color: #de327f;
+    font-family: "Microsoft YaHei";
+    height: 40px;
+}
+.detail-container .detail-box .pro-all-comment .comprehensive-coment-box .comprehensive-score :nth-child(2){
+    color: #333;
+}
+/* **********用户评论盒子 */
+.detail-container .detail-box .pro-all-comment .comments-bob{
+    width: 100%;
+    background-color: #90dcff;
+}
+/* **********用户评论 */
+.detail-container .detail-box .pro-all-comment .comments-bob .comment{
+    width: 100%;
+    background-color: #00aeff;
 }
 
+/* *************************************************************商品咨询 */
+
+
+/* *************************************************************关于我们 */
