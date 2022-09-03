@@ -8,7 +8,7 @@
     /* height: 100px; */
     /* background-color: rgb(194, 255, 230); */
     margin: 0 auto;
-    
+    margin-top: 150px;
 }
 /* 锚点-头标题栏 */
 .detail-container .maodian-box{
@@ -49,9 +49,8 @@
     width: 100%;
     background-color: rgb(175, 172, 250);
 }
-/* ************** 商品尺码*/
+/* *************************************************** 商品尺码*/
 .detail-container .detail-box .pro-size{
-    height: 296px; 
     width: 100%;
     background-color: rgb(208, 253, 254);
 }
@@ -100,28 +99,85 @@
 }
 /* table1 */
 .detail-container .detail-box .pro-size .pro-size-table .pro-table{
-    height: 218px;
     width: 100%;
     background-color: rgb(184, 200, 242);
 }
-.detail-container .detail-box .pro-size .pro-size-table .pro-table .table{
-    width: 1000px;
-    border: 1px solid #cccacc;
-    border-collapse: collapse;
+.detail-container .detail-box .pro-size .pro-size-table .pro-table .layui-form thead tr td{
+    background-color: #dbdbdb;
+    color: #333;
+    font-weight: 700;
 }
-.detail-container .detail-box .pro-size .pro-size-table .pro-table .table table{
-    width: 1000px;
-    border: 1px solid #cccacc;
-    border-collapse: collapse;
-    border-spacing: 0;
+.detail-container .detail-box .pro-size .pro-size-table .pro-table .layui-form tr th{
+    padding: 0;
+    height: 36px;
+    text-align: center;
+    line-height: 36px;
 }
-/**************** 商品参数 */
+.detail-container .detail-box .pro-size .pro-size-table .pro-table .layui-form tr td{
+    padding: 0 ;
+    height: 36px;
+    text-align: center;
+    line-height: 36px;
+}
+/* 温馨提示这一行 */
+.detail-container .detail-box .pro-size .pro-size-table .pro-table .layui-form :nth-child(7) td{
+    text-align: left;
+}
+.detail-container .detail-box .pro-size .pro-size-table .pro-table .layui-form :nth-child(7) td :nth-child(1){
+    color: #cd197a;
+}
+/*********************************************** 商品参数 */
 .detail-container .detail-box .pro-static{
-    height: 300px;
     width: 100%;
-    background-color: rgb(176, 237, 238);
+    background-color: rgb(226, 220, 252);
+    margin-top: 20px;
 }
-/******************** 商品展示-图片 */
+.detail-container .detail-box .pro-static .pro-modol-head{
+    text-align: left;
+    clear: both;
+    /* padding-left: 20px; */
+    background: url(//shop.vipstatic.com/img/detail/detial_line-hash-73c7b229.png?f06a5522) repeat-x left bottom;
+    position: relative;
+    padding-bottom: 6px;
+}
+.detail-container .detail-box .pro-static .pro-modol-head p{
+    color: #f10180;
+    font-size: 20px;
+}
+.detail-container .detail-box .pro-static .pro-modol-head p img{
+    height: 13px;
+    width: 13px;
+}
+.detail-container .detail-box .pro-static .pro-modol-head p i{
+    color: #999;
+    font-size: 20px;
+    padding-left: 5px;
+    position: relative;
+    bottom: -2px;
+    font-family: arial;
+}
+/* detail-table */
+.detail-container .detail-box .pro-static .pro-detail-table{
+    width: 100%;
+    padding: 10px 0 20px;
+}
+.detail-container .detail-box .pro-static .pro-detail-table .layui-table tbody tr td{
+    /* background-color: #fff; */
+    color: #999;
+    width: 20%;
+}
+.detail-container .detail-box .pro-static .pro-detail-table .layui-table tbody tr th{
+    background: #f5f5f5;
+    font-weight: 700;
+    text-align:right;
+    padding: 0;
+    color: #666;
+    width: 4%;
+}
+.detail-container .detail-box .pro-static .pro-detail-table .layui-table tbody tr :last-child{
+    text-align: center;
+}
+/******************************************** 商品展示-图片 */
 .detail-container .detail-box .pro-show-imag{
     /* height: 300px; */
     width: 100%;

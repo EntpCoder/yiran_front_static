@@ -1,0 +1,92 @@
+.m-coupons-modules {
+    background-color: #fff;
+    border: 1px solid #e4e4e4;
+}
+.m-active-area {
+    z-index: 5;
+    padding: 25px 70px;
+    position: relative;
+}
+.u-active-title {
+    background-color: #f9f9f9;
+    height: 45px;
+    line-height: 45px;
+    font-size: 14px;
+    color: #333;
+    padding-left: 20px;
+    font-weight: 700;
+    border-bottom: 1px solid #e4e4e4;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.u-active-input {
+    width: 525px;
+}
+.ui-input {
+    height: 18px;
+    line-height: 18px;
+    padding: 6px 10px;
+}
+.ui-input{
+    font: 14px/20px tahoma,arial,Hiragino Sans GB,WenQuanYi Micro Hei,'\5FAE\8F6F\96C5\9ED1','\5B8B\4F53',sans-serif;
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #b2b2b2;
+    border-radius: 3px;
+    outline: 0;
+}
+input{
+    margin: 0;
+    writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: fieldtext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+}
+.u-active-placeholder {
+    position: absolute;
+    left: 13px;
+    top: 5px;
+    color: #999;
+    font-size: 14px;
+    display: none;
+}
+.m-input-box {
+    margin: 0 10px;
+}
+.ui-form-item-group {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    transition: none!important;
+    opacity: 1!important;
+}
+.u-wavy-line {
+    height: 10px;
+    margin-top: -1px;
+    background: url(../images/bg-cou-add.png) no-repeat;
+}
+.m-panel-modules {
+    background-color: #fff;
+    border: 1px solid #e4e4e4;
+}
+.m-thead-list {
+    background-color: #f5f8fa;
+    line-height: 35px;
+    border-bottom: 1px solid #f2f2f2;
+    padding: 0 20px;
+}

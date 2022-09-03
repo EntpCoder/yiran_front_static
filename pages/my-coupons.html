@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>退换/售后</title>
+    <title>我的优惠券</title>
     <link rel="stylesheet" href="../static/layui/css/layui.css">
     <link rel="stylesheet" href="../static/css/iconfont.css">
     <link rel="stylesheet" href="../static/css/index.css">
     <link rel="stylesheet" href="../static/css/my-orders.css">
+    <link rel="stylesheet" href="../static/css/my-address.css">
+    <link rel="stylesheet" href="../static/css/my-coupons.css">
     <script src="../static/js/jquery-3.6.0.min.js"></script>
 </head>
 <body>
@@ -100,18 +102,18 @@
             </div>
         </div>
     </div>
-        <nav class="main-nav">
-            <div class="layui-row">
-                <div class="layui-col-md8 layui-col-md-offset2">
-                    <ul class="grid-demo">
-                        <li class="nav-myvip"><a href="">我的唯品会</a></li>
-                        <li class="nav-comingsoon"><a href="">我的特卖</a></li>
-                        <li class="nav-category"><a href="">首页</a></li>
-                    </ul>
-                </div>
+    
+    <nav class="main-nav">
+        <div class="layui-row">
+            <div class="layui-col-md8 layui-col-md-offset2">
+                <ul class="grid-demo">
+                    <li class="nav-myvip"><a href="../index.html">我的唯品会</a></li>
+                    <li class="nav-comingsoon"><a href="">我的特卖</a></li>
+                    <li class="nav-category"><a href="../index.html">首页</a></li>
+                </ul>
             </div>
-        </nav>
-
+        </div>
+    </nav>
     <div class="m-body">
         <div class="m-content">
             <ul class="g-sidebar layui-nav layui-nav-tree layui-inline " lay-filter="demo" style="margin-right: 10px;">
@@ -140,19 +142,53 @@
             <div class="g-content">
                 <p id="m-title">
                     <a href="personal.html">我的唯品会</a>
-                    &nbsp;>&nbsp;退换售后
+                    &nbsp;>&nbsp;优惠券
                 </p>
-                <div class="mad J-declare">
-                    <i class="i-horn"></i>
-                    <div class="J-declare-warning">
-                        <p>安全提醒：唯品会不会以任何理由要求您提供银行卡信息或支付额外费用，请谨防钓鱼链接或诈骗电话。</p>
-                        <p>*为保障您的信息安全，订单信息中的联系电话已被加密隐藏。</p>
+                <div class="m-coupons-modules">
+                    <p class="u-active-title">优惠券激活</p>
+                    <div class="m-active-area">
+                        <div id="code_inputBox" class="ui-form-item-group m-input-box">
+                            <input type="text" class="ui-input u-active-input" id="activeCodeValue" name="activeCodeValue" placeholder="请输入优惠券激活码">
+                        </div>
+                        <a href="javascript:;" role="button" id="codeSend" mars_sead="233|2|1|4" class="ui-btn-medium ui-btn-primary u-active-btn">激活</a>
                     </div>
+                </div>
+                <div class="u-wavy-line"></div>
+                <div class="m-panel-modules">
+                    <!-- 优惠券list -->
+                    <div class="layui-tab layui-tab-card">
+                        <ul class="layui-tab-title">
+                          <li class="layui-this">未使用</li>
+                          <li>已使用</li>
+                          <li>已过期</li>
+                        </ul>
+                        <div class="layui-tab-content" style="height: 100px;">
+                          <div class="layui-tab-item layui-show">
+                            <ul class="m-thead-list clearfix">
+                                <li class="l1">额度 | 明细</li>
+                                <li class="l2">适用范围</li>
+                                <li class="l3">有效期</li>
+                                <li class="l4">获取途径</li>
+                            </ul>
+                          </div>
+                          <div class="layui-tab-item">2</div>
+                          <div class="layui-tab-item">3</div>
+
+
+                        </div>
+                      </div>
                 </div>
             </div>
         </div>
     </div>
     <script src="../static/layui/layui.js"></script>
-    <script src="../static/js/my-orders.js"></script>
+    <script>
+        layui.use('element', function(){
+          var $ = layui.jquery
+          ,element = layui.element; //Tab的切换功能，切换事件监听等，需要依赖element模块
+          
+          
+        })
+        </script>
 </body>
 </html>

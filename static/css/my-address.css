@@ -38,3 +38,148 @@
     transition: .3s;
     cursor: pointer;
 }
+.m-address-title .u-address-num {
+    color: #f10180;
+    font-size: 14px;
+    margin: 0 5px;
+}
+.m-own-address-boxs {
+    padding: 20px 0 10px 3px;
+}
+/* 地址块 */
+.m-address-info-default {
+    background: url(../images/address-bg-selected.png) no-repeat;
+}
+.m-address-info {
+    width: 227px;
+    height: 122px;
+    position: relative;
+    background: url(../images/address-bg.png) no-repeat;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    zoom: 1;
+    margin: 0 0 10px 10px;
+    padding: 14px;
+    overflow: hidden;
+}
+.m-address-info-default .u-address-major {
+    top: 0;
+    background: #ee3495 none repeat;
+    display: inline;
+}
+.m-address-info .u-address-major {
+    background: #f974ba none repeat;
+    border-radius: 0 0 5px 5px;
+    color: #fff;
+    padding: 0 10px;
+    position: absolute;
+    cursor: pointer;
+    right: 10px;
+    top: -18px;
+    -webkit-transition: top .2s ease 0s;
+    transition: top .2s ease 0s;
+}
+.m-address-info .u-name {
+    font-size: 14px;
+    background: url(../images/i-addr-user.png) no-repeat 1px 4px;
+    padding: 0 0 3px 20px;
+    border-bottom: 1px dotted #dcdcdc;
+}
+.m-address-info .u-address-type-home {
+    background: url(../images/i-addr-home.png) no-repeat 1px 8px;
+}
+.m-address-info .u-address {
+    padding: 6px 0 3px 20px;
+    border-bottom: 1px dotted #dcdcdc;
+    height: 54px;
+    font-size: 12px;
+}
+.m-address-info .u-unsupport-COD {
+    color: #999;
+    float: right;
+    font-size: 12px;
+}
+.m-address-info .u-contact {
+    background: url(../images/i-addr-phone.png) no-repeat 1px 8px;
+    padding: 6px 0 3px 20px;
+}
+.m-address-info .u-contact .u-mobile{
+    font-size: 12px;
+}
+.m-address-info .u-contact .u-telephone {
+    margin-left: 15px;
+}
+.m-address-info-default .u-address-buttom {
+    height: 20px;
+    display: block;
+    margin-right: 10px;
+}
+.m-address-info .u-address-buttom {
+    position: absolute;
+    right: 10px;
+    display: none;
+    margin-top: -10px;
+}
+.m-address-info-default .u-btn-delete {
+    display: none;
+}
+.m-own-address .u-address-a {
+    position: relative;
+    float: right;
+    margin-top: -4px;
+    font-size: 12px;
+}
+.m-address-info a {
+    margin-left: 5px;
+}
+.ui-btn-default, .ui-btn3 {
+    background-color: #fafafa;
+    border: 1px solid #c2c2c2;
+}
+.ui-btn-default, .ui-btn-default:active, .ui-btn-default:hover, .ui-btn3, .ui-btn3:active, .ui-btn3:hover {
+    color: #333;
+}
+.ui-btn-mini {
+    min-width: 24px;
+    _width: 24px;
+    padding: 0 5px;
+    font: 12px/20px tahoma,arial,Hiragino Sans GB,WenQuanYi Micro Hei,'\5FAE\8F6F\96C5\9ED1','\5B8B\4F53',sans-serif;
+    _line-height: 22px;
+    height: 20px;
+}
+.ui-btn-big, .ui-btn-large, .ui-btn-medium, .ui-btn-mini, .ui-btn-nor, .ui-btn-small {
+    display: inline-block;
+    border-radius: 3px;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: top;
+    -webkit-transition: .3s;
+    transition: .3s;
+    cursor: pointer;
+    *white-space: nowrap;
+    _overflow-y: hidden;
+}
+.ui-btn-medium:hover{
+    color: #fff;
+}
+/* 新增地址 */
+.m-address-form {
+    color: #333;
+    font-size: 12px;
+    border-top: 1px solid #ef50a3;
+    margin-top: 25px;
+    background: #fff none repeat;
+}
+.m-modify-address .u-add-title {
+    display: none;
+}
+.m-address-form h3 {
+    color: #333;
+    font-size: 14px;
+    font-weight: bolder;
+    padding: 18px 0 12px 20px;
+}
+form{
+    font-size: 14px;
+}

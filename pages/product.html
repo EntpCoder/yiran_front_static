@@ -165,13 +165,13 @@
                     <li class="group-li"><span>女款针织衫</span></li>
                     <li class="group-li"><span>女款针织衫</span></li>
                     <li class="group-li"><span>女款针织衫</span></li>
-                </ul>
+                </ul>                
                 <span class="other-item">
                     <button class="clean-all">清空已选</button>
                     <button class="more more1">更多</button>
-                    <button class="duoxuan duoxiuan1">多选</button>
-                    
+                    <button class="duoxuan duoxiuan1">多选</button>                    
                 </span>
+                <div class="clean"></div>
         </div>
         <div class="shaixuan shaixuan2">
             <span class="leibie chima">尺码</span>  
@@ -183,8 +183,11 @@
                 <li class="group-li"><span>XL</span></li>
             </ul>    
             <span class="other-item">
-                <button class="clean-all">清空已选</button>     
-            </span>         
+                <button class="clean-all">清空已选</button>
+                <button class="more more1">更多</button>
+                <button class="duoxuan duoxiuan1">多选</button>   
+            </span> 
+            <div class="clean"></div>       
         </div>
         <div class="shaixuan shaixuan3">
             <span class="leibie chima">面料</span>  
@@ -206,7 +209,8 @@
                 <button class="clean-all">清空已选</button>
                 <button class="more more1">更多</button>
                 <button class="duoxuan duoxiuan1">多选</button>                
-            </span>         
+            </span>  
+            <div class="clean"></div>       
         </div>
         <div class="shaixuan shaixuan3">
             <span class="leibie chima">面料</span>  
@@ -228,7 +232,8 @@
                 <button class="clean-all">清空已选</button>
                 <button class="more more1">更多</button>
                 <button class="duoxuan duoxiuan1">多选</button>                
-            </span>         
+            </span>    
+            <div class="clean"></div>    
         </div>
         <div class="shaixuan shaixuan3">
             <span class="leibie chima">面料</span>  
@@ -241,16 +246,21 @@
                 <li class="group-li"><span>羊毛</span></li>
                 <li class="group-li"><span>羊绒</span></li>
                 <li class="group-li"><span>羊毛混纺</span></li>
-                <li class="group-li"><span>牛仔</span></li>
-                <li class="group-li"><span>真皮</span></li>
-                <li class="group-li"><span>PU</span></li>
-                
+                <li class="group-li"><span>棉</span></li>
+                <li class="group-li"><span>纯棉</span></li>
+                <li class="group-li"><span>棉混纺</span></li>
+                <li class="group-li"><span>真丝</span></li>
+                <li class="group-li"><span>莱赛尔</span></li>
+                <li class="group-li"><span>羊毛</span></li>
+                <li class="group-li"><span>羊绒</span></li>
+                <li class="group-li"><span>羊毛混纺</span></li>                    
             </ul>   
             <span class="other-item">
                 <button class="clean-all">清空已选</button>
                 <button class="more more1">更多</button>
                 <button class="duoxuan duoxiuan1">多选</button>                
-            </span>         
+            </span> 
+            <div class="clean"></div>        
         </div>
     </div>
     <!-- ======================小筛选============================== -->
@@ -901,16 +911,12 @@
         if(more == '更多'){
             //console.log($(this).parent) ;
             //找到父亲
-            $(this).parent().parent().css("height", "100px");
             var childrens = $(this).parent().parent().children();
-            childrens.eq(0).css("height", "100px");
-            childrens.eq(1).css("height", "auto");
+            childrens.eq(1).css({"overflow":"","height":"auto"});
             $(this).html("收起");
         }else{
-            $(this).parent().parent().css("height", "46px");
             var childrens = $(this).parent().parent().children();
-            childrens.eq(0).css("height", "46px");
-            childrens.eq(1).css("height", "46px");
+            childrens.eq(1).css({"height":"46px"});
             $(this).html("更多");
         }
     })
@@ -919,17 +925,16 @@
         $(".duoxuan").bind("click",function(){
             //找到父亲
             $(this).parent().css("display","none")
-            $(this).parent().parent().css("height", "150px");
             var childrens = $(this).parent().parent().children();
-
-            childrens.eq(1).css("height", "auto");
-            childrens.eq(0).css("height", "150px");
-            //增加两个按钮
-            if(childrens.length == 3){
-                
+               //增加两个按钮
+            if(childrens.length == 4){            
                 $(this).parent().parent().append ("<button class='ensure'>确定</button>");
                 $(this).parent().parent().append ("<button class='quxiao'>取消</button>");
              }
+             //ul
+            childrens.eq(1).css({"height": "auto"});
+         
+           
             //li
             var liArr = childrens.eq(1).children();
             //console.log(li_child.length)
@@ -948,61 +953,56 @@
         $(".group-li span").bind('click',function(event){
             //先将父元素，其他li标签的颜色变为黑色
             var li_child = $(event.target).parent().parent().children();
-            // console.log(li_child.length)
             for(var i = 0 ;i<li_child.length;i++){
                var li = li_child[i];
-               //console.log("-------li"+li.innerText)
-               // console.log(li.innerHTML)
-               //每个span标签颜色变为黑色
-               $(li).children('span').css("color","rgba(0,0,0,.85)");
+               //每个li标签颜色变为黑色
+               $(li).css("color","rgba(0,0,0,.85)");              
             }
-            $(event.target).css("color","#f32b80")            
+            $(event.target).addClass("selected");
+            $(event.target).parent().css("color","#f32b80")
+            if($(li).hasClass("selected"))
+                console.log("单选"+$(li).text())         
         })
         
         // ===================点击确定或者取消按钮，右边多选按钮显示=======================================
         $(".shaixuan").on("click",".ensure",function(){
             $(this).parent().children().eq(2).css("display","block");
-            $(this).parent().css("height","100px");
-            $(this).parent().children().eq(1).css("height","100px");
             //li标签元素checkbox变为span
             var childrens = $(this).parent().children().eq(1).children();
-            for(var i =0;i<childrens.length;i++){
-                childrens[i].innerHTML = "<span>"+childrens[i].innerText+"</span>"
-            }
-
-            $(this).parent().children().eq(0).css("height","100px");
+            for(var i =0;i<childrens.length;i++)
+                childrens[i].innerHTML = "<span>"+childrens[i].innerText+"</span>" ;
+            $(this).parent().children().eq(2).children().eq(1).text("收起");
             $(this).next().remove()
-            $(this).remove()            
+            $(this).remove()
+
        })
         $(".shaixuan").on("click",".quxiao",function(){
             $(this).parent().children().eq(2).css("display","block");
-            $(this).parent().css("height","100px");
-            $(this).parent().children().eq(1).css("height","100px");
             //li标签元素checkbox变为span
             var childrens = $(this).parent().children().eq(1).children();
             for(var i =0;i<childrens.length;i++){
                 childrens[i].innerHTML = "<span>"+childrens[i].innerText+"</span>"
             }
-            $(this).parent().children().eq(0).css("height","100px");
             $(this).prev().remove()
             $(this).remove()            
        })
             
       //========================选中li标签checkbox=======================================
         $(".ul-item").on("click",".li-check",function(event){
-            $(this).parent().css("color", "#f10180")
+             $(this).parent().css("color", "#f32b80")
        })
+       
+
+
        //======================清空已选=====================================
        $(".clean-all").bind("click",function(){
         var childrens = $(this).parent().parent().children().eq(1).children();
             for(var i =0;i<childrens.length;i++){
                 var li = childrens[i];
-                $(li).children('span').css("color","rgba(0,0,0,.85)");
+                $(li).css("color","rgba(0,0,0,.85)");
             }
             //栏位高度回归正常
-            $(this).parent().parent().css("height","46px");
             $(this).parent().parent().children().eq(1).css("height","46px");
-            $(this).parent().parent().children().eq(0).css("height","46px");
        })
     </script>
 </body>

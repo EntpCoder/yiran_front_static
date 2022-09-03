@@ -372,40 +372,86 @@
               <img src="../static/svg/attendtion-blue.svg" width="20px">
             </div>
             <div class="pro-table">
-              <div class="table">
-                <table>
-                  <tr>
-                    <td>尺码</td>
-                    <td>号型</td>
-                    <td>肩宽(cm)</td>
-                    <td>胸围(cm)</td>
-                    <td>衣长(cm)</td>
-                    <td>袖长(cm)</td>
-                  </tr>
-                  <tr>
-                    <td>S</td>
-                    <td>S165/84A</td>
-                    <td>52.4</td>
-                    <td>118</td>
-                    <td>65</td>
-                    <td>57.6</td>
-                  </tr>
-                  <tr>
-                    <td>M</td>
-                    <td>M170/88A</td>
-                    <td>54.2</td>
-                    <td>124</td>
-                    <td>67</td>
-                    <td>58.8</td>
-                  </tr>
-                  <tr>
-                    <td>L</td>
-                    <td>L175/92A</td>
-                    <td>56</td>
-                    <td>130</td>
-                    <td>69</td>
-                    <td>60</td>
-                  </tr>
+              <div class="layui-form">
+                <table class="layui-table">
+                  <colgroup>
+                    <col width="150">
+                    <col width="150">
+                    <col width="200">
+                    <col>
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th>尺码</th>
+                      <th>号型</th>
+                      <th>肩宽(cm)</th>
+                      <th>胸围(cm)</th>
+                      <th>衣长(cm)</th>
+                      <th>袖长(cm)</th>
+                    </tr> 
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>S</td>
+                      <td>S165/84A</td>
+                      <td>52.4</td>
+                      <td>118</td>
+                      <td>65</td>
+                      <td>57.6</td>
+                    </tr>
+                    <tr>
+                      <td>M</td>
+                      <td>M170/88A</td>
+                      <td>54.2</td>
+                      <td>124</td>
+                      <td>67</td>
+                      <td>58.8</td>
+                    </tr>
+                    <tr>
+                      <td>L</td>
+                      <td>L175/92A</td>
+                      <td>56</td>
+                      <td>130</td>
+                      <td>69</td>
+                      <td>60</td>
+                    </tr>
+                    <tr>
+                      <td>XL</td>
+                      <td>XL180/96A</td>
+                      <td>57.2</td>
+                      <td>134</td>
+                      <td>71</td>
+                      <td>61.5</td>
+                    </tr>
+                    <tr>
+                      <td>XXL</td>
+                      <td>XXL185/100A</td>
+                      <td>58.4</td>
+                      <td>138</td>
+                      <td>73</td>
+                      <td>63</td>
+                    </tr>
+                    <tr>
+                      <td>XXXL</td>
+                      <td>XXXL150/104A</td>
+                      <td>59.6</td>
+                      <td>142</td>
+                      <td>73</td>
+                      <td>63</td>
+                    </tr>
+                    <tr>
+                      <td colspan="6">
+                        <span>温馨提示：</span>
+                        <span>以上数据仅供参考，由于尺码是手工测量，所以难免存在1cm-2cm的误差
+                        </span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="6">
+                        <span><a href="#">收起∧∨</a></span>
+                      </td>
+                    </tr>
+                  </tbody>
                 </table>
               </div>
             </div>
@@ -413,11 +459,95 @@
         </div>
         <!------------------- 商品参数 -------------->
         <div class="pro-static">
-
+          <div class="pro-modol-head"> 
+            <p>
+              <img src="../static/svg/Hollow-diamond.svg">
+              商品参数
+              <i>DETAIL</i>
+            </p>
+          </div>
+          <div class="pro-detail-table">
+            <table class="layui-table" lay-even="" lay-skin="row">
+              <colgroup>
+                <col width="150">
+                <col width="150">
+                <col width="200">
+                <col>
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th>风格：</th>
+                  <td>美式街头</td>
+                  <th>适用场景：</th>
+                  <td>休闲</td>
+                </tr>
+                <tr>
+                  <th>版型：</th>
+                  <td>宽松</td>
+                  <th>厚薄：</th>
+                  <td>常规</td>
+                </tr>
+                <tr>
+                  <th>适用季节：</th>
+                  <td>秋</td>
+                  <th>衣门襟：</th>
+                  <td>单排扣</td>
+                </tr>
+                <tr>
+                  <th>袖长：</th>
+                  <td>长袖</td>
+                  <th>衣长：</th>
+                  <td>常规</td>
+                </tr>
+                <tr>
+                  <th>适用人群：</th>
+                  <td>青少年</td>
+                  <th>面料：</th>
+                  <td>涤纶/聚酯纤维</td>
+                </tr>
+                <tr>
+                  <th>功能：</th>
+                  <td>无特殊功能</td>
+                  <th>图案：</th>
+                  <td>人像</td>
+                </tr>
+                <tr>
+                  <th>里材料：</th>
+                  <td>其他</td>
+                  <th>款式：</th>
+                  <td>开衫</td>
+                </tr>
+                <tr>
+                  <th>适用性别：</th>
+                  <td>男士</td>
+                  <th>领型：</th>
+                  <td>棒球领</td>
+                </tr>
+                <tr>
+                  <th>首销日期：</th>
+                  <td>2022-08-11</td>
+                  <th>详细材料信息：</th>
+                  <td>涤纶55.5% 粘纤11.5%</td>
+                </tr>
+                <tr>
+                  <th>产地：</th>
+                  <td>中共</td>
+                  <th>商品编码：</th>
+                  <td>BWBCC360289</td>
+                </tr>
+                <tr>
+                  <td colspan="4">
+                    <span><a href="#">收起∧∨</a></span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>  
+            
+          </div>
         </div>
         <!------------------------- 商品展示-图片 -->
         <div class="pro-show-imag">
-
+          
         </div>
         <!--  全部评价-->
         <div class="pro-all-comment">
