@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test1</title>
+    <script src="../static/js/jquery-3.6.0.min.js"></script>
+
+    <style>
+        *{
+            margin: 0;
+            padding:0 ;
+        }
+        .one-row{
+            width: 600px;
+            border:1px solid red;
+        }
+        .pinlei{
+            width: 100px;
+            height: 30px;
+            float: left;
+            border: 1px solid yellow;
+        }
+        .ul1{
+            width: 310px;
+            height: 30px;
+            overflow: hidden;
+            border: 1px solid rgb(41, 227, 17);
+            float: left;
+        }
+        .li1{
+            width: 100px;
+            height: 30px;
+            float: left;
+            border: 1px solid blue;
+            list-style: none;
+
+        }
+        button{
+            float: left;
+
+        }
+        .clean{clear:both;height:0;font-size: 1px;line-height: 0px;} 
+
+    </style>
+</head>
+<body>
+    <div class="one-row">
+        
+        <ul class="ul1">
+            <li class="li1">111</li>
+            <li class="li1">222</li>
+            <li class="li1">3333</li>
+            <li class="li1">4444</li>
+            <li class="li1">5555</li>
+        </ul>
+        <span class="pinlei">品类</span>
+        <div class="clean"></div>
+    </div>
+    <button>显示</button>
+    <script>
+        $("button").bind("click",function(){
+            $(".ul1").css({"overflow":"","height":"auto"})
+        })
+    </script>
+</body>
+</html>
