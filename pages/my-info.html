@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的资料</title>
+    <link rel="stylesheet" href="../static/layui/css/layui.css">
+    <link rel="stylesheet" href="../static/css/iconfont.css">
+    <link rel="stylesheet" href="../static/css/index.css">
+    <link rel="stylesheet" href="../static/css/my-orders.css">
+    <script src="../static/js/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+        <!-- 头部开始-->
+        <div class="top">
+            <!-- ==============头部=============== -->
+            <div class="head">
+                <div class="head-center">
+                    <div class="user">
+                        <ul class="user-nav">
+                            <li class="user-cart">
+                                <i class="user-img"></i>
+                                <a href="../pages/login.html">登录</a>
+                                <div class="user-list">
+                                     <a href="#">我的账户</a>
+                                     <a href="#">我的账户</a>
+                                     <a href="#">我的账户</a>
+                                     <a href="#">我的账户</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="user-ul">
+                        <li>退出登录</li>
+                    </ul>
+        
+                    <a href="../pages/register.html" class="qiandao">
+                        <i class="qiandao-img"></i>
+                        <span class="qiandao-name">注册</span>
+                    </a>
+        
+                    <a href="" class="qiandao">
+                        <i class="qiandao-img"></i>
+                        <span class="qiandao-name">签到有礼</span>
+                    </a>
+                    <a href="../pages/my-orders.html" class="order">我的订单</a>
+                    <a href="" class="TeMai">
+                        <span class="temai">我的特卖</span>
+                    </a>
+                    <a href="" class="club">会员俱乐部</a>
+                    <a href="" class="kefu">客户服务</a>
+                </div>
+            </div>
+            <!-- =================副头部==================== -->
+            <div class="fu-header">
+                <div class="center-header">
+                    <img src="../static/svg/viplogo.png" alt="" class="viplogo">
+                    <div class="zhengpin">
+                        <img src="../static/svg/zhengpin.svg" alt="" class="zhengpin-img">
+                        <span class="zhengpin-name">100%正品</span>
+                    </div>
+                    <div class="baoyou">
+                        <img src="../static/svg/baoyou.svg" alt="" class="baoyou-img">
+                        <span class="baoyou-name">88元包邮</span>
+                    </div>
+                    <div class="tuihuan">
+                        <img src="../static/svg/tuihuan.svg" alt="" class="tuihuan-img">
+                        <span class="tuihuan-name">退换无忧</span>
+                    </div>
+                    <div class="search">
+                        <div class="sousuo">
+                            <input type="text">
+                        </div>
+                        <img src="../static/svg/sousuo.svg"  alt="" class="sousuo-img">
+                        <div class="gouwuche">
+                            <ul class="header-right">
+                                <li class="cart">
+                                    <a href="../pages/car.html"><i class="iconfont">&#xe653;</i>购物车
+                                        <span>(0)</span></a>
+                                    <div class="cart-list">
+                                        购物车中没有商品赶快去选购把！
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="sousuo-a">
+                            <ul class="sousuo-lift">
+                                <li><a href="#">衣服</a><span>|</span></li>
+                                <li><a href="#">衣服555</a><span>|</span></li>
+                                <li><a href="#">衣服555</a><span>|</span></li>
+                                <li><a href="#">衣服555</a><span>|</span></li>
+                                <li><a href="#">衣服555</a><span>|</span></li>
+                                <li><a href="#">衣服555</a></li>
+                            </ul>
+                        </div>
+        
+                    </div>
+        
+                </div>
+            </div>
+        </div>
+            <nav class="main-nav">
+                <div class="layui-row">
+                    <div class="layui-col-md8 layui-col-md-offset2">
+                        <ul class="grid-demo">
+                            <li class="nav-myvip"><a href="">我的唯品会</a></li>
+                            <li class="nav-comingsoon"><a href="">我的特卖</a></li>
+                            <li class="nav-category"><a href="">首页</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+    
+        <div class="m-body">
+            <div class="m-content">
+                <ul class="g-sidebar layui-nav layui-nav-tree layui-inline " lay-filter="demo" style="margin-right: 10px;">
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <a id="aa" href="javascript:;">我的交易</a>
+                        <dl class="layui-nav-child">
+                            <dd><a href="my-orders.html">订单管理</a></dd>
+                            <dd><a href="after-sales.html">退换/售后</a></dd>
+                            <dd><a href="my-address.html">收获地址</a></dd>
+                        </dl>
+                    </li>
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <a href="javascript:;">我的资产</a>
+                        <dl class="layui-nav-child">
+                            <dd><a href="my-coupons.html">优惠券</a></dd>
+                            <dd><a href="my-coins.html">唯品币</a></dd>
+                        </dl>
+                    </li>
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <a href="javascript:;">我的账户</a>
+                        <dl class="layui-nav-child">
+                            <dd><a href="my-info.html">我的资料</a></dd>
+                        </dl>
+                    </li>
+                </ul>
+                <div class="g-content">
+                    <p id="m-title">
+                        <a href="personal.html">我的唯品会</a>
+                        &nbsp;>&nbsp;我的资料
+                    </p>
+                </div>
+            </div>
+        </div>
+        <script src="../static/layui/layui.js"></script>
+        <script src="../static/js/my-orders.js"></script>
+</body>
+</html>

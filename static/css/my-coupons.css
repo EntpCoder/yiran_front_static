@@ -90,3 +90,116 @@ input{
     border-bottom: 1px solid #f2f2f2;
     padding: 0 20px;
 }
+li, ol, ul {
+    list-style: none;
+}
+.clearfix {
+    display: block;
+    list-style-type: disc;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.m-thead-list li {
+    float: left;
+    text-align: center;
+}
+li {
+    display: list-item;
+    font-size: 12px;
+}
+.m-thead-list {
+    background-color: #f5f8fa;
+    line-height: 35px;
+    border-bottom: 1px solid #f2f2f2;
+    padding: 0 20px;
+}
+.m-thead-list .l1 {
+    width: 214px;
+    text-align: left;
+}
+.m-thead-list .l2 {
+    width: 226px;
+}
+.m-thead-list .l3 {
+    width: 180px;
+}
+.m-thead-list .l4 {
+    width: 117px;
+}
+.m-coupons-table  tr {
+    border-bottom: 1px dotted #ccc;
+}
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+.m-coupons-table {
+    clear: both;
+    margin: 0 20px;
+    color: #666;
+    text-align: left;
+}
+table {
+    display: table;
+
+    box-sizing: border-box;
+    text-indent: initial;
+
+    border-color: grey;
+}
+.m-coupons-table .detail {
+    width: 214px;
+    text-align: left;
+}
+.m-coupons-table tr th p{
+    font-size: 12px;
+}
+.m-coupons-table tr th {
+    text-align: center;
+    height: 60px;
+    font-style: normal;
+    font-weight: 400;
+    display: table-cell;
+    vertical-align: inherit;
+}
+.m-coupons-table .detail .red {
+    color: #f10180;
+    font-weight: 700;
+}
+.range-text{
+    font-size: 12px;
+}
+.m-coupons-table .detail .gray {
+    color: #999;
+}
+.m-coupons-table .range {
+    width: 226px;
+    width: 186px;
+    margin: 0 auto;
+}
+.m-coupons-table .time .time-line {
+    width: 135px;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    vertical-align: top;
+}
+.m-coupons-table .time{
+    display: block;
+    margin-left: 60px;
+}
+.m-coupons-table .way p {
+    width: 164px;
+    max-height: 35px;
+    overflow: hidden;
+}
