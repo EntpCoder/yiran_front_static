@@ -47,7 +47,7 @@
 /* 自适应盒子 */
 .detail-container .detail-box{
     width: 100%;
-    background-color: rgb(175, 172, 250);
+    /* background-color: rgb(175, 172, 250); */
 }
 /* *************************************************** 商品尺码*/
 .detail-container .detail-box .pro-size{
@@ -226,12 +226,14 @@
 /* *************************************************************全部评价 */
 .detail-container .detail-box .pro-all-comment{
     width: 100%;
-    background-color: #5da2c2;
+    /* background-color: #5da2c2; */
 }
 /*************** 综合评论评分盒子 */
 .detail-container .detail-box .pro-all-comment .comprehensive-coment-box{
     width: 100%;
-    background-color: #ddf4ff;    
+    /* background-color: #ddf4ff; */
+    height: 200px; 
+    border: 1px solid #999;
 }
 .detail-container .detail-box .pro-all-comment .comprehensive-coment-box .grey-head{
     background-color: #eae8eb;
@@ -240,10 +242,14 @@
 }
 /* 100%盒子 */
 .detail-container .detail-box .pro-all-comment .comprehensive-coment-box .comprehensive-score{
-    margin: 36px 35px 45px 15px;
-    height: 70px;
+    margin: 36px 35px 45px 70px;
+    height: 80px;
     width: 165px;
+    border: 1px white solid;
     border-right: 1px #999 solid ;
+    float: left;
+    padding-right: 35px;
+    /* background-color: rgb(169, 64, 64); */
 }
 .detail-container .detail-box .pro-all-comment .comprehensive-coment-box .comprehensive-score :nth-child(1){
     font-size: 50px;
@@ -256,18 +262,56 @@
 }
 .detail-container .detail-box .pro-all-comment .comprehensive-coment-box .comprehensive-score :nth-child(2){
     color: #333;
+    margin-left: 10px;
 }
+.detail-container .detail-box .pro-all-comment .comprehensive-coment-box .comment-selections{
+    margin: 36px 35px 45px 35px;
+    /* height: 100px; */
+    width: 620px;
+    /* background: rgb(62, 69, 201); */
+    float: left;
+}
+.detail-container .detail-box .pro-all-comment .comprehensive-coment-box .comment-selections .selecttion{
+    height: 23px;
+    /* width: 100px; */
+    background-color:#fff;
+    float: left;
+    margin: 0px 10px 10px 0px;
+    border: 1px solid #999;
+    padding: 5px 12px 5px 12px;
+    border-radius: 3px;
+}
+.detail-container .detail-box .pro-all-comment .comprehensive-coment-box .comment-selections .selecttion span{
+    color: #666;
+    line-height: 23px;
+    font-size: 12px;
+
+}
+.detail-container .detail-box .pro-all-comment .comprehensive-coment-box .comment-selections .line{
+    /* height: 50px; */
+    width: 480px;
+    /* background-color: rgb(221, 105, 105); */
+    margin-top: 90px;
+}
+.detail-container .detail-box .pro-all-comment .comprehensive-coment-box .comment-selections .line legend{
+    margin: auto;
+    padding: 0 10px;
+    font-size: 12px;
+    font-weight: 300;
+}
+
 /* **********用户评论盒子 */
 .detail-container .detail-box .pro-all-comment .comments-bob{
     width: 100%;
+    height: 500px;
     background-color: #90dcff;
+
 }
 /* **********用户评论 */
 .detail-container .detail-box .pro-all-comment .comments-bob .comment{
     width: 100%;
     background-color: #00aeff;
 }
-
 /* *************************************************************商品咨询 */
 
 
