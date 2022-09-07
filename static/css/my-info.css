@@ -6,3 +6,41 @@
     font-size: 14px;
     font-family: 'Microsoft Yahei',Arial,Helvetica,sans-serif;
 }
+.account .accountContent {
+    width: 100%;
+    min-height: 163px;
+}
+.account .accountContent .itemContent .userInfo{
+    position: relative;
+    height: 120px;
+
+}
+.touxiang button{
+    background-color: #df147f;
+}
+.touxiang{
+    display: block;
+    margin-left: 20px;
+}
+.userName{
+    display: block;
+    float: left;
+    margin-top: 10px;
+}
+.layer{
+    height: 10px;
+}
+.layui-form{
+    display: block;
+    margin-top: 80px;
+    font-size: 12px;
+}
+.address-tips{
+    height: 30px;
+    background-color: rgb(230,232,244);
+    margin-bottom: 2%;
+    margin-top: 2%;
+    line-height: 30px;
+    color: rgb(152,152,152);
+    font-size: smaller;
+}
