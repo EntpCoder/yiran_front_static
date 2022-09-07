@@ -1,0 +1,295 @@
+:root .m-detail-modules {
+    border: 0 none;
+}
+.m-detail-modules {
+    border: 1px solid #ececec;
+    background-color: #fff;
+    box-shadow: 0 1px 4px rgb(0 0 0 / 10%);
+    margin-bottom: 15px;
+}
+.u-modules-title {
+    color: #000;
+    background-color: #f9f9f9;
+    font: 14px/24px tahoma,arial,Hiragino Sans GB,WenQuanYi Micro Hei,\5FAE\8F6F\96C5\9ED1,\5B8B\4F53,sans-serif;
+    padding-left: 20px;
+    line-height: 40px;
+    border-bottom: 1px solid #e0e0e0;
+    position: relative;
+}
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.m-detail-state {
+    position: relative;
+    border-bottom: 1px dotted #dcdcdc;
+    zoom: 1;
+    padding-bottom: 15px;
+}
+.m-detail-info {
+    padding: 2px 20px;
+    line-height: 24px;
+    position: relative;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.m-detail-state .type {
+    color: #999;
+    padding-right: 30px;
+}
+b {
+    font-weight: bold;
+}
+.m-detail-state .time {
+    float: right;
+}
+.m-detail-modules .time {
+    float: right;
+    margin-right: 15px;
+}
+.m-detail-state p, span{
+    font-size: 12px;
+}
+.m-detail-state .ui-tips-nor {
+    margin-top: 5px;
+    position: static;
+}
+.ui-tips2 {
+    background-color: #dff1f8;
+    border: 1px solid #b4e1f3;
+}
+.ui-tips-nor {
+    position: relative;
+    padding-left: 15px;
+    line-height: 30px;
+    border-radius: 2px;
+    zoom: 1;
+    font-family: tahoma,arial,Hiragino Sans GB,WenQuanYi Micro Hei,'\5FAE\8F6F\96C5\9ED1','\5B8B\4F53',sans-serif;
+}
+.ui-tips-nor i {
+    margin-right: 13px;
+    vertical-align: top;
+}
+.if-info {
+    color: #249fdf;
+}
+.vipFont {
+    font-family: vipFont;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+dl {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.m-detail-info-list dt {
+    float: left;
+}
+dt {
+    display: block;
+}
+.m-detail-info-list .money {
+    color: #f10180;
+}
+b {
+    font-weight: bold;
+}
+.m-detail-info-list{
+    font-size: 12px;
+}
+h3 span{
+    font-size: 14px;
+}
+.ui-step {
+    padding: 0 40px;
+}
+.step {
+    width: 80%;
+    margin: 0 auto;
+}
+.ui-step-3 li {
+    width: 20%;
+}
+.ui-step li.ui-step-end {
+    width: 250px;
+}
+.m-detail-modules .b{
+    height: 12px;
+}
+/* 商品清单 */
+.m-order-goods-list {
+    color: #666;
+    margin: 0 auto;
+    width: 820px;
+    margin-left: 10px;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: 12px;
+}
+table {
+    display: table;
+    box-sizing: border-box;
+    text-indent: initial;
+    border-color: grey;
+}
+thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.m-order-goods-list .u-goods-title {
+    border-bottom: 1px solid #e0e0e0;
+}
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+td {
+    display: table-cell;
+    vertical-align: inherit;
+}
+.m-order-goods-list .u-goods-title th {
+    line-height: 1;
+    padding: 2px 4px 8px;
+}
+.m-order-goods-list .title-good {
+    text-align: left;
+}
+.m-order-goods-list th {
+    color: #999;
+}
+th {
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+.m-order-goods-list .m-goods {
+    padding: 20px 0;
+    text-align: left;
+}
+.suitGoodsItem td {
+    border-bottom: 0;
+}
+.m-goods {
+    font-size: 0;
+    line-height: 1.5;
+}
+.m-goods .pic {
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+    letter-spacing: normal;
+    word-spacing: normal;
+}
+.m-goods-info {
+    display: inline-block;
+    width: 220px;
+    font-size: 12px;
+    vertical-align: middle;
+    letter-spacing: normal;
+    word-spacing: normal;
+    position: relative;
+}
+.m-goods-info .name {
+    max-height: 36px;
+    overflow: hidden;
+    white-space: normal;
+    word-wrap: break-word;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    margin-bottom: 3px;
+    color: #666;
+    font-size: 12px;
+}
+.m-goods-info .size {
+    display: block;
+    color: #333;
+}
+b {
+    font-weight: bold;
+}
+.u-money-color {
+    color: #f10180;
+    font-weight: bolder;
+}
+.m-total-pay {
+    float: right;
+    padding: 14px 20px 24px 0;
+    line-height: 30px;
+    text-align: right;
+}
+.m-total-pay .u-special-pay .cnt {
+    padding: 5px 7px;
+    line-height: 20px;
+}
+.ui-tips-pop .cnt {
+    position: relative;
+    background-color: #fff;
+}
+.m-total-pay .num {
+    color: #f10180;
+}
+.m-total-pay .txt {
+    display: inline-block;
+    min-width: 75px;
+    white-space: nowrap;
+}
+.m-detail-modules .num, .m-detail-modules .txt {
+    color: #f10180;
+}
+.m-total-pay>li {
+    position: relative;
+}
+.m-total-pay .u-special-pay {
+    position: relative;
+    float: right;
+    white-space: nowrap;
+    margin-top: 3px;
+    text-align: left;
+}
+.ui-tips-pop, .ui-tooltips {
+    position: absolute;
+    max-width: 800px;
+    border: 1px solid #dbdada;
+    border-radius: 2px;
+    box-shadow: 0 0 3px rgb(0 0 0 / 10%);
+    font: 12px/18px tahoma,arial,Hiragino Sans GB,WenQuanYi Micro Hei,'\5FAE\8F6F\96C5\9ED1','\5B8B\4F53',sans-serif;
+    color: #4d4d4d;
+    z-index: 50;
+}
+.m-total-pay .u-money-color {
+    font-size: 16px;
+}
+.u-money-color {
+    color: #f10180;
+    font-weight: bolder;
+}
