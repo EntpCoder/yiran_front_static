@@ -533,12 +533,18 @@
     margin-top: 8px;
 }
 /* ===================底部页码======================= */
-.layui-laypage {
+/* .layui-laypage {
     width: auto;
     height: 46px;
     margin-left: 500px;
     line-height: 46px;
     text-align: center;
+} */
+.demo1{
+    width: 100%;
+   height:46px;
+    text-align: center;  
+    float: left;
 }
 .layui-laypage a, .layui-laypage span {
     width: 36px;

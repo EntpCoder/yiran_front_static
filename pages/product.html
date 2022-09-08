@@ -850,14 +850,14 @@
         </ul>
     </div>
 <!-- ================总共的页码================== -->
-        <div id="demo1"></div>       
+        <div id="demo1" class="demo1"></div>       
     <script>
         layui.use(['laypage', 'layer'], function(){
           var laypage = layui.laypage
           ,layer = layui.layer;
           laypage.render({
                 elem: 'demo1'
-                ,count: 60 //数据总数
+                ,count: 100 //数据总数
                 ,jump: function(obj){
                 console.log(obj)
                 }
@@ -991,6 +991,7 @@
         $(".ul-item").on("click",".li-check",function(event){
              $(this).parent().css("color", "#f32b80")
        })
+       
        
 
 
