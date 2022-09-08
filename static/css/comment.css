@@ -1,0 +1,18 @@
+h3{
+    color: #f10180;
+    margin-left: 30px;
+    font-size: 18px;
+}
+textarea{
+    width: 80%;
+    height: 180px;
+    margin-left: 10%;
+    margin-top: 10px;
+
+}
+.comment-star{
+    margin-left: 10px;
+}
+.comment-star span{
+    font-size: 13px;
+}

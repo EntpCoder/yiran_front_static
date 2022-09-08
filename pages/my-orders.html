@@ -264,7 +264,7 @@
                                     </div>
                                     <div class="order-other">
                                         <p>
-                                            <a href="" mars_sead="order_after_service_apply" target="_blank">评价</a>
+                                            <a href="javascript:;" class="comment" role="button">评价</a>
                                         </p>
                                     </div>
                                 </div>
@@ -501,7 +501,7 @@
                                     </div>
                                     <div class="order-other">
                                         <p>
-                                            <a href="" mars_sead="order_after_service_apply" target="_blank">评价</a>
+                                            <a href="javascript:;" class="comment" role="button">评价</a>
                                         </p>
                                     </div>
                                 </div>
@@ -552,6 +552,17 @@
                     ins3.reload(options);
                 });
             });
+            $('.J_confirmSign').click(function () {
+                layer.alert('已确认收货');
+            });
+            $('.comment').click(function () {
+                layer.open({
+                    type: 2,
+                    skin: 'layui-layer-rim', //加上边框
+                    area: ['420px', '600px'], //宽高
+                    content: 'comment.html'
+                });
+            })
         </script>
 </body>
 
