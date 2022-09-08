@@ -52,7 +52,7 @@
 /* *************************************************** 商品尺码*/
 .detail-container .detail-box .pro-size{
     width: 100%;
-    background-color: rgb(208, 253, 254);
+    /* background-color: rgb(208, 253, 254); */
 }
 .detail-container .detail-box .pro-size .pro-modol-head{
     text-align: left;
@@ -129,7 +129,7 @@
 /*********************************************** 商品参数 */
 .detail-container .detail-box .pro-static{
     width: 100%;
-    background-color: rgb(226, 220, 252);
+    /* background-color: rgb(226, 220, 252); */
     margin-top: 20px;
 }
 .detail-container .detail-box .pro-static .pro-modol-head{
@@ -181,7 +181,7 @@
 /******************************************** 商品展示-图片 */
 .detail-container .detail-box .pro-show-imag{
     width: 100%;
-    background-color: rgb(176, 238, 195);
+    /* background-color: rgb(176, 238, 195); */
     margin-top: 20px;
 }
 .detail-container .detail-box .pro-show-imag .pro-modol-head{
@@ -304,13 +304,59 @@
 .detail-container .detail-box .pro-all-comment .comments-bob{
     width: 100%;
     height: 500px;
-    background-color: #90dcff;
-
+    /* background-color: #90dcff; */
 }
 /* **********用户评论 */
 .detail-container .detail-box .pro-all-comment .comments-bob .comment{
     width: 100%;
-    background-color: #00aeff;
+    /* background-color: #00aeff; */
+}
+.detail-container .detail-box .pro-all-comment .comments-bob .comment .user-name-image{
+    width: 210px;
+    height: 40px;
+    padding: 30px;
+    background-color: #fff;
+    float: left;
+    margin-right: 10px;
+}
+.detail-container .detail-box .pro-all-comment .comments-bob .comment .user-text{
+    width: 630px;
+    height: 300px;
+    /* background-color: rgb(208, 249, 255); */
+    float: left;
+}
+.detail-container .detail-box .pro-all-comment .comments-bob .comment .user-text .time{
+    width: 100%;
+}
+.detail-container .detail-box .pro-all-comment .comments-bob .comment .user-text .time .time1{
+    float: left;
+    padding-right: 10px;
+    color: #6f6f6f;
+    font-size: 12px;
+}
+.detail-container .detail-box .pro-all-comment .comments-bob .comment .user-text .time :nth-child(2){
+    margin-right: 10px;
+}
+.detail-container .detail-box .pro-all-comment .comments-bob .comment .user-text .main-text{
+    width: 100%;
+    float: left;
+    margin-top: 15px;
+    color: #6f6f6f;
+    font-size: 12px;
+}
+.detail-container .detail-box .pro-all-comment .comments-bob .comment .user-text .main-text span{
+    display: block;
+}
+.detail-container .detail-box .pro-all-comment .comments-bob .comment .user-text .main-text-image{
+    width: 100%;
+}
+.detail-container .detail-box .pro-all-comment .comments-bob .comment .user-text .main-text-image .text-imag{
+    height: 72px;
+    width: 72px;
+    border: 1px solid #999;
+    float: left;
+    margin-top: 15px;
+    padding: 3px;
 }
 /* *************************************************************商品咨询 */
 
