@@ -59,6 +59,7 @@
     width: 245px;
     height: 420px;
     border: 1px solid rgb(231,231,231);
+    position: relative;
 }
 .goods-item:hover .goods-item-inner{
     border: 1px solid rgb(231,231,231,0);
@@ -85,4 +86,16 @@
     margin: 3%;
     font-size: small;
     color: rgb(102,102,102);
+}
+.add-car{
+    background-color: rgb(250,250,250);
+    color: rgb(51,51,51);
+    width: 100%;
+    border-top: 1px solid rgb(224,224,224);
+    border-radius: 0px;
+    position: absolute;
+    bottom: 0px;
+}
+.add-car:hover{
+    color: rgb(241,1,128);
 }
