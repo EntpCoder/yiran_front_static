@@ -316,9 +316,9 @@
                         <div class="layui-col-md1">
                           <div class="grid-demo shuliang">
                             <span>数量</span>
-                            <div class="pro-num"><span class="sub">-</span></div>
+                            <div class="pro-num"><span class="sub"><a href="">-</a></span></div>
                             <input type="text" value="1">
-                            <div class="pro-num"><span>+</span></div>
+                            <div class="pro-num"><span><a href="#">+</a></span></div>
                           </div>
                         </div>
                         <div class="layui-col-md1">
@@ -346,12 +346,10 @@
       <div class="maodian-box">
         <div class="maodian-ul">
           <ul>
-            <a href="#">规格参数</a>
-            <a href="#">商品展示</a>
-            <a href="#">全部评价</a>
-            <a href="#">猜你喜欢</a>
-            <a href="#">商品咨询</a>
-            <a href="#">关于我们</a>
+            <a href="#pro-size">规格参数</a>
+            <a href="#pro-show-imag">商品展示</a>
+            <a href="#pro-all-comment">全部评价</a>
+            <a href="#pro-consultation">商品咨询</a>
           </ul>
         </div>
       </div>
@@ -359,7 +357,7 @@
         <!------------- 商品尺码 -------------->
         <div class="pro-size">
           <div class="pro-modol-head"> 
-            <p>
+            <p id="pro-size">
               <img src="../static/svg/Hollow-diamond.svg">
               商品尺码
               <i>SIZE</i>
@@ -448,7 +446,7 @@
                     </tr>
                     <tr>
                       <td colspan="6">
-                        <span><a href="#">收起∧∨</a></span>
+                        <span><a href="#">收起∧</a><a href="#">展开∨</a></span>
                       </td>
                     </tr>
                   </tbody>
@@ -529,15 +527,15 @@
                   <th>详细材料信息：</th>
                   <td>涤纶55.5% 粘纤11.5%</td>
                 </tr>
-                <tr>
+                <tr id="open-close">
                   <th>产地：</th>
-                  <td>中共</td>
+                  <td>中国</td>
                   <th>商品编码：</th>
                   <td>BWBCC360289</td>
                 </tr>
                 <tr>
                   <td colspan="4">
-                    <span><a href="#">收起∧∨</a></span>
+                    <span><a href="#" id="close2">收起∧</a><a href="#" id="open1">展开∨</a></span>
                   </td>
                 </tr>
               </tbody>
@@ -548,7 +546,7 @@
         <!------------------------- 商品展示-图片 -->
         <div class="pro-show-imag">
           <div class="pro-modol-head"> 
-            <p>
+            <p id="pro-show-imag">
               <img src="../static/svg/Hollow-diamond.svg">
               图片展示
               <i>IMAGE</i>
@@ -601,10 +599,10 @@
           </div>
         </div>
         <!--  全部评价-->
-        <div class="pro-all-comment">
+        <div class="pro-all-comment" id="pro-all-comment">
           <div class="comprehensive-coment-box">
             <div class="grey-head">
-              <span>全部评价</span>
+              <span >全部评价</span>
             </div>
             <!-- 100%满意度 -->
             <div class="comprehensive-score">
@@ -720,7 +718,7 @@
         </div>
       </div>
       <!-- 商品咨询 -->
-      <div class="pro-consultation">
+      <div class="pro-consultation" id="pro-consultation">
         <div class="grey-head">
           <span>商品咨询</span>
         </div>

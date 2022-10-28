@@ -280,12 +280,31 @@
     border: 1px solid #999;
     padding: 5px 12px 5px 12px;
     border-radius: 3px;
+    cursor: pointer;
+}
+.detail-container .detail-box .pro-all-comment .comprehensive-coment-box .comment-selections .selecttion:visited{
+    border: 1px solid #de327f;
+}
+.detail-container .detail-box .pro-all-comment .comprehensive-coment-box .comment-selections .selecttion:hover{
+    border: 1px solid #de327f;
+}
+.detail-container .detail-box .pro-all-comment .comprehensive-coment-box .comment-selections .selecttion:active{
+    border: 1px solid #de327f;
 }
 .detail-container .detail-box .pro-all-comment .comprehensive-coment-box .comment-selections .selecttion span{
     color: #666;
     line-height: 23px;
     font-size: 12px;
 
+}
+.detail-container .detail-box .pro-all-comment .comprehensive-coment-box .comment-selections .selecttion span:visited{
+    color: #de327f;
+}
+.detail-container .detail-box .pro-all-comment .comprehensive-coment-box .comment-selections .selecttion span:hover{
+    color: #de327f;
+}
+.detail-container .detail-box .pro-all-comment .comprehensive-coment-box .comment-selections .selecttion span:active{
+    color: #de327f;
 }
 .detail-container .detail-box .pro-all-comment .comprehensive-coment-box .comment-selections .product-comment-info{
     /* height: 100px; */
@@ -362,6 +381,7 @@
     float: left;
     margin-top: 15px;
     padding: 3px;
+    cursor:pointer;
 }
 /* 点赞 */
 .detail-container .detail-box .pro-all-comment .comments-bob .comment .user-text .great{
@@ -374,10 +394,12 @@
 .detail-container .detail-box .pro-all-comment .comments-bob .comment .user-text .great div{
     float: right;
     margin-right: 5px;
+    cursor: pointer;
 }
 .detail-container .detail-box .pro-all-comment .comments-bob .comment .user-text .great span{
     color: #6f6f6f;
     float: right;
+    cursor: pointer;
 }
 /* *************************************************************商品咨询 */
 .detail-container .pro-consultation{

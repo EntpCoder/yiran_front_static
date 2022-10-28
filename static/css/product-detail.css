@@ -31,10 +31,13 @@
     background-color: rgb(111, 111, 111);
     opacity: 0.5;
     height: 69px;
+    cursor: pointer;
+}
+.product-container .layui-row .layui-col-md5 .layui-row .layui-col-md2{
+    cursor: pointer;
 }
 .product-container .layui-row .layui-col-md5 .layui-row .layui-col-md1 img{
     margin-top: 17px;
-    
 }
 /* 商品编码和收藏 */
 .product-container .layui-row .layui-col-md5 .proId-and-collect{
@@ -281,6 +284,19 @@
     /* background-color: rgb(251, 201, 201); */
     float: left;
     margin: 0 auto;
+    border: 2px solid #999999;
+    cursor: pointer;
+}
+.product-container .layui-row .layui-col-md7 .grid-demo .layui-col-md11 .layui-row .layui-col-md1 .grid-demo ul li .box:link{
+    border: 2px solid #999999;
+}
+.product-container .layui-row .layui-col-md7 .grid-demo .layui-col-md11 .layui-row .layui-col-md1 .grid-demo ul li .box:visited{
+    border: 2px solid #f03867;
+}
+.product-container .layui-row .layui-col-md7 .grid-demo .layui-col-md11 .layui-row .layui-col-md1 .grid-demo ul li .box:hover{
+    border: 2px solid #f03867;
+}
+.product-container .layui-row .layui-col-md7 .grid-demo .layui-col-md11 .layui-row .layui-col-md1 .grid-demo ul li .box:active{
     border: 2px solid #f03867;
 }
 .product-container .layui-row .layui-col-md7 .grid-demo .layui-col-md11 .layui-row .layui-col-md1 .grid-demo ul li .box img{
@@ -350,6 +366,7 @@
     margin-top: 20px;
     margin-left: 45px;
     position: relative;
+    cursor: pointer;
 }
 .product-container .layui-row .layui-col-md7 .grid-demo .layui-col-md11 .layui-row .layui-col-md1 .lastbox{
     height: 110px;
