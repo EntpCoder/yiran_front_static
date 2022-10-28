@@ -226,7 +226,7 @@
 /* *************************************************************全部评价 */
 .detail-container .detail-box .pro-all-comment{
     width: 100%;
-    /* background-color: #5da2c2; */
+    background-color: #fafafa;
 }
 /*************** 综合评论评分盒子 */
 .detail-container .detail-box .pro-all-comment .comprehensive-coment-box{
@@ -287,29 +287,33 @@
     font-size: 12px;
 
 }
-.detail-container .detail-box .pro-all-comment .comprehensive-coment-box .comment-selections .line{
-    /* height: 50px; */
-    width: 480px;
-    /* background-color: rgb(221, 105, 105); */
-    margin-top: 90px;
+.detail-container .detail-box .pro-all-comment .comprehensive-coment-box .comment-selections .product-comment-info{
+    /* height: 100px; */
+    width: 100%;
+    /* background-color: rgb(243, 184, 184); */
+    border-top: #999 1px solid;
+    float: left;
 }
-.detail-container .detail-box .pro-all-comment .comprehensive-coment-box .comment-selections .line legend{
-    margin: auto;
-    padding: 0 10px;
-    font-size: 12px;
-    font-weight: 300;
+.detail-container .detail-box .pro-all-comment .comprehensive-coment-box .comment-selections .product-comment-info span{
+    font-size: 10px;
+    display: block;
+    float: left;
+    line-height:15px;
+    color: #666;
 }
-
+.detail-container .detail-box .pro-all-comment .comprehensive-coment-box .comment-selections .product-comment-info :nth-child(1){
+    margin-left: 40%;
+}
 /* **********用户评论盒子 */
 .detail-container .detail-box .pro-all-comment .comments-bob{
     width: 100%;
-    height: 500px;
-    /* background-color: #90dcff; */
+    /* height: 500px; */
+    background-color: #90dcff;
 }
 /* **********用户评论 */
 .detail-container .detail-box .pro-all-comment .comments-bob .comment{
     width: 100%;
-    /* background-color: #00aeff; */
+    background-color: #1d7097;
 }
 .detail-container .detail-box .pro-all-comment .comments-bob .comment .user-name-image{
     width: 210px;
@@ -320,13 +324,14 @@
     margin-right: 10px;
 }
 .detail-container .detail-box .pro-all-comment .comments-bob .comment .user-text{
-    width: 630px;
+    width: 670px;
     height: 300px;
     /* background-color: rgb(208, 249, 255); */
     float: left;
 }
 .detail-container .detail-box .pro-all-comment .comments-bob .comment .user-text .time{
     width: 100%;
+    line-height: 15px;
 }
 .detail-container .detail-box .pro-all-comment .comments-bob .comment .user-text .time .time1{
     float: left;
@@ -358,7 +363,58 @@
     margin-top: 15px;
     padding: 3px;
 }
+/* 点赞 */
+.detail-container .detail-box .pro-all-comment .comments-bob .comment .user-text .great{
+    height: 20px;
+    width: 100%;
+    /* background-color: rgb(213, 183, 249); */
+    float: left;
+    margin-top: 25px;
+}
+.detail-container .detail-box .pro-all-comment .comments-bob .comment .user-text .great div{
+    float: right;
+    margin-right: 5px;
+}
+.detail-container .detail-box .pro-all-comment .comments-bob .comment .user-text .great span{
+    color: #6f6f6f;
+    float: right;
+}
 /* *************************************************************商品咨询 */
+.detail-container .pro-consultation{
+    width: 100%;
+    /* background-color: rgb(242, 192, 192); */
+    float: left;
+}
+.detail-container .pro-consultation .grey-head{
+    background-color: #eae8eb;
+    line-height: 45px;
+    padding-left: 15px;
+    margin-bottom: 30px;
+}
+.detail-container .pro-consultation .pro-questions{
+    width: 96%;
+    /* background-color: #90dcff; */
+    margin: 0px 20px 0px 20px;
+    line-height: 30px;
+    font-weight: 700;
+    font-size: 14px;
+}
+/* 问题1 */
+.detail-container .pro-consultation .pro-questions .question{
+    width: 100%;
+    /* background-color: rgb(215, 208, 250); */
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.detail-container .pro-consultation .pro-questions .question .A{
+    font-weight:500;
+}
 
-
+.detail-container .pro-consultation .pro-questions .question .A span #image{
+    float: left;
+}
+.detail-container .pro-consultation .pro-questions .question .A span #centent{
+    float: left;
+    width: 97%;
+}
 /* *************************************************************关于我们 */
